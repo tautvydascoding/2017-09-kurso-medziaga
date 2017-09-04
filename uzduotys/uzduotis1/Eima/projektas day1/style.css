@@ -1,0 +1,18 @@
+h2, .antraste {
+  color: #666;
+  font-weight: 300;
+  font-family:sans-serif;
+}
+.tekstas {
+  color:#444;
+  text-align: justify;
+  max-width: 400px;
+}
+.nuoroda {
+  width:400px;
+  height:200px;
+  display:block;
+}
+.paverstas {
+  font-style:italic;
+}
