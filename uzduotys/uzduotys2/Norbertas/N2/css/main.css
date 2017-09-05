@@ -1,0 +1,23 @@
+body{margin: 0; padding: 0;}
+h1{color:red; text-align: center;}
+.identiskas_bar{background-color: rgb(77, 46, 49);
+border: solid 1px black;
+/*elementai vienoj eilutej. float vaiksto kartu su plociu*/
+float: left;
+width: 30%;
+position: relative; margin-right: 2.3%;
+/*baigus naudoti float- uzdeti clear: both;*/
+}
+.clear{clear: both; }
+.first_menu h4{background-color: rgb(195, 49, 87);
+width: 100px; }
+.second_menu h4{color: red; background-color: rgb(60, 97, 153); width: 100px;}
+.third_menu h4{color:blue; background-color: rgb(199, 185, 160); width: 100px;}
+.identiskas_bar h4{border: solid 1px black;}
+
+/*elementu pozicijos keitimas*/
+h4{position: absolute; right: 0px; top: 0px;
+margin-top: 0px; text-align: center;}
+.identiskas_bar p{margin-top: 30px; margin-left: 20px; margin-right: 20px;}
+
+.identiskas_bar:first-of-type{margin-left: 2.5%;}
