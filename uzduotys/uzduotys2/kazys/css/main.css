@@ -1,0 +1,12 @@
+h1 {color: blue;
+}
+body {background: yellow;
+}
+/*<div class="redAds"> class su tasku*/
+.redAds {
+  color:blue;
+}
+/*<div id="pirkimoForma"> id su #*/
+#pirkimoForma {
+  color:red;
+}
