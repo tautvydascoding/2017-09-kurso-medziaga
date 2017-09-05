@@ -1,0 +1,23 @@
+h1 {
+    color: #3333a2;
+}
+
+
+body {
+    background-color: gray;
+}
+
+/* class  */
+.redAds {
+    color: chocolate;
+}
+
+
+
+/* id  */
+#specialid {
+    color: cornflowerblue;
+}
+
+
+/*   */
