@@ -8,10 +8,10 @@ h2, .antraste {
   text-align: justify;
   max-width: 400px;
 }
-.nuoroda {
-  width:400px;
-  height:200px;
-  display:block;
+.nuoroda img {
+  width:1263px;
+  height:400px;
+  object-fit: cover;
 }
 .paverstas {
   font-style:italic;
