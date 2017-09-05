@@ -1,0 +1,16 @@
+h1 {
+  color: red;
+}
+
+body {
+  background-color: #999;
+}
+
+/*  class="redAds" */
+.redAds {
+  color: blue;
+}
+/*    id="pirkimoForma"   */
+#pirkimoForma {
+  color: white;
+}
