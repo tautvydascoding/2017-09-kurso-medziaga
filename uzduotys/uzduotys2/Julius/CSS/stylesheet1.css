@@ -1,6 +1,13 @@
-#AIDY
-{color:red;}
-.KLAS
-{color:blue;}
-body p{color:purple;}
-body .darvienas{color:green;}
+body
+{text-align: center;}
+.blokas
+{border:1px solid black;
+text-align: center;
+width:20%;
+display: inline-block;}
+
+
+
+
+
+
