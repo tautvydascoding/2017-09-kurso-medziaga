@@ -10,3 +10,25 @@ body {background: #999;
 #pirkimoForma {
   color:red;
 }
+.italic {
+  font-style: italic;
+p {
+  color: black;
+}
+}
+body section p {
+  color: orange;
+}
+button {
+  background-color: white;
+  border-radius: 15px;
+  border: 20px;
+  padding: 10px;
+  /*atstumimas nuo elementu (tik nuo block elementu)*/
+  margin-left: 25px;
+}
+button:hover,
+button:focus {
+  background-color: #b2b2b2;
+  color: white;
+}
