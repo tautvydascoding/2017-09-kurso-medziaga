@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: red;
+    text-align: center;
+}
+
+p {
+    margin-top: 30px;
+}
+.product {
+    background-color: #b2b2b2;
+    border: solid 1px black;
+
+    /* elementus darome vienoje eiluteje */
+    float: left;
+    width: 30%;
+    /* baigus naudoti float - uzdeti clear: both; */
+
+    position: relative;
+    margin-right: 2.3%;
+}
+.product:first-of-type {
+    margin-left: 2.5%;
+}
+.clear {
+    clear: both;
+}
+.firstMenu h3 {
+    background-color: #28ebe6;
+    width: 100px;
+}
+.secondMenu h3 {
+    background-color: #fc703d;
+    width: 100px;
+}
+.thirdMenu h3 {
+     background-color: #1cd59f;
+     width: 100px;
+}
+
+/* elementu pozicijos keitimas i ekrano desine  */
+h3 {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    margin-top: 0;
+    text-align: center;
+}
