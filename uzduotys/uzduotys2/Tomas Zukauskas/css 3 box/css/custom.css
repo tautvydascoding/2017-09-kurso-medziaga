@@ -1,0 +1,46 @@
+.box {
+  display: inline-block;
+  float: left;
+  word-wrap: normal;
+  width: 30%;
+  border-style: solid;
+  border-color: black;
+  border-width: 3px;
+  margin: 10px;
+  background-color: gray;
+  min-width: 300px;
+}
+
+p {
+  padding: 10px;
+  min-width: 300px;
+}
+
+h1 {
+  text-align: center;
+}
+
+span {
+  float: right;
+  border-width: 3px;
+  border-left-style: solid;
+  border-bottom-style: solid;
+  border-color: black;
+  padding: 3px;
+  font-weight: bold;
+  width: 20%;
+  text-align: center;
+}
+
+.one {
+  background-color: pink;
+}
+
+.two {
+  background-color: red;
+  color: white;
+}
+
+.three {
+  background-color: yellow;
+}
