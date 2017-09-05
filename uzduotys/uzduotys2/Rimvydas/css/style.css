@@ -3,7 +3,9 @@ h1 {
 }
 
 
-
+body {
+    background-color: gray;
+}
 
 /* class  */
 .redAds {
