@@ -1,0 +1,15 @@
+h1{
+  color: red;
+}
+
+body {
+  background-color: rgba(219, 187, 237, 0.9);
+}
+
+/* class="RedADS" */
+.RedADS {
+  color: rgb(232, 225, 28)
+}
+#Pirkimoforma {
+  color: white;
+}
