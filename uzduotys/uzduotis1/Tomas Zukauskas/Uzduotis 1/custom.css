@@ -1,0 +1,17 @@
+#title {
+  background: linear-gradient(-90deg, red, yellow);
+}
+
+.text {
+  color: blue;
+}
+
+.a {
+  &:hover{
+    color: red;
+  }
+}
+
+#navbar {
+  display: inline-block;
+}
