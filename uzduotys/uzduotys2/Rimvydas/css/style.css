@@ -1,23 +1,62 @@
+* {
+/*  Nunulina rėmelius padding ir margin  */
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+
+
+
 h1 {
     color: #3333a2;
 }
-
 
 body {
     background-color: gray;
 }
 
+
 /* class  */
+
 .redAds {
     color: chocolate;
 }
 
+.italic {
+    font-style: italic;
+}
 
 
 /* id  */
+
 #specialid {
     color: cornflowerblue;
 }
 
 
 /*   */
+
+p {
+    color: aquamarine;
+}
+
+section p {
+    color: blue;
+}
+
+
+/* Nustumimai į šonus tik nuo block elementų */
+
+button {
+    background-color: darkgreen;
+    border-radius: 5px;
+    border: 0;
+    padding: 10px 10px;
+}
+
+button:hover {
+    background-color: blue; 
+}
