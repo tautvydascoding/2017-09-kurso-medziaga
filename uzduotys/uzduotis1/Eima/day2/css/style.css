@@ -14,7 +14,7 @@ h2, .antraste {
   max-width: 400px;
 }
 .nuoroda img {
-  width:1263px;
+  width:100%;
   height:300px;
   object-fit: cover;
   transform:0;
@@ -31,12 +31,13 @@ section p {
 }
 .main-navigation {
   position: relative;
-  top: 20px;
   width: 100%;
-  height: 60px;
+  padding: 20px 0;
+  text-align: center;
 }
 .main-navigation li {
-  display: inline;
+  display: inline-block;
+  padding: 20px 0;
 }
 .main-navigation a {
   padding: 20px 20px;
@@ -59,9 +60,9 @@ section p {
 }
 
 .vistiena, .jautiena, .vegetariskas {
-  width:32%;
+  width:31%;
   display: inline-block;
-  padding: 1%;
+  margin: 1%;
   border: 1px solid #444;
 }
 #musu-menu {
@@ -76,12 +77,24 @@ p {
 }
 .musuMenu h2 {
   text-align: center;
-  padding:20px;
+  padding:7px 10px;
   color: #fff;
   position: absolute;
   right: 0px;
   top: 0px;
+  border-bottom: solid 1px #444;
+  border-left: solid 1px #444;
 
+}
+.vistiena, .jautiena, .vegetariskas {
+    position:relative;
+    box-shadow: none;
+    transform: scale(1);
+    transition: all ease 0.3s;
+}
+.vegetariskas:hover, .vistiena:hover, .jautiena:hover {
+  box-shadow: 0px 13px 33px -7px rgba(64,64,148,0.73);
+  transform: scale(1.02)
 }
 .vistiena h2 {
   background: #444;
@@ -92,9 +105,27 @@ p {
 .vegetariskas h2 {
   background: red;
 }
-.musuMenu {
-  position: relative;
-}
+
 .musuMenu p {
-  margin-top:80px;
+  margin: 3%;
+  margin-top:60px;
+}
+
+
+
+
+/* media screen */
+
+@media screen and (max-width: 797px) {
+  .vistiena, .jautiena {
+    width: 47.7%;
+  }
+  .vegetariskas {
+    width: 98%;
+  }
+}
+@media screen and (max-width: 658px) {
+  .vegetariskas, .vistiena, .jautiena {
+    width: 98%;
+  }
 }
