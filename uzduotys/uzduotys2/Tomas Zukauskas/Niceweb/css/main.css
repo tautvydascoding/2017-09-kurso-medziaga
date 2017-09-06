@@ -1,6 +1,5 @@
 body {
-  margin-left: 200px;
-  margin-right: 200px;
+  margin: auto 200px;
   background-color: gray;
 }
 
@@ -14,11 +13,27 @@ header {
   text-align: justify;
 }
 
+header button {
+    width: 17%;
+}
+
+form {
+    display: inline-block;
+}
+
+.submit {
+    color: white;
+    background-color: rgb(22, 29, 34);
+    border: none;
+    display: inline;
+    width: 50px;
+    height: 21px;
+}
+
 .headitem {
-  display: inline-block;
   border: none;
   background-color: pink;
-  padding: 20px;
+  padding: 15px;
 }
 
 .search {}
@@ -38,7 +53,8 @@ article {
     height: auto;
     width: 65%;
     background-color: white;
-    padding-right: 150px;
+    margin-right: 20%;
+    margin: 0;
 }
 
 footer {
