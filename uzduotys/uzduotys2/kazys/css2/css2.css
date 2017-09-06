@@ -1,0 +1,46 @@
+h1 {
+  color: red;
+  text-align: center;
+}
+p {
+  margin-top: 30px;
+}
+.product {
+  background-color: #b2b2b2;
+  border: solid 1px black;
+
+/*eelementai vienas salia kito, vienoje eiluteje*/
+  float: left;
+/*butinas elementu plotis, turi tilpti ekrane*/
+  width: 30%;
+  /*baigus naudoti float - uzdeti clear: both;*/
+  position: relative;
+  margin-right: 1.25%;
+  margin-left: 1.25%;
+}
+.clearfix {
+  clear: both;
+}
+.firstChoice h2 {
+  color: darkblue;
+  background-color: pink;
+  width: 100px;
+}
+ .secondChoice h2 {
+ color: white;
+ background-color: red;
+ width: 100px;
+}
+.thirdChoice h2 {
+  color: black;
+  background-color: yellow;
+  width: 100px;
+}
+/*elementu pozicijos keitimas i ekrano desine*/
+h2 {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  margin: 0px;
+  text-align: center;
+}
