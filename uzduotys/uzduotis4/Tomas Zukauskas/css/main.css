@@ -1,0 +1,19 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    /*background-image: url("C:/Users/User/Documents/2017-09-kurso-medziaga/uzduotys/uzduotys-toliau/2-sunkesne/assets/background.jpg");*/
+    background-image: url("../../../uzduotys-toliau/2-sunkesne/assets/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh;
+    width: 100vh;
+    max-height: 100%;
+}
+
+.submit {
+    background: none;
+    border: solid
+}
