@@ -1,3 +1,9 @@
+/* remelius iskaiciuoja i elementu ploti !!!! */
+* {
+    box-sizing: border-box;
+}
+
+/* -------------------------------*/
 body {
     margin: 0;
     padding: 0;
@@ -60,19 +66,37 @@ h3 {
     /*padding:  2px 10px 30px;*/
 
 }
-@media (min-width: 678px) {
+/* Tablet */
+@media (max-width: 768px) {
     .thirdMenu {
         width: 96%;
+        margin-top: 20px;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+     .firstMenu:first-of-type {
+        width: 47%;
+        margin-left: 2%;
+         margin-right: 2%;
     }
     .secondMenu {
-
-    }
-    .firstMenu {
-        
+       width: 47%;
+       margin-right: 2%;
     }
 }
 
+/* Mobile 425px */
+@media (max-width: 425px) {
+    .firstMenu:first-of-type, .secondMenu  {
+       width: 96%;
+       margin-left: 2%;
+        margin-right: 2%;
+    }
+    .secondMenu {
+        margin-top: 20px;
+    }
 
+} /* end @media */
 
 
 
