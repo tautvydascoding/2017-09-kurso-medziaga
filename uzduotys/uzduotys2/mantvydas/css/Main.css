@@ -1,3 +1,11 @@
+/*remeliu taisykles visiems elementams (kurie neaprasyti atskirai)*/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+
 h1{
   color: red;
 }
@@ -8,8 +16,36 @@ body {
 
 /* class="RedADS" */
 .RedADS {
-  color: rgb(232, 225, 28)
+  color: rgb(28, 84, 232)
 }
 #Pirkimoforma {
   color: white;
+}
+
+.italic {
+    font-style: italic;
+}
+body section p {
+    color: rgb(255, 252, 0);
+    font-size: 20px;
+    font-weight: 200;
+}
+
+button {
+    background-color: white;
+    border-radius: 50px;
+    border-width: 0;
+    position: relative;
+    top: 300px;
+    left: 400px;
+    /* nustumimas */
+    padding: 10px;
+    margin: 35px;
+    /*nustumimas i kaire tik nuo block elementu*/
+    margin-left: 20px;
+    }
+
+button:hover,
+button:focus {
+    background-color: rgba(219, 187, 237, 0.9);
 }

@@ -51,3 +51,50 @@ section p {
   background: rgba(219, 0, 0, 0.85);
   color: #fff;
 }
+/* naujas */
+.musuMenu {
+  width: 100%;
+  margin: auto;
+  display: block;
+}
+
+.vistiena, .jautiena, .vegetariskas {
+  width:32%;
+  display: inline-block;
+  padding: 1%;
+  border: 1px solid #444;
+}
+#musu-menu {
+  text-align: center;
+  padding: 50px;
+}
+p {
+  text-align: justify;
+}
+.clearfix {
+  clear: both;
+}
+.musuMenu h2 {
+  text-align: center;
+  padding:20px;
+  color: #fff;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+
+}
+.vistiena h2 {
+  background: #444;
+}
+.jautiena h2 {
+  background: #b2b2b2;
+}
+.vegetariskas h2 {
+  background: red;
+}
+.musuMenu {
+  position: relative;
+}
+.musuMenu p {
+  margin-top:80px;
+}

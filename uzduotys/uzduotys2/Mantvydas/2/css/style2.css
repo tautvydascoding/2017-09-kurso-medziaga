@@ -1,0 +1,75 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(167, 197, 213);
+}
+
+h1 {
+    color: red;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.product1 {
+    background-color: lightgrey;
+    border: solid 1px darkgrey;
+    margin-right: 2%;
+    /* elements in a row */
+    float: left;
+    width: 50%;
+    /* baigus naudoti float uzdeti clear: both; */
+    /*sukurti produkta kaip teva*/
+    position: relative;
+    margin-right: 2%
+}
+
+.product:first-of-type {
+    margin-left: 2%;
+}
+
+.product2 {
+    background-color: lightgrey;
+    border: solid 1px darkgrey;
+    margin-right: 2%;
+    /* elements in a row */
+    float: left;
+    width: 90%;
+    /* baigus naudoti float uzdeti clear: both; */
+    /*sukurti produkta kaip teva*/
+    position: relative;
+    margin-right: 2%
+}
+
+.clear {
+    clear: both;
+}
+
+.FirstMenu h3 {
+    background-color: rgb(223, 154, 220);
+    width: 100px
+}
+
+.SecondMenu h3 {
+    background-color: rgb(177, 228, 193);
+    width: 100px
+}
+
+.ThirdMenu h3 {
+    background-color: rgb(171, 181, 221);
+    width: 100px
+}
+
+
+/* elementu pozicionavimas */
+
+h3 {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 0;
+    text-align: center;
+}
