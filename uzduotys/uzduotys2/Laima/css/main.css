@@ -1,0 +1,55 @@
+* {
+    /* remelius, margin iskaiciuoja i "with" */
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+  color: red;
+}
+
+body {
+  background-color: #999;
+}
+
+/* class = "redAds"*/
+.redAds {
+  color: blue;
+}
+/* id = "pirkimoForma" */
+#pirkimoForma {
+  color: white;
+}
+
+.italic {
+    font-style: italic;
+}
+
+body p {
+    color: orange;
+}
+
+p {
+    color: black;
+}
+
+article > p {
+    color: blue;
+}
+ button {
+     background-color: white;
+     border-radius: 10px;
+     border-width: 0;
+     /*nustumimas i sona*/
+     padding: 10px;
+    /* atsistumimas i kaire (tik nuo "block") */
+    margin-left: 112px;
+    display: block;
+ }
+
+button:hover,
+button:focus {
+    background-color: #b2b2b2;
+    color: white;
+}
