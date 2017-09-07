@@ -1,0 +1,64 @@
+/* remelius iskaiciuoja i elementu ploti !!!! */
+* {
+    box-sizing: border-box;
+}
+
+.clear {
+    clear: both;
+    content: "";
+}
+body {
+    margin: 0;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1040px;
+}
+/* -------------------------------*/
+html {
+    background-color: #F0F0F0;
+}
+
+h1 {
+    color: red;
+}
+.row {
+    height: 100px;
+    background-color: #FF80FF;
+    /*border: solid 1px;*/
+}
+
+#wrapper {
+    border: 1px solid red;
+    background-color: #fff;
+}
+section {
+    float: left;
+    width: 80%;
+}
+aside {
+    height: 100%;
+    float: left;
+    width: 20%;
+    /*border: 4px solid blue;*/
+    background-color: #FF80FF;
+}
+footer {
+    height: 100px;
+    background-color: #fff;
+}
+nav {
+    border: 4px solid blue;
+    float: left;
+    width: 70%;
+}
+#search {
+    float: left;
+    width: 30%;
+    border: 4px solid orange;
+}
+
+header li {
+    display: inline;
+    width: 25%;
+}

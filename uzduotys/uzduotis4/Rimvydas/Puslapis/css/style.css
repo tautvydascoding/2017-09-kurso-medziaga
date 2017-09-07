@@ -21,7 +21,7 @@ html {
 }
 
 .menu {
-    
+    height: 100px;
     background-color: blueviolet;
     border: solid 1px black;
 }
@@ -31,15 +31,11 @@ aside {
     width: 18%;
     border: solid 1px black;
     margin-left: 10px;
-/*
-    margin-top: -100%;
-    margin-bottom: -100%;
-*/
+    margin-top: -9999px;
+    margin-bottom: -9999px;
     float: left;
-/*
-    padding-top: 100%;
-    padding-bottom: 100%;
-*/
+    padding-top: 9999px;
+    padding-bottom: 9999px;
 }
 
 section {
@@ -62,34 +58,21 @@ footer {
 nav {
     border: 3px solid blue;
     display: inline-block;
-    width: 70%;
-    line-height: 35px;
-    vertical-align: middle;
 }
 
 nav>ul>li {
     text-transform: uppercase;
     display: inline-block;
-    width: 24%;
+    margin: 0 20px;
     color: black;
-    margin: 0;
-    
-}
-
-nav>ul {
-    padding-left: 0;
-    text-align: center;
 }
 
 #search {
     float: right;
     width: 30%;
-    text-align: center;
-    margin-top: 10px;
 }
 
 .container {
-/*    overflow: hidden;*/
-    display: flex;
+    overflow: hidden;
     margin-top: 10px;
 }
