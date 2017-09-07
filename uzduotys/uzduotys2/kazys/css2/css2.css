@@ -1,23 +1,27 @@
-h1 {
+* {
+  box-sizing: border-box;
+}
+  h1 {
   color: red;
   text-align: center;
+  background-color: #999;
 }
 p {
-  margin-top: 30px;
+  margin-top: 50px;
 }
 .product {
   background-color: #b2b2b2;
   border: solid 1px black;
 
-/*eelementai vienas salia kito, vienoje eiluteje*/
+  /*elementai vienas salia kito, vienoje eiluteje*/
   float: left;
-/*butinas elementu plotis, turi tilpti ekrane*/
+  /*butinas elementu plotis, turi tilpti ekrane*/
   width: 30%;
-  /*baigus naudoti float - uzdeti clear: both;*/
   position: relative;
   margin-right: 1.25%;
   margin-left: 1.25%;
 }
+  /*baigus naudoti float - uzdeti clear: both;*/
 .clearfix {
   clear: both;
 }
@@ -28,7 +32,7 @@ p {
 }
  .secondChoice h2 {
  color: white;
- background-color: red;
+ background-color: darkred;
  width: 100px;
 }
 .thirdChoice h2 {
@@ -43,4 +47,40 @@ h2 {
   top: 0px;
   margin: 0px;
   text-align: center;
+  border: 1px solid black;
+  border-top: 0px;
+  border-right: 0px;
+}
+/*for tablets up to 768px*/
+@media (max-width: 768px) {
+  .thirdChoice {
+    width: 96%;
+    margin-top: 2%;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+  .firstChoice {
+    width: 46%;
+    margin-left: 2%;
+  }
+  .secondChoice {
+    width: 46%;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+}
+/*for mobile devices up to 420px*/
+@media (max-width: 420px) {
+  .firstChoice {
+    width: 92%;
+    margin: 2% 4%;
+}
+  .secondChoice {
+    width: 92%;
+    margin: 2% 4%;
+  }
+  .thirdChoice {
+    width: 92%;
+    margin: 2% 4%;
+  }
 }

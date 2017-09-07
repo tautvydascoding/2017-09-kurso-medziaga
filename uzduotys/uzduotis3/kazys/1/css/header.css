@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 1040px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+html {
+  background-color: grey;
+}
+
+.wrapper {
+  float: left;
+  width: 100%;
+}
+
+.header {
+  height: 100px;
+}
+
+.navigation li {
+  display: inline-block;
+}
+
+.navigation {
+  height: 80px;
+  background-color: purple;
+  float: left;
+  width: 70%;
+}
+#search {
+  float: right;
+  width: 30%;
+  background: purple;
+}
+
+.container {
+  overflow-x: hidden;
+  position: relative;
+}
+
+.content {
+  background-color: white;
+  float: left;
+  width: 80%;
+  display: table-cell;
+}
+
+.sidebar {
+  background-color: purple;
+  width: 20%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.footer {
+  background-color: white;
+  height: 60px;
+  clear: both;
+}

@@ -1,0 +1,108 @@
+* {
+    /* remelius, margin iskaiciuoja i "with" */
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: blue;
+    text-align: center;
+}
+
+p {
+    margin-top: 30px;
+}
+
+.product {
+    background-color: #b2b2b2;
+    border: solid 1px black;
+    /* elementus darome vienoje eiluteje; flotas visada einau su plociu*/
+    float: left;
+    width: 30%;
+    /* baigus naudoti float - uzdeti clear: both;*/
+    position: relative;
+    margin-right: 2.3%;
+}
+
+.product:first-of-type {
+        margin-left: 2.5%;
+}
+
+.clear {
+    clear: both;
+}
+
+.firstMenu h3 {
+    background-color: #14e989;
+    width: 100px;
+}
+
+h3 {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 0;
+    text-align: center;
+
+    border-left: solid 1px #000;
+    border-bottom: solid 1px #000;
+
+    /*border-style: solid;*/
+    /* virsus desine apacia kaire*/
+    /*border-width: 2px 10px 4px 20px;*/
+    /*padding:  2px 10px;*/
+    /* virsus sonai apacia */
+    /*padding:  2px 10px 30px;*/
+
+}
+
+.secondMenu h3 {
+    background-color: #e65629;
+    width: 100px;
+}
+
+.thirdMenu h3 {
+    background-color: #a027f1;
+    width: 100px;
+}
+/* elementu pozicijos keitimas i ekrano desine */
+
+/* Tablet */
+@media (max-width: 768px) {
+    .thirdMenu {
+        width:  96%;
+        margin-top: 20px;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+     .firstMenu:first-of-type {
+         width:  47%;
+         margin-left: 2%;
+         margin-right: 2%;
+     }
+
+    .secondMenu {
+        width:  47%;
+        margin-right: 2%;
+    }
+    .secondMenu {
+
+    }
+}
+/* Media tablet end*/
+
+/* Mobile 425px */
+
+@media (max-width: 425px) {
+    .firstMenu:first-of-type, .secondMenu {
+        width: 96%;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    .secondMenu {
+        margin-top: 20px;
+    }
+}

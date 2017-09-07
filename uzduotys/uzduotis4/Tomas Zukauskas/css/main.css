@@ -1,0 +1,19 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: url("../../../uzduotys-toliau/2-sunkesne/assets/background.jpg") no-repeat center right fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    /*height: 100vh;
+    width: 100vh;
+    max-height: 100%;*/
+}
+
+.submit {
+    background: none;
+    border: solid
+}
