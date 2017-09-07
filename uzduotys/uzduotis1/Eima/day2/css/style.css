@@ -15,6 +15,7 @@ body {
   border: 1px solid #333;
   display: inline-block;
   width: 100%;
+  overflow:hidden;
 }
 
 section {
@@ -27,6 +28,11 @@ aside {
   background: grey;
   width: 25%;
   float: left;
+  height: 100%;
+  padding-top: 9999px;
+  padding-bottom: 9999px;
+  margin-bottom: -9999px;
+  margin-top: -9999px;
 }
 
 
@@ -65,12 +71,15 @@ h1, h2, h3 {
   position: relative;
   width: 100%;
   float: left;
-  text-align:center;
 }
 
 .main-navigation li {
   display: inline-block;
   padding: 20px 0;
+}
+.main-navigation ul {
+  display: flex;
+  justify-content: space-around;
 }
 
 .main-navigation a {
