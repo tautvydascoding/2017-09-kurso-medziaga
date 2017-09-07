@@ -3,9 +3,11 @@
 
 <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Puslapiukas</title>
 
     <link rel="stylesheet" href="./css/main.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Cabin:400,400i|Fira+Sans:400,800,800i" rel="stylesheet">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -26,7 +28,10 @@
                 </ul>
             </nav>
             <div id="search">
-                    Seach
+                <form action="q" method="post">
+                    <input placeholder="Search" maxlength="15"/> <!-- IDEA: apribojom ivedamo teksto ilgi -->
+                    <button type="submit"> Search </button>
+                </form>
             </div>
         </div>
     </header>
@@ -35,15 +40,15 @@
     <div id="wrapper">
         <!-- Content -turinys -->
         <section>
-            <h2>Article Heading</h2>
+            <h2 class="text-center special-font">Article Heading</h2>
             <article>
-                <h3>subsection</h3>
+                <h3 class="special-font">subsection</h3>
                 <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
                     aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.tur adipisicing elit, sed
                 </p>
             </article>
             <article>
-                <h3>Another subsection</h3>
+                <h3 class="special-font">Another subsection</h3>
                 <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
                     aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </article>
@@ -51,7 +56,7 @@
 
         <!-- right sidebar -->
         <aside>
-            <h2>Related</h2>
+            <h2 class="text-center">Related</h2>
             <ul>
                 <li> Lorem ipsum dolor sit a</li>
                 <li> sit amet, consectetur</li>
@@ -67,12 +72,6 @@
     <footer>
         &copy; 2017 Copy right all
     </footer>
-
-
-
-
-
-
 
 </body>
 
