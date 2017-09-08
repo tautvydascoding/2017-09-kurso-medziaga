@@ -30,7 +30,11 @@ color: blue;
 .stumimas-t-30 {
     margin-top: 30px;
 }
-nav {
+/* austomatinis sidebar aukstis */
+.auto-sidebar {
     padding-bottom: 100%;
-    margin-bottom: -100%; 
+    margin-bottom: -100%;
+}
+#wrapper {
+    overflow: hidden;
 }
