@@ -1,0 +1,50 @@
+html, body, .container, .eima100 {
+  height:100%;
+}
+
+h1, h2, p, input, button {
+    text-transform: uppercase;
+}
+.bg-grey {
+  background-color:#eee;
+}
+.bg-yellow {
+  background-color:yellow;
+}
+.bg-wh {
+  background-color:white;
+}
+.h-500 {
+  height: 500px;
+}
+.h200 {
+  height: 200px;
+}
+.h100 {
+  min-height: 100px;
+}
+.h70pr {
+  height:70%;
+}
+.h29pr {
+  height: 29%;
+}
+
+body {
+    background-image: url(C:/Users/eimulex/Documents/2017-09-kurso-medziaga/uzduotys/uzduotys-toliau/2-sunkesne/assets/background.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position:right bottom;
+}
+#forma .form-control {
+  border:0;
+  border-bottom: 2px solid #111;
+  border-radius: unset;
+}
+input[placeholder] {
+    text-align: center;
+}
+.btn-outline-danger {
+    padding: 10px 80px;
+    border-radius: 0;
+}
