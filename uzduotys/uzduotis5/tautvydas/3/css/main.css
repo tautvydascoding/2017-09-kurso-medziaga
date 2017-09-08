@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
 }
-html, body {
+body {
     padding: 0;
     margin: 0;
     height: 100%;
@@ -10,7 +10,6 @@ html, body {
 h1 {
 color: blue;
 }
-
 .fonas-yellow {
     background-color: #f4d42f;
 }
