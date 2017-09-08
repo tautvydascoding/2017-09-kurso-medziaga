@@ -23,7 +23,9 @@ h1 {
     height: 100px;
 }
 .aukstis300 {
-    height: 300px;
+    /*height: 300px;*/
+    min-height: 300px;
+    /*max-height: ; */
 }
 .aukstis500 {
     height: 500px;
