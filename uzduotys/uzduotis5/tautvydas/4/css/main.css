@@ -10,6 +10,8 @@ body {
 h1 {
 color: blue;
 }
+
+
 .fonas-yellow {
     background-color: #f4d42f;
 }
@@ -19,19 +21,16 @@ color: blue;
 .aukstis100 {
     height: 100px;
 }
+.aukstis200 {
+    min-height: 200px;
+}
 .aukstis300 {
     min-height: 300px;
 }
-.nullMargin {
-    margin: 0;
+.stumimas-t-30 {
+    margin-top: 30px;
 }
-header {
-    margin-bottom: 20px;
-}
-footer {
-    margin-top: 20px;
-}
-h2 {
-    padding-left: 30px;
-    padding-top: 20px;
+nav {
+    padding-bottom: 100%;
+    margin-bottom: -100%; 
 }
