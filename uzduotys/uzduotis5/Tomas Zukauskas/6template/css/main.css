@@ -1,35 +1,41 @@
 * {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
+  margin: 0;
+  padding: 0;
+  height: 100%;
 }
+
+
 /*--------------*/
 
 .fonas-green {
-    background-color: #bade44;
+  background-color: #bade44;
 }
 
 .fonas-yellow {
-    background-color: #fff38b;
+  background-color: #fff38b;
 }
 
 .aukstis100 {
-    min-height: 100px;
+  min-height: 100px;
 }
+
 .aukstis200 {
-    min-height: 200px;
+  min-height: 200px;
 }
+
 .aukstis300 {
-    min-height: 300px;
+  min-height: 300px;
 }
+
 .aukstis500 {
-    min-height: 500px;
+  min-height: 500px;
 }
+
 .aukstis600 {
-    min-height: 600px;
+  min-height: 600px;
 }
