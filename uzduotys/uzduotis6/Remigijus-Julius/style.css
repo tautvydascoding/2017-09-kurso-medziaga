@@ -1,11 +1,27 @@
-.geltona {
-  background-color: yellow;
+.sz-50 {
+  height: 50%;
+  width: 50%;
 }
 
-.zalia {
+.sz-100 {
+  width: 100%;
+}
+
+.cl-reklama {
+  background-color: #DEB887;
+}
+
+.cl-red {
+  background-color: red;
+}
+
+.cl-green {
   background-color: green;
 }
+.cl-bluee {
+  background-color: blue;
+}
 
-.raudona {
-  background-color: red;
+.cl-black {
+  background-color: #000;
 }
