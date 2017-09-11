@@ -65,8 +65,7 @@ height: auto;
   margin-bottom: 1rem;
   }
 
-
-h2 {
+h2, h3 {
     text-align: center;
     color: black;
 }
@@ -125,8 +124,3 @@ header button {
     background: url("../images/bg2.jpg") no-repeat;
     background-size: cover;
 }
-
-p {
-    font-weight: bold;
-    color: rgb(223, 208, 195);
-  }
