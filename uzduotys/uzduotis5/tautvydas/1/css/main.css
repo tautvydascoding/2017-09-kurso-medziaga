@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+}
+
+/* ---------- */
+h1 {
+    color: orange;
+}
+
+.fonas-green {
+    background-color: #bade44;
+}
+.fonas-pink {
+    background-color: #fff38b;
+}
+.fonas-white {
+    background-color: #fff;
+}
+.aukstis100 {
+    height: 100px;
+}
+.aukstis300 {
+    /*height: 300px;*/
+    min-height: 300px;
+    /*max-height: ; */
+}
+.aukstis500 {
+    height: 500px;
+}
+
+
+
+
+
+
+
+/**/
