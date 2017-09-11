@@ -12,7 +12,60 @@ body {
 
 
 /*-------------------*/
+.gallery img {
+  padding: 1rem;
+}
+.ad {
+background-color: #45b059;
+width: 100vw;
+height: auto;
+}
+.footer {
+  background-color: #535353;
+  width: 100vw;
+  height: auto;
+}
 
+.footer ul {
+  list-style-type: none;
+}
+.brandImg {
+  display: inline-block;
+  /*margin: -30px;*/
+  width: 30px;
+  height: 30px;
+  font-size: 30px;
+}
+
+.footer a {
+  color: #FFFFFF;
+  text-decoration: none;
+  vertical-align: middle;
+
+<<<<<<< HEAD
+}
+.footer li {
+    margin: 5px 0;
+}
+.footer a:hover {
+  color: #45b059;
+  text-decoration: none;
+}
+.footerImg {
+  display: flex;
+  float: right;
+}
+.adImg {
+  display: flex;
+  float: left;
+}
+.footer nav {
+  display: flex;
+}
+.ad h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+=======
 h1 {
     color: #fff;
 }
@@ -78,4 +131,5 @@ header button {
 p {
     font-weight: bold;
     color: rgb(223, 208, 195);
+>>>>>>> 9b6fe9b1f0163fcd09d381efbfa90a09e9b78b11
 }
