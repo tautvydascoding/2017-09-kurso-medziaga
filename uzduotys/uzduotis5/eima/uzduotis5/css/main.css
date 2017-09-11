@@ -1,0 +1,37 @@
+html, body {
+  height:100%;
+}
+
+h1 {
+    color: orange;
+}
+.bg-grey {
+  background-color:#eee;
+}
+.bg-yellow {
+  background-color:yellow;
+}
+.bg-wh {
+  background-color:white;
+}
+.h-500 {
+  height: 500px;
+}
+.h200 {
+  height: 200px;
+}
+.h100 {
+  min-height: 100px;
+}
+.h70pr {
+  height:70%;
+}
+.h29pr {
+  height: 29%;
+}
+.h50pr {
+  height: 50%;
+}
+.h49pr {
+  height: 49%;
+}

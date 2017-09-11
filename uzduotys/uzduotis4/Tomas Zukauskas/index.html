@@ -2,36 +2,45 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Nicer WEB</title>
-    <link rel="stylesheet" href="css/main.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+  <link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body>
-    <div class="content">
-        <img src="../../uzduotys-toliau/2-sunkesne/assets/logo.png" />
-        <div class="toptxt">
-            <h2>A NEW WORLD OF TAILORED SHIRTS FOR WOMEN</h2>
-            <h2>ARRIVING 2018</h2>
-        </div>
-
-        <form class="login">
-            <div class="textfield">
-                <label for="fname">FIRST NAME</label>
-                <input type="text" name="fname">
-            </div>
-            <div class="textfield">
-                <label for="fname">LAST NAME</label>
-                <input type="text" name="lname">
-            </div>
-            <div class="textfield">
-                <label for="fname">YOUR EMAIL ADRESS</label>
-                <input type="email" name="email">
-            </div>
-            <button class="submit" type="submit" name="submit">SIGN UP</button>
-        </form>
+  <div class="container-fluid pl-0">
+    <img src="../../uzduotys-toliau/2-sunkesne/assets/logo.png" />
+    <div class="toptxt">
+      <h2 class="mt-5">A NEW WORLD OF TAILORED SHIRTS FOR WOMEN</h2>
+      <h2 class="mt-0">ARRIVING 2018</h2>
     </div>
+    <p>
+      Sign up for reinvented wardrobe classics, made for movement.
+    </p>
+    <form class="login pl-0 ml-0">
+      <div class="row">
+        <div class="col-6 px-0">
+          <div class="textfield">
+            <input class="field fname mr-0" type="text" name="fname" placeholder="FIRST NAME">
+          </div>
+        </div>
+        <div class="col-6 pl-3 pr-0">
+          <div class="textfield">
+            <input class="field lname" type="text" name="lname" placeholder="LAST NAME">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="textfield mt-3">
+          <input class="field email" type="email" name="email" placeholder="YOUR EMAIL ADRESS">
+        </div>
+      </div>
+      <button class="submit mt-4" type="submit" name="submit">SIGN UP</button>
+    </form>
+  </div>
 </body>
 
 </html>
