@@ -1,1 +1,28 @@
-rasau
+* {
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+/* ---------------------------------------------------- */
+.navBar {
+    height: 150px;
+    width: 100%;
+    border: 1px solid #000000;
+}
+.border {
+    border: 2px solid black;
+}
+.homeTopText {
+    height: 500px;
+    border: 1px solid #000000;
+}
+/*.logo {
+    width: 260px;
+    height: 130px;
+}*/
+.navigacija {
+    height: 150px;
+}
