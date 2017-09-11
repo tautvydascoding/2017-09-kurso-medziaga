@@ -1,0 +1,41 @@
+/** {
+  box-sizing: border-box;
+}*/
+
+h1 {
+  text-align: center;
+}
+p {
+  padding: 10px;
+}
+.menuItem {
+  width: 30%;
+  min-width: 200px;
+  float: left;
+  border: solid 3px black;
+  background: lightgrey;
+  padding: 0px;
+  margin: 10px;
+}
+/*h3 {
+  position: absolute;
+}*/
+h3 {
+  border-left: solid 2px black;
+  border-bottom: solid 2px black;
+  width: 100px;
+  margin: 0px;
+  text-align: center;
+  float: right;
+}
+
+.firstMenu h3 {
+  background: #bf6988;
+}
+.secondMenu h3 {
+  background: #cc4f4f;
+  color: white;
+}
+.thirdMenu h3 {
+  background: #dfb64c;
+}
