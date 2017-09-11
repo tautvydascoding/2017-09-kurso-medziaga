@@ -72,7 +72,7 @@ h1 {
 
 h2 {
     text-align: center;
-    color: rgb(209, 125, 106)
+    color: rgb(209, 125, 106);
 }
 
 .one {
@@ -131,5 +131,4 @@ header button {
 p {
     font-weight: bold;
     color: rgb(223, 208, 195);
->>>>>>> 9b6fe9b1f0163fcd09d381efbfa90a09e9b78b11
-}
+  }
