@@ -10,20 +10,45 @@ body {
 h1 {
 color: blue;
 }
-
-
+.fonas-blue {
+  background-color: rgb(37, 5, 237);
+}
 .fonas-yellow {
     background-color: #f4d42f;
 }
 .fonas-green {
     background-color: #71eb37;
 }
-.aukstis100 {
-    height: 100px;
+.aukstis50 {
+    height: 50px;
 }
 .aukstis300 {
     min-height: 300px;
 }
+<<<<<<< HEAD
+.navbar {
+    display: none;
+  }
+a {
+  color:rgb(247, 7, 7) ;
+
+nav {
+    transform: translate(-50%,-50%);
+}
+.antraste {
+  text-align: center;
+}
+.kazkas {
+  background-image: url("./LoL.jpg");
+  /*background-size: cover;
+  background-position: center;
+  border: 1px solid black;*/
+  height: 100px;
+}
+.paveiksliukas {
+  background-image: url(LoL.jpg);
+  height: 100px;
+=======
 
 .col-6 h2 {
   text-align: center;
@@ -40,4 +65,5 @@ h3 {
 }
 .inline {
   inline:block;
+>>>>>>> 30cecdd3058bf030ccbdec3f1c31a8a104932126
 }
