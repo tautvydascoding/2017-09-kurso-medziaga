@@ -1,37 +1,54 @@
 * {
   box-sizing: 0;
 }
-body
-{
+
+body {
   padding: 0;
   margin: 0;
   height: 100%;
 }
+
 .col-12, .ceburaska, .rounded-circle {
   width: 200px;
 }
+
 .col-6, .ceburaska, .rounded-circle {
   width: 200px;
 }
+
 .col-4, .ceburaska, .rounded-circle {
   width: 200px;
 }
+
 nav, .row {
   height: 100px;
 }
+
 nav, img, .navbar-brand {
   height: 50px;
 }
+
 ul, .nav {
   padding-top: 30px;
 }
+
 .aukstis300 {
-  height:300px;
+  height: 300px;
 }
+
 .button {
   position: absolute;
-  transform: translate(-50%; -50%);
+  transform: translate(-50%;-50%);
+  top: -50%;
+  right: -50%;
 }
+
 .bg-cebis {
-  background-image: url("./img/ceburasa.jpg");
+background-image: url(../img/ceburaska.jpg);
+}
+.row, .aukstis300, {
+  position: relative;
+}
+.bottom-p {
+min-height: 200px;
 }

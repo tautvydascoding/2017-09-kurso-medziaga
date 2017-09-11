@@ -1,8 +1,11 @@
-body{
+* {
+    box-sizing: border-box;
+}
+
+body {
     margin: 0px;
     padding: 0px;
-background-color: rgba(86, 189, 89, 0.69);
-
+    background-color: rgba(86, 189, 89, 0.69);
 }
 
 h1 {
@@ -11,26 +14,28 @@ h1 {
 }
 
 p {
-text-align: center;
-margin-top: 30px;
+    text-align: center;
+    margin-top: 30px;
 }
+
 .product {
     background-color: lightgrey;
     border: solid 1px darkgrey;
     margin-right: 2%;
     /* elements in a row */
     float: left;
-    width: 30%;
+    /*width: 30%;*/
     /* baigus naudoti float uzdeti clear: both; */
-
     /*sukurti produkta kaip teva*/
     position: relative;
     margin-right: 2%
 }
-.product:first-of-type{
+
+.product:first-of-type {
     margin-left: 2%;
 }
-.clear{
+
+.clear {
     clear: both;
 }
 
@@ -38,21 +43,55 @@ margin-top: 30px;
     background-color: rgb(223, 154, 220);
     width: 100px
 }
+
 .SecondMenu h3 {
     background-color: rgb(177, 228, 193);
     width: 100px
 }
+
 .ThirdMenu h3 {
     background-color: rgb(171, 181, 221);
     width: 100px
 }
 
+
 /* elementu pozicionavimas */
 
-h3{
+h3 {
     position: absolute;
     right: 0;
     top: 0;
     margin-top: 0;
     text-align: center;
+    border: solid 1px #000;
+    border-top: none;
+    border-right: none;
+    border: solid 1px 2px 3px 4px #000;
+}
+
+
+/*Tablet*/
+
+@media (max-width: 778px) {
+    .FirstMenu {
+        width: 47%;
+        margin-left: 2%;
+
+    }
+    .SecondMenu {
+        width: 47%;
+        margin-left: 2%;
+        margin-top: 10px;
+    }
+    .ThirdMenu {
+        width: 96%;
+        margin-top: 10px;
+        margin-left: 2%;
+    }
+} /* End Media */
+
+/*Mobile*/
+
+@media (max-width: ) {
+
 }
