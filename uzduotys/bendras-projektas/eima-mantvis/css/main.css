@@ -1,40 +1,80 @@
 html, body {
-  height:100%;
+    padding: 0;
+    border: 0;
+    height: 100%;
 }
 
 h1 {
     color: orange;
 }
+
+.imgCenter {
+    vertical-align: middle;
+}
+
 .bg-grey {
-  background-color:#eee;
+    background-color: #eee;
 }
+
 .bg-yellow {
-  background-color:yellow;
+    background-color: yellow;
 }
+
 .bg-wh {
-  background-color:white;
+    background-color: white;
 }
+
 .h-500 {
-  min-height: 500px;
+    min-height: 500px;
 }
+
 .h200 {
-  min-height: 200px;
+    min-height: 200px;
 }
+
 .h100 {
-  min-height: 100px;
+    min-height: 100px;
 }
+
 .h70pr {
-  height:70%;
+    height: 70%;
 }
+
 .h29pr {
-  height: 29%;
+    height: 29%;
 }
+
 .h50pr {
-  height: 50%;
+    height: 50%;
 }
+
 .h49pr {
-  height: 49%;
+    height: 49%;
 }
-.h100pr{
-  height:100%;
+
+.h100pr {
+    height: 100%;
+}
+
+.container-fluid {
+    background-image: url(http://weknowyourdreams.com/images/dog/dog-06.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 40% 40%;
+    height: 300px;
+    max-width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.forceSize {
+    height: 198.4px;
+}
+
+.nav {
+    justify-content: center;
+}
+.borderForce {
+    border: 1px solid #000000;
 }
