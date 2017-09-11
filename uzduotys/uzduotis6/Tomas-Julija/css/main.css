@@ -14,3 +14,8 @@ body {
 h1 {
   color: #fff;
 }
+
+img {
+    max-height: 5%;
+    width: 5%;
+}
