@@ -33,6 +33,7 @@ elemento centravimas
   	<div class="clear-float"> </div>
 	.clear-float {
   		clear: both;
+		content: ‘’;
 	}
  ---------------------------------------
 
