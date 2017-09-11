@@ -71,7 +71,7 @@ div.col-12 button {
 
 /* KITAS KONTEINERIS footer -----------*/
 
-footer.container {
+footer.kuntikas {
     height: 500px;
     width: 80%;
     margin-left: 10%;
@@ -79,7 +79,7 @@ footer.container {
     display: inline-block;
 }
 
-footer.eile.col-12 {
+footer.eile.stulpas-12 {
     height: 30%;
     width: 30%;
 }
