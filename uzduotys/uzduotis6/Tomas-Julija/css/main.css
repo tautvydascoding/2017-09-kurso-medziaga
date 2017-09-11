@@ -64,11 +64,14 @@ height: auto;
   text-align: center;
   margin-bottom: 1rem;
   }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 1200eb28b501de155a562387869107af030c9657
 
 h2 {
     text-align: center;
-    color: rgb(209, 125, 106);
+    color: black;
 }
 
 .one {
