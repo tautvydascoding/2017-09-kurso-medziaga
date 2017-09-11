@@ -56,7 +56,7 @@ h1 {
     height: 100%;
 }
 
-.container-fluid {
+.container-fluid.mantvis {
     background-image: url(http://weknowyourdreams.com/images/dog/dog-06.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -72,7 +72,7 @@ h1 {
     height: 198.4px;
 }
 
-.nav {
+.nav.mantvisNav {
     justify-content: center;
 }
 .borderForce {
