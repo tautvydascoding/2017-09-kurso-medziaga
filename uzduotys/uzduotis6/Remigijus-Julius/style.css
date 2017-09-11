@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-.kunas {
+<<<<<<< HEAD .kunas {
     padding: 0;
     margin: 0;
 }
@@ -16,9 +15,6 @@
 
 header.eile {
     width: 100%;
-    
-    
-    
 }
 
 nav {
@@ -26,17 +22,19 @@ nav {
     justify-content: center;
     margin-bottom: 50px;
 }
+
 .nav-link {
-    margin-left:100px;
-    margin-right:100px;
-    
+    margin-left: 100px;
+    margin-right: 100px;
 }
-
-    
-
 
 .eile h2 {
     margin-bottom: 20px;
+}
+
+.sudas.paveikslelis img {
+    height: 50px;
+    margin: 0;
 }
 
 
@@ -54,92 +52,89 @@ nav {
 
 .container-fluid div.col-12 {
     background-image: url(../Remigijus-Julius/img/oldpaper.jpg);
-    height:300px;
-    
-    
+    height: 300px;
 }
 
-div.col-12 button{
-
-/*
+div.col-12 button {
+    /*
     margin-left: 487px;
     margin-right:487px;
     margin-top: 135px;
     margin-bottom:135px;
 */
-    transform:translate(-50%, -50%);
-    position:absolute;
-    top:50%;
-    left:50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
 
-   
-}
+
 /* KITAS KONTEINERIS footer -----------*/
-footer.container {
-    height:500px;
-    width:80%;
+
+footer.kuntikas {
+    height: 500px;
+    width: 80%;
     margin-left: 10%;
-    
     justify-content: center;
-    display:inline-block;
-}
-footer.eile.col-12 {
-    height:30%;
-    width:30%;
-    
-    
-    
-}
-footer p.left{
-    margin-right:70%;
-    margin-top :20px;
-    height:auto;
     display: inline-block;
-    
 }
-footer p.center{
-    margin-left:35%;
+
+footer.eile.stulpas-12 {
+    height: 30%;
+    width: 30%;
+}
+
+footer p.left {
+    margin-right: 70%;
+    margin-top: 20px;
+    height: auto;
+    display: inline-block;
+}
+
+footer p.center {
+    margin-left: 35%;
     margin-right: 35%;
-    
 }
+
 footer p.right {
-    margin-left:70%;
-    padding-right:40px;
+    margin-left: 70%;
+    padding-right: 40px;
 }
-=======
-.sz-50 {
-  height: 50%;
-  width: 50%;
+
+=======.sz-50 {
+    height: 50%;
+    width: 50%;
 }
 
 .sz-100 {
-  width: 100%;
+    width: 100%;
 }
 
 .cl-reklama {
-  background-color: #DEB887;
+    background-color: #DEB887;
 }
 
 .cl-red {
-  background-color: red;
->>>>>>> 0f2a3e9d6fd773d4a8fbc5b50395b981db66a6df
+    background-color: red;
+    >>>>>>>0f2a3e9d6fd773d4a8fbc5b50395b981db66a6df
 }
 
 .cl-green {
-  background-color: green;
+    background-color: green;
 }
+
 .cl-blue {
-  background-color: blue;
+    background-color: blue;
 }
 
 .cl-black {
-  background-color: #000;
+    background-color: #000;
 }
 
 .min-img {
-  min-height: 100%;
+    min-height: 100%;
 }
 
 .h-50 {
-  height: 50%.;
+    height: 50%.;
 }
