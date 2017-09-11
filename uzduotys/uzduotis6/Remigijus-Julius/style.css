@@ -1,11 +1,107 @@
-.geltona {
-  background-color: yellow;
+body {
+    padding: 0;
+    margin: 0;
 }
 
-.zalia {
-  background-color: green;
+.container {
+    padding: 0;
+    margin: 0px 50px 50px 50px;
 }
 
-.raudona {
-  background-color: red;
+.row {
+    justify-content: center;
+    margin: 0;
+}
+
+header.row {
+    width: 100%;
+    
+    
+    
+}
+
+nav {
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.nav-link {
+    margin-left:100px;
+    margin-right:100px;
+    
+}
+
+    
+
+
+.row h2 {
+    margin-bottom: 20px;
+}
+
+
+/*KITAS KONTEINERIS container-fluid-----------------------------*/
+
+.container-fluid {
+    height: 300px;
+    justify-content: center;
+}
+
+.container-fluid.row {
+    height: 100%;
+    justify-content: center;
+}
+
+.container-fluid div.col-12 {
+    background-image: url(../Remigijus-Julius/img/oldpaper.jpg);
+    height:300px;
+    
+    
+}
+
+div.col-12 button{
+
+/*
+    margin-left: 487px;
+    margin-right:487px;
+    margin-top: 135px;
+    margin-bottom:135px;
+*/
+    transform:translate(-50%, -50%);
+    position:absolute;
+    top:50%;
+    left:50%;
+
+   
+}
+/* KITAS KONTEINERIS footer -----------*/
+footer.container {
+    height:500px;
+    width:80%;
+    margin-left: 10%;
+    
+    justify-content: center;
+    display:inline-block;
+}
+footer.row.col-12 {
+    height:30%;
+    width:30%;
+    
+    
+    
+}
+footer p.left{
+    margin-right:70%;
+    margin-top :20px;
+    height:auto;
+    display: inline-block;
+    
+}
+footer p.center{
+    margin-left:35%;
+    margin-right: 35%;
+    
+}
+footer p.right {
+    margin-left:70%;
+    padding-right:40px;
 }
