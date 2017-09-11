@@ -1,0 +1,56 @@
+.col-12 {
+    padding: 0;
+}
+
+
+#landing {
+    background-image: url("../img/landing_img.jpg");
+    height: 50vh; 
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+
+
+form > img {
+    width: 150px;
+    height: auto;
+}
+
+
+.btn-lg {
+    width: 50vh;
+    
+}
+
+.btn-dark:hover {
+    border: solid 1px black;
+    background-color: transparent;
+    color: black;
+    transition: 0.25s;
+}
+
+#antraste  h1 {
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
