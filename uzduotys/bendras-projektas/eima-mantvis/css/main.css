@@ -38,3 +38,17 @@ h1 {
 .h100pr{
   height:100%;
 }
+.img-fluid.eima {
+  width: 30%;
+}
+.eimag.img-fluid {
+  height: 350px;
+  object-fit:cover;
+}
+/*.container-fluid.eima {
+  background-image: url(https://pixabay.com/get/ed37b20c21fc1c22d2524518a349409fe775e3d604b0144190f1c07fa4eab0/pet-423398_1280.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+
+} */
