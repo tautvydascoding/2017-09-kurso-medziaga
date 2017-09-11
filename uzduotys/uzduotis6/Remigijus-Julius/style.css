@@ -128,10 +128,18 @@ footer p.right {
 .cl-green {
   background-color: green;
 }
-.cl-bluee {
+.cl-blue {
   background-color: blue;
 }
 
 .cl-black {
   background-color: #000;
+}
+
+.min-img {
+  min-height: 100%;
+}
+
+.h-50 {
+  height: 50%.;
 }
