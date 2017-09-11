@@ -38,7 +38,6 @@ color: blue;
 #wrapper {
     overflow: hidden;
 }
-
 button {
     height: 50px;
     width: 150px;
@@ -51,8 +50,6 @@ button {
 
     position: absolute;
     top: 50%;
-    left: 50%;
-
-
+    left: 50%; 
 
 }
