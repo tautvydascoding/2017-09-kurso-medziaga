@@ -5,22 +5,96 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Bootstrap Praktika</title>
+  <title>Gallery</title>
   <!-- Bootstrap CSS -->
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous"> -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-  <!-- <link rel="stylesheet" href="./lib/css/bootstrap.css"> -->
+  <!-- <link rel="stylesheet" href="./lib/css/bootstrap.css">-->
   <link rel="stylesheet" type="text/css" href="./css/main.css">
 </head>
 
 <body>
 
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col">
-        <h1>Bootstrap Praktika</h1>
+    <section class="container gallery my-5" id="gallery">
+
+      <div class="row text-center mb-5">
+        <div class="col-md-12">
+          <h2>Galerija</h2>
+        </div>
       </div>
-    </div>
-  </div> <!-- end container-->
+
+      <div class="row justify-content-center">
+        <div class="col-md-4">
+          <img src="https://unsplash.it/800" class="img-fluid rounded-circle" alt="Paveikslėlis">
+        </div>
+      </div>
+
+      <div class="row justify-content-between">
+        <div class="col-md-4 ">
+          <img src="https://unsplash.it/800" class="img-fluid rounded-circle" alt="Paveikslėlis">
+        </div>
+        <div class="col-md-4 justify-content-end">
+          <img src="https://unsplash.it/800" class="img-fluid rounded-circle" alt="Paveikslėlis">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4">
+          <img src="https://unsplash.it/800" class="img-fluid rounded-circle" alt="Paveikslėlis">
+        </div>
+        <div class="col-md-4">
+          <img src="https://unsplash.it/800" class="img-fluid rounded-circle" alt="Paveikslėlis">
+        </div>
+        <div class="col-md-4">
+          <img src="https://unsplash.it/800" class="img-fluid rounded-circle" alt="Paveikslėlis">
+        </div>
+      </div>
+    </section> <!-- end container gallery-->
+
+    <section class="container-fluid ad p-5" id="ad">
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <img class="adImg" src="https://unsplash.it/400/200" alt="Grafikas">
+        </div>
+        <div class="col-md-6">
+          <h3>Reklama</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="container footer p-5" id="footer">
+      <div class="row">
+
+        <!-- <div class="col-6">
+          <nav class="mt-5">
+            <ul>
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./gallery.html">Gallery</a></li>
+              <li class="brand"><a href="./index.html">Brandas</a></li>
+            </ul>
+          </nav>
+        </div> -->
+
+        <div class="col-6">
+          <nav class="mt-5 ">
+            <ul>
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./gallery.html">Gallery</a></li>
+              <li class="brand">
+                <img class="brandImg" src="./images/logo.jpg" alt="logo">
+                <a href="./index.html">Brandas</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="col-6">
+            <img class="footerImg" src="https://unsplash.it/200" alt="Pav">
+        </div>
+
+      </div>
+    </footer>
 
 </body>
 
