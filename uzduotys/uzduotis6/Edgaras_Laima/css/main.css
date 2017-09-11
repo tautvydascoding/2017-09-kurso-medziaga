@@ -10,19 +10,31 @@ html, body {
 .navBar {
     height: 150px;
     width: 100%;
-    border: 1px solid #000000;
+    align-items: center;
+    display: flex;
+    text-transform: uppercase;
 }
 .border {
     border: 2px solid black;
 }
 .homeTopText {
-    height: 500px;
-    border: 1px solid #000000;
+    height: auto;
 }
-/*.logo {
-    width: 260px;
-    height: 130px;
-}*/
+a {
+    margin: 30px;
+}
 .navigacija {
     height: 150px;
+}
+.fotopervisa {
+    background-image: url("../img/aduzy.jpg");
+    background-size: cover;
+    background-position: center;
+    border: 1px solid black;
+    height: 400px;
+}
+.registracija {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
