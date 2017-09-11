@@ -13,6 +13,10 @@ body {
 
 #title {
     color: red;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Lobster', cursive;
+    font-size: 30px;
 }
 /* ---------------------------------------- */
 /* ---------- VIRSUS ---------------------- */
@@ -29,12 +33,17 @@ body {
 nav {
     width: 65%;
     float: left;
-    padding: 15px;
+    /*padding: 15px;*/
     background-color: rgb(186, 105, 180);
     text-transform: uppercase;
+    /*vertical-align: middle;*/
+    height: 82px;
 }
 ul {
-    padding: 10px;
+    /*padding: 10px;*/
+}
+nav ul {
+    /*line-height: 70px;*/
 }
 #search {
     width: 35%;
@@ -43,18 +52,24 @@ ul {
     height: 82px;
     background-color: rgb(186, 105, 180);
 }
+
 .clear {
   clear: both;
 }
 h1 {
-    text-align: center;
+
 }
 header li {
     display: inline-block;
     width: 25%;
     float: left;
-    margin-top: -5px;
+    margin: 0;
+    /*padding: 9;*/
     font-weight: bold;
+    text-align: center;
+    padding-top: 17px;
+}
+header ul {
 }
 button {
     background-color: black;
@@ -78,7 +93,8 @@ input {
 /* --------------END VIRSUS --------------- */
 /* --------------VIDUS--------------------- */
 #wrapper {
-    overflow: hidden;
+    /* flex padaro aside ir section negalini i apacia*/
+    display: flex;
 }
 section {
     float: left;
@@ -92,6 +108,9 @@ aside {
     width: 20%;
     background-color: rgb(201, 146, 201);
     margin-top: 1%;
+}
+aside h2 {
+    text-align: center;
 }
 .clear {
     clear: both;
@@ -107,6 +126,9 @@ p {
 }
 .h2Top {
     text-align: center;
+}
+article {
+    width: 100%;
 }
 /* --------------END VIDUS --------------- */
 /* --------------APACIA ------------------ */
