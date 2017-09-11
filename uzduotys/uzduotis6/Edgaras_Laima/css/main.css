@@ -1,1 +1,40 @@
-rasau
+* {
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+/* ---------------------------------------------------- */
+.navBar {
+    height: 150px;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    text-transform: uppercase;
+}
+.border {
+    border: 2px solid black;
+}
+.homeTopText {
+    height: auto;
+}
+a {
+    margin: 30px;
+}
+.navigacija {
+    height: 150px;
+}
+.fotopervisa {
+    background-image: url("../img/aduzy.jpg");
+    background-size: cover;
+    background-position: center;
+    border: 1px solid black;
+    height: 400px;
+}
+.registracija {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
