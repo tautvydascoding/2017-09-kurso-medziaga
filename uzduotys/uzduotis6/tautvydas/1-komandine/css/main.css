@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+/* -------------*/
+h1 {
+color: blue;
+}
+
+
+.fonas-yellow {
+    background-color: #f4d42f;
+}
+.fonas-green {
+    background-color: #71eb37;
+}
+.aukstis100 {
+    height: 100px;
+}
+.aukstis200 {
+    min-height: 200px;
+}
+.aukstis300 {
+    min-height: 300px;
+}
+.stumimas-t-30 {
+    margin-top: 30px;
+}
+/* austomatinis sidebar aukstis */
+.auto-sidebar {
+    padding-bottom: 100%;
+    margin-bottom: -100%;
+}
+#wrapper {
+    overflow: hidden;
+}
+
+button {
+    height: 50px;
+    width: 150px;
+    background-color: #b2b2b2;
+    border: none;
+    color: #fff;
+
+    /* elementa pies ne nuo jo kampo o nuo vidurio */
+    transform: translate(-50%, -50%);
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+
+
+}
