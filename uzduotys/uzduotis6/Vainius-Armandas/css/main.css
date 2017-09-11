@@ -24,3 +24,17 @@ color: blue;
 .aukstis300 {
     min-height: 300px;
 }
+
+h2 {
+  text-align: center;
+  color: white;
+}
+p {
+  color: white;
+}
+body {
+  background-color: rgb(16, 32, 88);
+}
+h3 {
+  color: white;
+}
