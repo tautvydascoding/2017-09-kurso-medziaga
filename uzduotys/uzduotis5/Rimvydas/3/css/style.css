@@ -1,0 +1,39 @@
+h1 {
+    background-color: green;
+}
+
+
+nav {
+    background-color: aqua;
+}
+
+
+.fonas-green {
+    background-color: #bade44;
+}
+
+
+
+.fonas-pink {
+    background-color: #fff38b;
+}
+
+
+.fonas-white {
+    background-color: white;
+}
+
+
+.aukstis100 {
+    min-height: 100px;
+    
+}
+
+.aukstis300 {
+    min-height: 300px;
+    
+}
+
+.aukstis500 {
+    min-height: 400px;
+}

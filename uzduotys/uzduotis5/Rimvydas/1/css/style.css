@@ -1,0 +1,29 @@
+.fonas-green {
+    background-color: #bade44;
+}
+
+
+
+.fonas-pink {
+    background-color: #fff38b;
+}
+
+
+.fonas-white {
+    background-color: white;
+}
+
+
+.aukstis100 {
+    height: 100px;
+    
+}
+
+.aukstis300 {
+    min-height: 300px;
+    
+}
+
+.aukstis500 {
+    height: 500px;
+}
