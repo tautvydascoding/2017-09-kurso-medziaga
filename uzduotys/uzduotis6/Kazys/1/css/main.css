@@ -36,11 +36,11 @@ ul, .nav {
   height: 300px;
 }
 
-.button {
-  position: absolute;
+button {
+  /*position: absolute;*/
   transform: translate(-50%;-50%);
-  top: -50%;
-  right: -50%;
+  top: 50%;
+  right: 50%;
 }
 
 .bg-cebis {

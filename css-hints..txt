@@ -1,4 +1,4 @@
-==========musu puslapis uzimtu visu monitoriaus auksti =========
+﻿==========musu puslapis uzimtu visu monitoriaus auksti =========
 body, html {
     height: 100%;
 }
@@ -50,5 +50,18 @@ aside {
   margin-bottom: -100%;
 
 
+
+// ============================================Bootstrap 4==============================================
+		REKLAMOS MYGTUKAS CENTRE REKLAMOS BAKC
+
+            <!-- Bootstrap4 turinio centravimas X asyje: -->
+            <!-- ant tevo uzdeti class: justify-content-center d-flex  -->
+            <!-- visi vaikai bus centruoti -->
+            <section class="col-md-12">
+                <div class="ads aukstis300 row fonas-green mb-3 justify-content-center d-flex ">
+                    <!-- Vertical alignment "align-self-center" centracimas Y asyje -->
+                    <h3 class=" align-self-center "> Reklama</h3>
+                </div>
+            </section>
 
 

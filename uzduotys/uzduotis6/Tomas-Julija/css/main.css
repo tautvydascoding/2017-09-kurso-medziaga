@@ -6,20 +6,68 @@ body {
     padding: 0;
     margin: 0;
     height: 100%;
-    background: url("../images/bg.jpg") no-repeat;
-    background-size: cover;
 }
 
 
 /*-------------------*/
-
-h1 {
-    color: #fff;
+.gallery img {
+  padding: 1rem;
+}
+.ad {
+background-color: #45b059;
+width: 100vw;
+height: auto;
+}
+.footer {
+  background-color: #535353;
+  width: 100vw;
+  height: auto;
 }
 
+.footer ul {
+  list-style-type: none;
+}
+.brandImg {
+  display: inline-block;
+  /*margin: -30px;*/
+  width: 30px;
+  height: 30px;
+  font-size: 30px;
+}
+
+.footer a {
+  color: #FFFFFF;
+  text-decoration: none;
+  vertical-align: middle;
+
+<<<<<<< HEAD
+}
+.footer li {
+    margin: 5px 0;
+}
+.footer a:hover {
+  color: #45b059;
+  text-decoration: none;
+}
+.footerImg {
+  display: flex;
+  float: right;
+}
+.adImg {
+  display: flex;
+  float: left;
+}
+.footer nav {
+  display: flex;
+}
+.ad h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  }
+  
 h2 {
     text-align: center;
-    color: rgb(209, 125, 106)
+    color: rgb(209, 125, 106);
 }
 
 .one {
@@ -39,7 +87,6 @@ h2 {
     height: 5%;
     margin-right: 0;
     float: left;
-    margin-top: 25px;
     margin-left: 22px;
 }
 
@@ -50,7 +97,7 @@ h2 {
     padding: 0;
 }
 
-button {
+header button {
     border: none;
     background-color: transparent;
     font-size: 20px;
@@ -74,9 +121,16 @@ button {
 .center {
     position: relative;
     height: 100px;
+    background: url("../images/bg2.jpg") no-repeat;
+    background-size: cover;
 }
 
 p {
     font-weight: bold;
+<<<<<<< HEAD
     color: rgb(223, 208, 195);
+  }
+=======
+    color: rgb(14, 13, 13);
 }
+>>>>>>> 188f2622ddd78a0053a594b80486edc490a298be

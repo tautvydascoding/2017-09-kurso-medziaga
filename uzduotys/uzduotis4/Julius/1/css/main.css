@@ -1,0 +1,77 @@
+/* remelius iskaiciuoja i elementu ploti !!!! */
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    /* margin auto turi tureti nurodyta ploti */
+     margin-left: auto;
+     margin-right: auto;
+     width: 1040px;
+}
+.clear {
+    clear: both;
+    content: " "; /* Older browser do not support empty content */
+}
+/* -------------------------------*/
+html {
+    background-color: #b2b2b2;
+}
+
+h1 {
+    color: red;
+}
+.row {
+    height: 100px;
+    background-color: #FF80FF;
+    
+}
+#wrapper {
+    border:  4px solid red;
+    overflow: hidden;
+    display: flex;
+}
+section {
+    float: left;
+    width: 80%;
+    background-color: #fff;
+}
+aside {
+    float: left;
+    width: 20%;
+    border:  4px solid blue;
+    background-color: #FF80FF;
+/*
+    padding-bottom:100%;
+    margin-bottom:-100%;
+*/
+    
+}
+footer {
+    height: 100px;
+    background-color: #fff;
+}
+nav {
+    border:  4px solid blue;
+    float: left;
+    width: 70%;
+}
+header ul 
+{padding:0;
+}
+}
+#search {
+    width: 30%;
+    float: left;
+    border: 4px solid orange;
+    line-height: 69px;
+        
+}
+header li {
+    display: inline-block;
+    width:24%;
+    text-align: center;
+    text-transform:uppercase;
+}
+
