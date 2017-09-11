@@ -1,19 +1,20 @@
-body {
+<<<<<<< HEAD
+.kunas {
     padding: 0;
     margin: 0;
 }
 
-.container {
+.kuntikas1 {
     padding: 0;
     margin: 0px 50px 50px 50px;
 }
 
-.row {
+.eile {
     justify-content: center;
     margin: 0;
 }
 
-header.row {
+header.eile {
     width: 100%;
     
     
@@ -34,19 +35,19 @@ nav {
     
 
 
-.row h2 {
+.eile h2 {
     margin-bottom: 20px;
 }
 
 
-/*KITAS KONTEINERIS container-fluid-----------------------------*/
+/*KITAS KONTEINERIS container-fluid kuntikas 2-----------------------------*/
 
-.container-fluid {
+.kuntikas2 {
     height: 300px;
     justify-content: center;
 }
 
-.container-fluid.row {
+.kuntikas2.eile {
     height: 100%;
     justify-content: center;
 }
@@ -82,7 +83,7 @@ footer.container {
     justify-content: center;
     display:inline-block;
 }
-footer.row.col-12 {
+footer.eile.col-12 {
     height:30%;
     width:30%;
     
@@ -104,4 +105,33 @@ footer p.center{
 footer p.right {
     margin-left:70%;
     padding-right:40px;
+}
+=======
+.sz-50 {
+  height: 50%;
+  width: 50%;
+}
+
+.sz-100 {
+  width: 100%;
+}
+
+.cl-reklama {
+  background-color: #DEB887;
+}
+
+.cl-red {
+  background-color: red;
+>>>>>>> 0f2a3e9d6fd773d4a8fbc5b50395b981db66a6df
+}
+
+.cl-green {
+  background-color: green;
+}
+.cl-bluee {
+  background-color: blue;
+}
+
+.cl-black {
+  background-color: #000;
 }

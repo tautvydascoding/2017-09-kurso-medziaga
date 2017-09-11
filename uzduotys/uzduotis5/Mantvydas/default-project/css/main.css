@@ -1,0 +1,34 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+
+/* -------------*/
+
+.fonas-yellow {
+    background-color: #ddc54d;
+}
+
+.fonas-green {
+    background-color: #71eb37;
+}
+
+.aukstis100 {
+    height: 100px;
+}
+.aukstis200 {
+    height: 200px;
+}
+.aukstis300 {
+    height: 300px;
+}
+.aukstis500 {
+    height: 500px;
+}

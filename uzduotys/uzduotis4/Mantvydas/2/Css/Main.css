@@ -1,0 +1,19 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+/* ----------------------- */
+h1 {
+    color: blue;
+}
+.container {
+    background-color: #d9d9d9;
+}
+.elementas {
+    background-color: #d9d9d9;
+    margin: 5px;
+}

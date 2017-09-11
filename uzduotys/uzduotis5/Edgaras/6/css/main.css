@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+/* ----------------------------------------- */
+.fonas-green {
+    background-color: #c7da74;
+}
+.fonas-pink {
+    background-color: #dfa3dd;
+}
+.fonas-white {
+    background-color: #ffffff;
+}
+.fonas-blue {
+    background-color: #9493e2;
+}
+.fonas-yelow {
+    background-color: #f2f96b;
+}
+.aukstis100 {
+    height: 100px;
+}
+.aukstis300 {
+    height: 300px;
+}
+.aukstis500 {
+    height: 500px;
+}
+.aukstis700 {
+    height: 700px;
+}
+.aukstis200 {
+    height: 200px;
+}
