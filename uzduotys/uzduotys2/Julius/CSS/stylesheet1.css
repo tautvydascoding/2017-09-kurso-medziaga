@@ -1,6 +1,38 @@
-#AIDY
-{color:red;}
-.KLAS
-{color:blue;}
-body p{color:purple;}
-body .darvienas{color:green;}
+body
+{   text-align: center;    
+}
+.H1
+{   color:crimson;
+}
+.blokas
+{   border:1.5px solid black;
+    text-align: justify;
+    width:25%;
+    display: inline-block;
+    background-color: lightgrey;
+    padding: 0px 15px 10px 10px;
+}
+body h1
+{   margin: 100px 0px 100px 0;
+}
+.vistiena
+{   border: 1px solid black;
+    color:blue;
+    text-align: right;
+    
+}
+.gaidiena
+{   border: 1px solid black;
+    color: red;
+    text-align: right;    
+}
+.ziurkiena
+{   border: 1px solid black;
+    color:brown;
+    text-align: right;
+}
+
+
+
+
+

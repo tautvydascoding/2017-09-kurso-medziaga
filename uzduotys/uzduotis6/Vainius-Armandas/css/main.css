@@ -25,6 +25,7 @@ color: blue;
 .aukstis300 {
     min-height: 300px;
 }
+<<<<<<< HEAD
 .navbar {
     display: none;
   }
@@ -47,4 +48,22 @@ nav {
 .paveiksliukas {
   background-image: url(LoL.jpg);
   height: 100px;
+=======
+
+.col-6 h2 {
+  text-align: center;
+  color: white;
+}
+p {
+  color: white;
+}
+body {
+  background-color: rgb(16, 32, 88);
+}
+h3 {
+  color: white;
+}
+.inline {
+  inline:block;
+>>>>>>> 30cecdd3058bf030ccbdec3f1c31a8a104932126
 }
