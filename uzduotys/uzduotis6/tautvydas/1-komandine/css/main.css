@@ -38,7 +38,10 @@ color: blue;
 #wrapper {
     overflow: hidden;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> dcfaa9b40c9a95e4aa8d2822ff43b986d523b219
 button {
     height: 50px;
     width: 150px;
@@ -51,8 +54,12 @@ button {
 
     position: absolute;
     top: 50%;
+<<<<<<< HEAD
     left: 50%;
 
 
+=======
+    left: 50%; 
+>>>>>>> dcfaa9b40c9a95e4aa8d2822ff43b986d523b219
 
 }

@@ -23,6 +23,7 @@ height: auto;
   width: 100vw;
   height: auto;
 }
+<<<<<<< HEAD
 
 .footer ul {
   list-style-type: none;
@@ -68,6 +69,52 @@ height: auto;
 h2 {
     text-align: center;
     color: rgb(209, 125, 106);
+=======
+
+.footer ul {
+  list-style-type: none;
+}
+.brandImg {
+  display: inline-block;
+  /*margin: -30px;*/
+  width: 30px;
+  height: 30px;
+  font-size: 30px;
+}
+
+.footer a {
+  color: #FFFFFF;
+  text-decoration: none;
+  vertical-align: middle;
+
+}
+.footer li {
+    margin: 5px 0;
+}
+.footer a:hover {
+  color: #45b059;
+  text-decoration: none;
+}
+.footerImg {
+  display: flex;
+  float: right;
+}
+.adImg {
+  display: flex;
+  float: left;
+}
+.footer nav {
+  display: flex;
+}
+.ad h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  }
+
+h2, h3 {
+    text-align: center;
+    color: black;
+>>>>>>> dcfaa9b40c9a95e4aa8d2822ff43b986d523b219
 }
 
 .one {
@@ -124,9 +171,12 @@ header button {
     background: url("../images/bg2.jpg") no-repeat;
     background-size: cover;
 }
+<<<<<<< HEAD
+=======
 
-p {
+ article p {
     font-weight: bold;
+<<<<<<< HEAD
 <<<<<<< HEAD
     color: rgb(223, 208, 195);
   }
@@ -134,3 +184,8 @@ p {
     color: rgb(14, 13, 13);
 }
 >>>>>>> 188f2622ddd78a0053a594b80486edc490a298be
+=======
+    color: rgb(14, 13, 13);
+}
+>>>>>>> de4c28706d110c3462bcdf0f92594771ca300b49
+>>>>>>> dcfaa9b40c9a95e4aa8d2822ff43b986d523b219
