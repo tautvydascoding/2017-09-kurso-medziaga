@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+
+/*-------------------*/
+.gallery img {
+  padding: 1rem;
+}
+.ad {
+background-color: #45b059;
+width: 100vw;
+height: auto;
+}
+.footer {
+  background-color: #535353;
+  width: 100vw;
+  height: auto;
+}
+
+.footer ul {
+  list-style-type: none;
+}
+.brandImg {
+  display: inline-block;
+  /*margin: -30px;*/
+  width: 30px;
+  height: 30px;
+  font-size: 30px;
+}
+
+.footer a {
+  color: #FFFFFF;
+  text-decoration: none;
+  vertical-align: middle;
+
+<<<<<<< HEAD
+}
+.footer li {
+    margin: 5px 0;
+}
+.footer a:hover {
+  color: #45b059;
+  text-decoration: none;
+}
+.footerImg {
+  display: flex;
+  float: right;
+}
+.adImg {
+  display: flex;
+  float: left;
+}
+.footer nav {
+  display: flex;
+}
+.ad h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  }
+  
+h1 {
+    color: #fff;
+}
+
+h2 {
+    text-align: center;
+    color: rgb(209, 125, 106)
+}
+
+.one {
+    background-color: none;
+}
+
+.col-9 {
+    max-width: 73%;
+    padding: 0;
+}
+
+.navbar-nav {
+    display: inline-block;
+}
+
+.logo {
+    height: 5%;
+    margin-right: 0;
+    float: left;
+    margin-left: 22px;
+}
+
+.image {
+    height: 10%;
+    width: 10%;
+    float: right;
+    padding: 0;
+}
+
+header button {
+    border: none;
+    background-color: transparent;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(204, 222, 218)
+}
+
+.threecol {
+    column-gap: 20px;
+    column-count: 3;
+}
+
+.register {
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: white;
+}
+
+.center {
+    position: relative;
+    height: 100px;
+    background: url("../images/bg2.jpg") no-repeat;
+    background-size: cover;
+}
+
+p {
+    font-weight: bold;
+    color: rgb(14, 13, 13);
+}

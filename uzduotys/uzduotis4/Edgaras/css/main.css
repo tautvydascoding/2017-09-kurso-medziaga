@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 1040px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(214, 214, 214);
+}
+
+#title {
+    color: red;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Lobster', cursive;
+    font-size: 30px;
+}
+/* ---------------------------------------- */
+/* ---------- VIRSUS ---------------------- */
+/*.row {
+    height: 100px;
+    background-color: rgb(121, 150, 157);
+    width: 700px;
+    float: left;
+}*/
+#title {
+    color: #fff;
+    text-shadow: 0 0 10px rgb(0, 0, 0);
+}
+nav {
+    width: 65%;
+    float: left;
+    /*padding: 15px;*/
+    background-color: rgb(186, 105, 180);
+    text-transform: uppercase;
+    /*vertical-align: middle;*/
+    height: 82px;
+}
+ul {
+    /*padding: 10px;*/
+}
+nav ul {
+    /*line-height: 70px;*/
+}
+#search {
+    width: 35%;
+    float: right;
+    padding: 16px;
+    height: 82px;
+    background-color: rgb(186, 105, 180);
+}
+
+.clear {
+  clear: both;
+}
+h1 {
+
+}
+header li {
+    display: inline-block;
+    width: 25%;
+    float: left;
+    margin: 0;
+    /*padding: 9;*/
+    font-weight: bold;
+    text-align: center;
+    padding-top: 17px;
+}
+header ul {
+}
+button {
+    background-color: black;
+    color: white;
+    width: 100px;
+    border: none;
+    border-radius: none;
+    padding: 10px;
+    float: left;
+    width: 30%;
+    margin-left: 10px;
+    margin-top: 8px;
+}
+input {
+    padding: 8px;
+    float: left;
+    width: 60%;
+    margin-left: 2%;
+    margin-top: 8px;
+}
+/* --------------END VIRSUS --------------- */
+/* --------------VIDUS--------------------- */
+#wrapper {
+    /* flex padaro aside ir section negalini i apacia*/
+    display: flex;
+}
+section {
+    float: left;
+    width: 79%;
+    background-color: #fff;
+    margin-top: 1%;
+    margin-right: 1%;
+}
+aside {
+    float: right;
+    width: 20%;
+    background-color: rgb(201, 146, 201);
+    margin-top: 1%;
+}
+aside h2 {
+    text-align: center;
+}
+.clear {
+    clear: both;
+}
+.articleTop h2 {
+    text-align: center;
+}
+h2 {
+    padding: 5px;
+}
+p {
+    padding: 5px;
+}
+.h2Top {
+    text-align: center;
+}
+article {
+    width: 100%;
+}
+/* --------------END VIDUS --------------- */
+/* --------------APACIA ------------------ */
+footer {
+    height: 100px;
+    background-color: #fff;
+    margin-top: 1%;
+}
+/* --------------END APACIA -------------- */

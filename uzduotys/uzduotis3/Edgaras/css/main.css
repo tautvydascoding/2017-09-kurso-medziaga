@@ -22,16 +22,26 @@ body {
     width: 700px;
     float: left;
 }*/
-nav {
-    border: 1px solid black;
-    width: 70%;
-    float: left;
+#title {
+    color: #fff;
+    text-shadow: 0 0 10px rgb(0, 0, 0);
 }
-
+nav {
+    width: 65%;
+    float: left;
+    padding: 15px;
+    background-color: rgb(186, 105, 180);
+    text-transform: uppercase;
+}
+ul {
+    padding: 10px;
+}
 #search {
-    border: 1px solid black;
-    width: 30%;
+    width: 35%;
     float: right;
+    padding: 16px;
+    height: 82px;
+    background-color: rgb(186, 105, 180);
 }
 .clear {
   clear: both;
@@ -41,11 +51,34 @@ h1 {
 }
 header li {
     display: inline-block;
+    width: 25%;
+    float: left;
+    margin-top: -5px;
+    font-weight: bold;
+}
+button {
+    background-color: black;
+    color: white;
+    width: 100px;
+    border: none;
+    border-radius: none;
+    padding: 10px;
+    float: left;
+    width: 30%;
+    margin-left: 10px;
+    margin-top: 8px;
+}
+input {
+    padding: 8px;
+    float: left;
+    width: 60%;
+    margin-left: 2%;
+    margin-top: 8px;
 }
 /* --------------END VIRSUS --------------- */
 /* --------------VIDUS--------------------- */
 #wrapper {
-    border: 1px solid black;
+    overflow: hidden;
 }
 section {
     float: left;
@@ -62,6 +95,18 @@ aside {
 }
 .clear {
     clear: both;
+}
+.articleTop h2 {
+    text-align: center;
+}
+h2 {
+    padding: 5px;
+}
+p {
+    padding: 5px;
+}
+.h2Top {
+    text-align: center;
 }
 /* --------------END VIDUS --------------- */
 /* --------------APACIA ------------------ */

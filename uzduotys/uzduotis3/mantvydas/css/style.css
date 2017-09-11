@@ -1,0 +1,121 @@
+/* remelius iskaiciuoja i elementu ploti !!!! */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    /* margin turi buti nurodytas plotis */
+    width: 1040px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.clear {
+    clear: both;
+    content: "";
+}
+/* -------------------------------*/
+html {
+    background-color: #B2B2B2;
+}
+
+h1 {
+    color: red;
+    font-family: 'Cabin';
+    text-align: center;
+    text-shadow: 10px 10px 10px 10px red;
+}
+.text-center {
+    text-align: center;
+}
+.special-font {
+    font-family: 'Cabin';
+}
+nav {
+    float: left;
+    width: 70%;
+    padding-top: 25px;
+}
+
+header ul {
+    padding: 0;
+    margin:  0;
+    /*line-height: 69px;*/
+}
+header li {
+    display: inline-block;
+    width: 24%;
+    margin: 0px;
+    padding: 0px;
+
+    text-align: center;
+    text-transform: uppercase; /* Makes letters big*/
+    vertical-align: middle;
+
+}
+
+.row {
+    height: 70px;
+    background-color: #FF80FF;
+    margin-bottom: 15px;
+
+}
+#wrapper {
+    border: 4px solid red;
+    overflow: hidden;
+    display: flex;
+}
+section{
+    float: left;
+    width: 80%;
+    background-color: #fff;
+    padding: 0 25px 29px;
+}
+
+aside {
+    float: left;
+    width: 20%;
+    border: 4px solid blue;
+    background-color: #FF80FF;
+    /* Aside making same size as amount of content in main section */
+    /*padding-bottom: 100%;
+    margin-bottom: -100%;*/
+}
+#search {
+    float: right;
+    width: 30%;
+    border: 3px solid orange;
+}
+footer {
+    height: 100px;
+    background-color: #fff;
+    margin-top: 10px;
+}
+input {
+    width: 200px;
+    height: 40px;
+    font-size: 20px;
+    vertical-align: middle;
+    background-color: #fff;
+}
+
+#search input {
+    width: 200px;
+    height: 50px;
+    font-size: 30px;
+    vertical-align: middle;
+    background-color: #fff;
+    padding-top: 0px;
+}
+#search button {
+    width: 98px;
+    height: 39px;
+    font-size: 21px;
+    vertical-align: middle;
+    background-color: #154;
+    color: #FBA;
+    border-radius: 12px;
+    display: inline-block;
+}
+/* Responsive */
