@@ -4,11 +4,11 @@ while (x < 51) {
     console.log('Azuolas' + x);
     x++;
 }
-function spa() {
-    x = prompt('Enter a thing: ');
-    alert(x + '... really? wow...');
-}
-spa();
+// function spa() {
+//     x = prompt('Enter a thing: ');
+//     alert(x + '... really? wow...');
+// }
+// spa();
 
 //B)
 i = 0;
@@ -17,11 +17,27 @@ i = 0;
 // }
 // you mad...
  function pie(v) {
-     var i = 0;
-     while (i < v) {
+     for (i=0; i < v; i++) {
      console.log('-');
-     i++;
      }
  }
- var y = prompt('Nori eilutes? Irasyk skaiciu: ');
- pie(y);
+ // var y = prompt('Nori eilutes? Irasyk skaiciu: ');
+ // pie(y);
+
+// function stulpeli(x) {
+//     g = 0;
+//     while (g < x) {
+//         console.log("|");
+//         g++;
+//     }
+// }
+//
+// u = prompt("Stulpelio aukstis: ");
+// stulpeli(u);
+
+// function stulpelis(x) {
+//         console.log("|"+x+'|');
+// }
+//
+// i = prompt('Stulpelis: ');
+// stulpelis(i);
