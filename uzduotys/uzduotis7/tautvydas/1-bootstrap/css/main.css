@@ -27,5 +27,8 @@ color: blue;
 
 .no-margin {
     margin-left: 0;
-    margin-right: 0;
+}
+.adwords {
+        background-color: #f4d42f;
+        margin-right: -15px;
 }
