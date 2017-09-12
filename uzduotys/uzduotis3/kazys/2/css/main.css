@@ -1,0 +1,121 @@
+/* remelius iskaiciuoja i elementu ploti !!!! */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  /* margin auto turi tureti nurodyta ploti */
+  margin-left: auto;
+  margin-right: auto;
+  width: 1040px;
+}
+
+.clear {
+  clear: both;
+  content: " ";
+  /* Older browser do not support empty content */
+}
+
+
+/* -------------------------------*/
+
+html {
+  background-color: #b2b2b2;
+}
+
+h1 {
+  color: red;
+  font-family: 'Cabin Condensed', sans-serif;
+  text-align: center;
+  text-shadow: 3px 5px 7px #000;
+}
+section h2 {
+  text-align: center;
+}
+.row {
+  height: 70px;
+  background-color: #FF80FF;
+  margin-bottom: 15px;
+}
+
+#wrapper {
+  overflow: hidden;
+  display: flex;
+  /*position: relative;*/
+}
+
+section {
+  float: left;
+  width: 80%;
+  background-color: #fff;
+  padding: 0px 20px;
+}
+
+aside {
+  /*position: absolute;*/
+  /*top: 0;*/
+  /*right: 0;*/
+  /*height: 100%;*/
+  width: 20%;
+  background-color: #FF80FF;
+  margin-left: 15px;
+}
+aside h2 {
+  margin-left: 15px;
+}
+footer {
+  height: 100px;
+  background-color: #fff;
+  margin-top: 15px;
+
+}
+footer p {
+  padding-top: 39px; 
+}
+nav {
+  float: left;
+  width: 70%;
+  padding-top: 28px;
+}
+
+#search {
+  width: 30%;
+  float: left;
+}
+header ul {
+  padding: 0;
+  margin: 0;
+}
+header li {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  width: 24%;
+  text-align: center;
+  text-transform: uppercase;
+  /*text-transform pakeisti teksto raides*/
+  /*padding-top: 35px;*/
+}
+#search {
+  padding-top: 20px;
+
+}
+#search input {
+  width: 200px;
+  height: 30px;
+  font-size: 18px;
+  background-color: #fff;
+  border: none;
+
+}
+#search button {
+  width: 75px;
+  height: 30px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  display: inline-block;
+}

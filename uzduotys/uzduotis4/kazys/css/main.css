@@ -1,0 +1,21 @@
+* {
+  box-sizing: 0;
+}
+body
+{
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+h1 {
+  color: red;
+}
+.container {
+  background-color: #d9d9d9;
+}
+.elementas {
+  background-color: #b2b2b2;
+  /*margin: 5px;*/
+  border: solid red 1px;
+  height: 400px;
+}

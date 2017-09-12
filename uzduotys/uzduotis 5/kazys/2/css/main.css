@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+}
+
+body{
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+.bg-green {
+  background-color: rgba(18, 195, 115, 0.71);
+}
+
+.bg-lightgreen {
+  background-color: rgb(179, 235, 207);
+}
+
+.bg-white {
+  background-color: #fff;
+}
+.aukstis150 {
+  height: 100px
+}
+
+.aukstis200 {
+  height: 150px;
+}
+
+.aukstis450 {
+  min-height: 400px;
+}

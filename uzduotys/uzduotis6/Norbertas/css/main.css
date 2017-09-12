@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+.auksits100{height: 100px;}
+.auskits300{height: 300px;}
+.aukstis500{min-height: 500px;}
+.bgcbl{background-color: rgb(111, 144, 227);}
+nav li{display: inline-block;
+width: 45%;
+text-align: center;
+text-transform: uppercase;
+margin-top: 30px;}
+.logoo{margin-top: 30px;
+text-align: center;}
+h2{margin-top: 30px;
+    margin-bottom: 30px;
+text-align: center;
+text-transform: uppercase;}
+/*#botrow{position: relative; width: 100%;}*/
+button{position: absolute;
+    width: 100px;
+    float: right: 50%;
+
+}
+.btn{transform: translate(-50% , -50%);
+    position: absolute;
+    top:50%;
+    left:50%;
+    /*padding-left:45%;
+padding-top: 3%;*/
+}
+.rounded1{border-radius: 15rem;}
+#trys{display: flex;
+    justify-content:space-between;}
+    .antrs{display: flex;
+    justify-content: center;
+text-transform: uppercase;}
+.centr{display: flex;
+}

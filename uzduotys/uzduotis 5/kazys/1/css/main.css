@@ -1,0 +1,21 @@
+.bg-green {
+  background-color: #bade44;
+}
+
+.bg-pink {
+  background-color: #fff38b;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+.aukstis100 {
+  height: 100px;
+}
+.aukstis300 {
+  height: 300px;
+}
+.aukstis500 {
+  height: 500px;
+}

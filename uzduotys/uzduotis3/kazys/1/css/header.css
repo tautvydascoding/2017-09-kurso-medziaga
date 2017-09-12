@@ -13,37 +13,24 @@ body {
 html {
   background-color: grey;
 }
-
 .wrapper {
   float: left;
   width: 100%;
 }
-
 .header {
   height: 100px;
 }
-
-.navigation li {
+.header li {
   display: inline-block;
 }
-
 .navigation {
   height: 80px;
   background-color: purple;
-  float: left;
-  width: 70%;
 }
-#search {
-  float: right;
-  width: 30%;
-  background: purple;
-}
-
 .container {
   overflow-x: hidden;
   position: relative;
 }
-
 .content {
   background-color: white;
   float: left;
@@ -59,6 +46,7 @@ html {
   right: 0;
   top: 0;
 }
+
 
 .footer {
   background-color: white;

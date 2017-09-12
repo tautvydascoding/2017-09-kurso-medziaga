@@ -32,6 +32,8 @@ color: blue;
 a {
   color:rgb(247, 7, 7) ;
 
+<<<<<<< HEAD
+=======
 nav {
     transform: translate(-50%,-50%);
 }
@@ -50,6 +52,7 @@ nav {
   height: 100px;
 =======
 
+>>>>>>> dcfaa9b40c9a95e4aa8d2822ff43b986d523b219
 .col-6 h2 {
   text-align: center;
   color: white;
@@ -65,5 +68,8 @@ h3 {
 }
 .inline {
   inline:block;
+<<<<<<< HEAD
+=======
 >>>>>>> 30cecdd3058bf030ccbdec3f1c31a8a104932126
+>>>>>>> dcfaa9b40c9a95e4aa8d2822ff43b986d523b219
 }
