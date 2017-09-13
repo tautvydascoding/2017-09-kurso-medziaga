@@ -3,30 +3,33 @@ console.log("labas");
 nevedes = true;
 
 while (nevedes) {
-  console.log("testtuoju while cikla");
+  console.log("testuoju while cikla");
   nevedes = false;
 }
 
 
 
 // uzduotis 0
-// uzduotis 50 kartu atspausdinti zodi: "Azuolas" 
+// uzduotis 50 kartu atspausdinti zodi: "Azuolas"
+
 
 // uzduotis 1)
 // A) susikurit f-ja (x) kuri  atspausdina paduota reiksme
 // B) 150 kartu paleisti sia ^ f-ja, (paduodant "i" reiksme)
 
- 
- 
- 
- 
- 
- 
+
+
+
+
+
+
 // --------------------------- += , ++ --------------
 i = i + 1;   // tai yra tas kas i += 1;
 i++;  // i + 1 (i padidieja vienetu)  arba mazinant  k--;
 
 
+// uzdavinnys 2
+// isvesti 150 skaiciu vienoje eiluteje
 
 //  -----------texta sulipdo i viena eilute
 i = 0;
@@ -58,5 +61,3 @@ console.log(text);
 //// 5) nupiestiLentelesStulpeliuPavadinimus(firstColName, secondColName, lastColName) Nereik while!
 
 piestiEilute("- ");
-
- 
