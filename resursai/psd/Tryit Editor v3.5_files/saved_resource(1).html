@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<!-- saved from url=(0065)https://www.w3schools.com/js/tryit.asp?filename=tryjs_array_slice -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"></head><body contenteditable="false">
+
+<h2>JavaScript Array Methods</h2> 
+
+<h2>slice()</h2>
+
+<p>When the slice() method is given two arguments, it selects array elements from the start argument, and up to (but not included) the end argument:</p>
+
+<p id="demo">Banana,Orange,BMW,Mango<br><br>Lemon,Apple</p>
+
+<script>
+var fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+var citrus = fruits.splice(2,2,"BMW");
+document.getElementById("demo").innerHTML = fruits + "<br><br>" + citrus;
+</script>
+
+
+
+</body></html>
