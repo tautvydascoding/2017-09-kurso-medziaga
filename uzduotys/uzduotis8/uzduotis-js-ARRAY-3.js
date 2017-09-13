@@ -1,5 +1,5 @@
 // --------------------Array / Masyvai -----
-names = ["Tomas", "Pietkus", 25, "VDU - inziniarija"];
+names = ["Tomas", "Pietkus", 25, "VDU - inzinerija"];
 
 console.log(names);
 console.log(names.join());
