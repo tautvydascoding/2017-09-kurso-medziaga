@@ -76,20 +76,36 @@ console.log("kaina su PVM: " , prekesKainaSuPVM);
 // klientai  8 iki 15    "MTV kanalas"
 // klientai  16 iki 18  "Naujausi telefonai"
 // klientai  >65       "Pensiju atsiemimas per 1 men"
-// pensininkams ir vaikams <8    "Laimes rato laida"
 
 // sendBlaster - siuncia emails
 age = 111;
 console.log("amzius: " + age);
 
-if (age <= 8) {
-    console.log("Kinder kiausiniai -50%");
+
+if (age <= 8 ) {
+     console.log("Kinder kiausiniai -50%");
+}
+else if(age > 8 && age <= 15) {
+       console.log("MTV kanalas");
+   } else if (age <= 18) {
+       console.log("Naujausi telefonai");
+   } else if ( age >= 65) {
+           console.log("Pensiju atsiemimas per 1 men");
+   }
+
+
+ // pensininkams >65 ir vaikams <8    "Laimes rato laida"
+if (age <= 8 || age > 65 ) {
+    if (age <= 8) {
+        console.log("Kinder kiausiniai -50%");
+    } else if (age > 65 ) {
+         console.log("Pensiju atsiemimas per 1 men");
+    }
+    console.log("Laimes rato laida");
 } else if(age > 8 && age <= 15) {
         console.log("MTV kanalas");
     } else if (age <= 18) {
         console.log("Naujausi telefonai");
-    } else if ( age >= 65) {
-            console.log("Pensiju atsiemimas per 1 men");
     }
 
 
