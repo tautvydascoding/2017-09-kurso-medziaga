@@ -28,6 +28,8 @@ random
   
   
   //===========Array / Masyvu f-jos=========
+  
+  
  console.log(names.join());  // atspausdina visus Array elementus vienoje eiluteje (atskiria kableliais)
  
   names.length;  - suskaiciuoja masyvo ilgi
@@ -54,7 +56,7 @@ var myChildren = myGirls.concat(myBoys);     // Concatenates (joins) myGirls and
 dalisVardu = names.slice(3); // copy nuo trecio masyvo elemento
 var citrus = fruits.slice(1, 3); // copy nuo 1 iki 3 elemento
 
-//==========================================
+//====================Math======================
 
 Math.PI;            // returns 3.141592653589793
 Math.round(4.7);    // returns 5
@@ -110,7 +112,7 @@ for (y in vardai  ) {
 //=================GET VALUE===================
 vardas = document.querySelector('input[name="firstname"]').value; 
 
-==============Out put=====================
+// ==============Out put=====================
 JavaScript Display Possibilities
 
 Writing into the browser console, using   console.log() 
@@ -122,14 +124,16 @@ Writing into an alert box, using	  window.alert()
 
 
 // ===================js out put===================
+
 pirmojiGalerija = document.querySelector('.galerija'); // SURANDA pirma
 galerijos = document.querySelectorAll(".galerija");  // SURANDA VISUS
 galerijos[0].style.color = "blue"; // pakeiciam  teksto spalva
+galerijos[0].style.backgroundcolor = "red"; // pakeiciam  bg spalva
   tekstas = "<h2> Mano antraste </h2>";
 galerijos[0].innerHTML += tekstas ;
 
 
-//================
+//==============================================
 // js - pati save iskviecianti f-ja
 (function() {
     console.log("iskvieciau save");
