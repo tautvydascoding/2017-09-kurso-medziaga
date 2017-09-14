@@ -122,3 +122,11 @@ console.log("ieskomas zodis yra: " + ieskomoZodzioVieta);
 
 
 // 3) rasti pavarde masyve esancio  zmogaus vardu "Freida" (pirmojo)
+var freidaSaraseNr = ieskotiVardoVieta("Freida");
+FreidosPavarde = lastNames[freidaSaraseNr];
+console.log("Freidos pavarde ", freidaSaraseNr);
+console.log(lastNames[freidaSaraseNr]);
+
+
+
+// lol
