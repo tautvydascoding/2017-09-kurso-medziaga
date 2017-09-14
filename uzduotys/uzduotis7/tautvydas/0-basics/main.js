@@ -24,7 +24,7 @@ console.log("--x:", x);
     console.log("NE x nelygu 10");
 }
 
-//                   ir
+                  // ir
 //  if (usename == xxx  &&  password == yyyy) {
 //  }
 // //                   arba
