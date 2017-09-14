@@ -66,6 +66,26 @@ console.log("pazimiu vidurkis: " + getAvarage(pazymiai3) );
 // 2) vaikas: klase, vardas
 // 3) priskirti tevo objekui (kintamajam) vaika
 
+// 1
+var tevas = {
+    vardas : "Tim",
+    pavarde : "Timauskas",
+    palikuonys : []
+};
+var vaikas = {
+    vardas : "Paulius",
+    klase : 7
+};
+// tevas.vaikas = vaikas;
+tevas.palikuonys[0] = vaikas;
+tevas.palikuonys[1] = vaikas;
+
+
+
+
+
+
+
 
 
 //
