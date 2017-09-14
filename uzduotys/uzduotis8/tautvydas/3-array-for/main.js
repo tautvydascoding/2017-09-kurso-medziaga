@@ -1,6 +1,7 @@
 console.log("Labas");
 
 var names = ["Enriqueta", "Sybil", "Piper", "Anh", "Carmelo", "Regan", "Synthia", "Newton", "Norbert", "Krystyna", "Fidelia", "Christoper", "Lewis", "Jeromy", "Joy", "Lorri", "Owen", "Rosenda", "Devora", "Treva", "Leanora", "Meghann", "Jacqueline", "Bunny", "Tenisha", "Rico", "Clementina", "Samella", "Rico", "Sandi", "Efrain", "Tena", "Vivan", "Hiedi", "Naida", "Evette", "Shane", "Freida", "Marielle", "Wynona", "Cheree", "Gaston", "Aja", "Timika", "Jude", "Griselda", "Luise", "Rico", "Minh", "Warren"];
+
 var lastNames = ["Mcdowell", "Gates", "Mccall", "Cisneros", "Hancock", "Gaines", "Juarez", "Nolan", "Barajas", "Ware", "Orr", "Bell", "Donovan", "Rojas", "Stevenson", "Long", "Hays", "Gibson", "Meyer", "Sims", "Mcintosh", "Craig", "Haney", "Cunningham", "Hunt", "Montgomery", "Spears", "Cooke", "Gregory", "Mcknight", "Fernandez", "Hendrix", "Patton", "Bond", "Skinner", "Randolph", "Montes", "Guerra", "Bowen", "Potts", "Dyer", "Riley", "Rodgers", "Schroeder", "Ferguson", "Garrett", "Rush", "Moon", "Whitney", "Mcdaniel"];
 
 // 1A) surasti vardu masyve, kelintas zmogus yra "Rico" (surasti pirmaji; sunkes- surasti visus riko)
@@ -52,6 +53,12 @@ console.log("ieskomas zodis yra: " + ieskomoZodzioVieta);
 
 // 3) rasti pavarde masyve esancio  zmogaus vardu "Freida" (pirmojo)
 // 3.1 rasti visu zmoniu vardu "Rico" pavardes
+
+freidosNrSarase  = ieskotiVardoVieta("Freida");
+freidosPavarde = lastNames[freidosNrSarase];
+console.log("Freidos pavarde: ", freidosPavarde);
+// arba
+console.log("Freidos pavarde: ",  lastNames[  ieskotiVardoVieta("Freida") ] );
 
 
 
