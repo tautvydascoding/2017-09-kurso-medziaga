@@ -50,6 +50,9 @@ skaiciavimai (5, 6, 7);
 // uzduotis 4
 
 function spausdinti (number, boolean, string) {
-  console.log("", number, "", boolean, "", string);
+  number= 4.5;
+  boolean= 0;
+  string= "geras lankomumas";
+  console.log(number, boolean, string);
 }
-spausdinti (4.5, 0, "geras lankomumas");
+spausdinti (number, boolean, string);
