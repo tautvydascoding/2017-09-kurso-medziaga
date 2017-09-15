@@ -1,3 +1,4 @@
+// PASIKARTOTI 
 // js saugosime mokinio informacija: 
 // 			mokinio vardo, pavardes, kelintokas. mokinio matematikos pazymiai (6, 5, 9 , 10, 8) 
 // Uzdavinys: 

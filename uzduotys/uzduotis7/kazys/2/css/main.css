@@ -1,0 +1,24 @@
+* {
+  box-sizing: 0;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+h1 {
+  color:red;
+}
+.aukstis100 {
+  height: 100px;
+}
+.fonas-yellow {
+  background-color: yellow;
+}
+.aukstis300 {
+  min-height:300px;
+}
+.aukstis200 {
+  min-height:200px;
+}
