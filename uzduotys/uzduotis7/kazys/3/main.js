@@ -56,7 +56,7 @@ img = "<img src='#' width='100px' height='100px'>";
 for (i = 0; i <2; i++) { // spausdina eilutes
   document.write( "<br>");
   for (var t = 0; t < 3; t++){ // t-skaitliukas paveiksliukam
-  document.write( img )
+  document.write( img );
 }
 }
 
