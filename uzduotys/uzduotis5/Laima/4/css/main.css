@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+}
+html, body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+/* -------------*/
+h2 {
+color: black;
+}
+
+.fonas-yellow {
+    background-color: #FDDA00;
+}
+
+.fonas-green {
+    background-color: #9BCE0B;
+}
+
+.aukstis100 {
+    height: 100px;
+}
+.aukstis200 {
+    height: 100px;
+}
+.aukstis300 {
+    min-height: 300px;
+}
+.stumimas-t-30 {
+    margin-top: 30px;
+}
+/* automatinis sidebar aukstis*/
+
+/*.auto-sidebar {
+    padding-bottom: 100%;
+    margin-bottom: -100%;
+}*/
+
+#wrapper {
+    overflow: hidden;
+}
