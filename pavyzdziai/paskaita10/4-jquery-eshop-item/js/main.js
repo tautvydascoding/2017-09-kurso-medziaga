@@ -1,4 +1,4 @@
-// =================ARRAY / masyvas============
+// =================eShop items============
 
 console.log("labas");
 
