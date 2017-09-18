@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+}
+body, html {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+/* -------------*/
+
+
+
+h1 {
+    color: orange;
+}
+
+.fonas-yellow {
+    background-color: #f4d42f;
+}
+.fonas-green {
+    background-color: #71eb37;
+}
+.aukstis100 {
+    height: 100px;
+}
+.aukstis300 {
+    min-height: 300px;
+}
+
+// sukureme kintamaji, kuris saugos spalva $titleColor
+$titleColor : red;
+$titleSize : 29px;
+$titleWeight : 900;
+$titlebgHover: #232e3e;
+
+
+section {
+    h3 {
+        color: $titleColor;
+        // font-size: $titleSize;
+        // font-weight: $titleWeight;
+        // ARBA 
+        font : {
+            size: $titleSize;
+            weight: $titleWeight;
+        }
+    }
+    p {
+        font-size: 16px;
+        font-weight: 300;
+    }
+}
+
+aside {
+    h3 {
+        color: $titleColor;
+        font-size: 36px;
+        font-weight: 200;
+    }
+    p {
+        font-size: 14px;
+        font-weight: 500;
+    }
+}
+/*
+  daug komentaru
+  */
+// komentaras
+
+a h3 {
+    color: #6c66f9;
+    &:hover {
+        // color: #fff;
+        background-color: $titlebgHover;
+    }
+    &:active {
+        background-color: #000;
+    }
+    & h3 {
+        color: orange;
+    }
+}
+
+
+
+
+
+
+
+//

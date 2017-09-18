@@ -1,27 +1,54 @@
 * {
-    box-sizing: border-box;
-}
-body {
-    padding: 0;
-    margin: 0;
-    height: 100%;
-}
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body, html {
+  padding: 0;
+  margin: 0;
+  height: 100%; }
+
 /* -------------*/
 h1 {
-color: blue;
-}
-
-
+  color: orange; }
 
 .fonas-yellow {
-    background-color: #f4d42f;
-}
+  background-color: #f4d42f; }
+
 .fonas-green {
-    background-color: #71eb37;
-}
+  background-color: #71eb37; }
+
 .aukstis100 {
-    height: 100px;
-}
+  height: 100px; }
+
 .aukstis300 {
-    min-height: 300px;
-}
+  min-height: 300px; }
+
+section h3 {
+  color: red;
+  font-size: 29px;
+  font-weight: 900; }
+
+section p {
+  font-size: 16px;
+  font-weight: 300; }
+
+aside h3 {
+  color: red;
+  font-size: 36px;
+  font-weight: 200; }
+
+aside p {
+  font-size: 14px;
+  font-weight: 500; }
+
+/*
+  daug komentaru
+  */
+a h3 {
+  color: #6c66f9; }
+  a h3:hover {
+    background-color: #232e3e; }
+  a h3:active {
+    background-color: #000; }
+  a h3 h3 {
+    color: orange; }
