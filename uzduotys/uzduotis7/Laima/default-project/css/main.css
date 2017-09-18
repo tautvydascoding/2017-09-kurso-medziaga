@@ -12,16 +12,22 @@ color: blue;
 }
 
 
-
 .fonas-yellow {
     background-color: #f4d42f;
 }
 .fonas-green {
     background-color: #71eb37;
 }
-.aukstis100 {
+.h100 {
     height: 100px;
 }
-.aukstis300 {
+
+.h300 {
     min-height: 300px;
+}
+
+
+.no-margin {
+    margin-left: 0;
+    margin-right: 0;
 }

@@ -1,0 +1,123 @@
+
+// uzduotis 0
+// uzduotis 50 kartu atspausdinti zodi: "Azuolas"
+var i = 1;
+
+while ( i <= 50 ) {
+  console.log(i + " Azuolas");
+      i ++;
+}
+
+// uzduotis 1)
+// A) susikurit f-ja (x) kuri  atspausdina paduota reiksme
+// B) 150 kartu paleisti sia ^ f-ja, (paduodant "i" reiksme)
+
+// ---- Uzduotis A
+function myFunction(reiksme) {
+    console.log(reiksme);
+}
+
+myFunction(222);
+
+
+// ---- Uzduotis B
+
+
+function myFunction(i) {
+    var y = 0;
+    while( y <= i ) {
+        console.log("aa");
+        y = y+1;
+    }
+}
+
+myFunction(1);
+
+////===============
+
+
+var data = prompt ("Ivesk savo gimimo data");
+
+console.log("Ivestas skaicius: " + data);
+*
+document.write("<h1> Pakeistas </h1>");
+
+window.alert("auuu");
+
+// uzduotis 1)
+// A) susikurit f-ja (x) kuri  atspausdina paduota reiksme
+// B) 150 kartu paleisti sia ^ f-ja, (paduodant "i" reiksme)
+
+// ---- Uzduotis A
+function myFunction(reiksme) {
+    console.log(reiksme);
+}
+
+myFunction(222);
+
+
+// ---- Uzduotis B
+//     var y = 1;
+// function myFunction(i, txt) {
+//
+//     while( y <= i ) {
+//         console.log(y, txt);
+//         y ++;
+//     }
+// }
+//
+// myFunction(5, "adata");
+// text = "Pradzia";
+// for (i = 0; i <= 20; i++) {
+//     text = text + " " + i; // yexy += " " + i;
+// }
+// console.log(text);
+
+///// ----------------
+function piestiEilute(ilgis) {
+    eilute = "-";
+    for (i = 0; i < ilgis; i++) {
+        eilute = eilute + "-";
+        }
+        console.log(eilute);
+        document.write(eilute);
+}
+
+
+function piestiStulpeli(aukstis) {
+    eilute = "-";
+    for (i = 0; i < aukstis; i++) {
+        document.write("|   <br>");
+        }
+}
+
+piestiEilute(50);
+piestiStulpeli(1);
+document.write("|                 Nr        |        Vardas                 |       Pavarde             | ")
+piestiStulpeli(1);
+piestiEilute(50);
+piestiStulpeli(10);
+piestiEilute(50);
+// piestiStulpeli(10);
+
+
+
+ //// ------------------------------------------------------------
+//// |    nr     |     Name     |     lName    |
+//// ------------------------------------------------------------
+//// |
+//// |
+//// |
+//// |
+//// |
+//// -----------------------------------------
+//
+////  3) piestiEilute(x)    f-ja kurioje while ciklas nupiesia eilete (x - skaicius kokio ilgio nupiesti)
+//// A) susikurti f-ja
+//// B) i f-ja ^ ideti while cikla
+//// C) uz while atspausdintin suskaiciuota eilute
+//
+////  4) piestiStulpeli(x)    f-ja kioje while ciklas nupiesia stulpeli
+//// 5) nupiestiLentelesStulpeliuPavadinimus(firstColName, secondColName, lastColName) Nereik while!
+
+//piestiEilute("- ");
