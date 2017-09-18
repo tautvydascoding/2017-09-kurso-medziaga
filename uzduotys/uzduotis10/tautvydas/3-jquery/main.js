@@ -13,46 +13,56 @@ var text3 = $('#wrapper').html();
 
 console.log(text1);
 
-//
-$(document).ready(function(){
-
-   // sicia parasytas kodas veiks tik kai uzkraus visa svetaine
-
-});
-// ARBA
-$(function() {
-    // sicia parasytas kodas veiks tik kai uzkraus visa svetaine
+$(".mygtukas").click(function(event){
+$("img:last").toggle(1000);
 });
 
+//cool function. leidzia panaudot funkcija vienodiem elementam, bet tik ant to, kuri 'paspaudi'
+// $("img").mouseenter(function(event){
+// $(this).toggle(1000);
+// });
 
-$(function() {
-    // sicia parasytas kodas veiks tik kai uzkraus visa svetaine
-    console.log("Labas -  puslapis pilnai uzkrautas");
+var stilius = {
+  "color": "red",
+  "background-color": "#000",
+  'font-size': "78px",
+  "margin": "200px 450px"
+};
+
+$('h1').css(stilius);
+
+// var width = {
+//   "width": "200px"
+// };
+// $("img").click(function(event){
+//     $(this).animate(width);
+//     });
+
+$('img').on("click", function(){
+  var animacijosVeiksmai = {
+    width: "200px",
+    height: "200px"
+  };
+  $(this).animate(animacijosVeiksmai);
 });
 
-$('.mygtukas').click( function(event) {
-    /* Act on the event */
-    $('img:last').toggle(2000);
-    $('img.pirmas').toggle(2000);
-    $('.pirmas').toggle(2000);
-});
-// ARBA
-// $('.mygtukas').click( veiksmaiPaspaudus());
-//
+
+
 // function veiksmaiPaspaudus() {
-//     /* Act on the event */
+//
 // }
 
-$('img').click( function(event) {
-    // $(this).toggle(2000) ; // this - veikia curent elementa
-    $('img[width="101px"]').toggle(1000);
+
+
+
+
+
+// variantas #1
+$(document).ready(function(){
+  //cia parasytas kodas veiks tik kai uzsikraus visa svetaine
 });
-
-
-
-
-
-
-
-
-//
+//variantas #2
+$(function() {
+  //cia parasytas kodas veiks tik kai uzsikraus visa svetaine
+console.log("sveikinu uzkrovus svetaine");
+});
