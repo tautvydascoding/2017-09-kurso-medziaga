@@ -1,0 +1,67 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+/* -------------*/
+h1 {
+color: blue;
+}
+
+
+
+.fonas-yellow {
+    background-color: #f4d42f;
+}
+.fonas-green {
+    background-color: #71eb37;
+}
+.aukstis100 {
+    height: 100px;
+}
+.aukstis300 {
+    min-height: 300px;
+}
+
+$colorred: red;
+$font200: 200;
+$font300: 300;
+$font500: 500;
+$font600: 600;
+$font-size14: 14px;
+$font-size16: 16px;
+$font-size29: 29px;
+$font-size36: 36px;
+
+article h2 {
+  color: $colorred;
+  font-weight: $font200;
+  font-size: $font-size36;
+  &.title-eima {
+    font-weight: $font600;
+    font-size: $font-size29;
+  }
+}
+
+p.p-eima {
+  font-size: $font-size16;
+  font-weight: $font300;
+}
+p {
+  font-size: $font-size14;
+  font-weight: $font500;
+}
+
+a h2{
+  color: #111;
+  &:hover {
+    background-color: rgb(196, 255, 0);
+    text-decoration: none;
+  }
+  &:active {
+    color: lime;
+  }
+}
