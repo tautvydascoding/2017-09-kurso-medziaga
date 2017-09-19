@@ -4,8 +4,7 @@
                     <div class="col-md-8">
                         <section>
                             <h2>Content</h2>
-                                <?php
-                                    
+                                <?php 
                                     include("./acticle.php");
                                  ?>
                         </section>

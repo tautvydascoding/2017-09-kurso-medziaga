@@ -5,3 +5,9 @@
 
     include_once('./footer.php');
  ?>
+
+
+<!-- uzduotis -->
+<!-- sukurti kontaktu pls -->
+<!-- sukurti about pls -->
+<!-- sukurti gallery pls -->

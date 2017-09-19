@@ -23,10 +23,10 @@
                     <div class="col-md-10">
                         <nav>
                             <ul>
-                                <li>home</li>
-                                <li>about</li>
-                                <li>gallery</li>
-                                <li>contacts</li>
+                                <li><a href="/"> home</a></li>
+                                <li><a href="about.php"> about</a></li>
+                                <li><a href="gallery.php"> gallery</a></li>
+                                <li><a href="contacts.php"> contacts</a></li>
                             </ul>
                         </nav>
                     </div>
