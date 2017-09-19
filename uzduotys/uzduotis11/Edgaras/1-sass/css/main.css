@@ -1,0 +1,36 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%; }
+
+/* -------------*/
+section h2 {
+  color: red;
+  font-size: 29px;
+  font-weight: 600; }
+
+section p {
+  background-color: green;
+  font-size: 30px;
+  font-weight: 300; }
+
+section a {
+  text-decoration: none;
+  color: #5100c9; }
+  section a:hover {
+    color: #00ffdf;
+    text-decoration: none; }
+  section a:active {
+    color: #eb00ff; }
+
+aside {
+  color: red;
+  font-size: 36px;
+  font-weight: 200; }
+  aside p {
+    font-size: 16px;
+    font-weight: 500; }
