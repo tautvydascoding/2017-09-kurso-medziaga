@@ -1,0 +1,49 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%; }
+
+/* -------------*/
+h1 {
+  color: blue; }
+
+.fonas-yellow {
+  background-color: #f4d42f; }
+
+.fonas-green {
+  background-color: #71eb37; }
+
+.aukstis100 {
+  height: 100px; }
+
+.aukstis300 {
+  min-height: 300px; }
+
+#wrapper section h2 {
+  color: red;
+  font-size: 29px;
+  font-weight: 900; }
+
+#wrapper section p {
+  font-size: 16px;
+  font-weight: 300; }
+
+#wrapper aside h2 {
+  color: red;
+  font-size: 36px;
+  font-weight: 200; }
+
+#wrapper aside p {
+  font-size: 14px;
+  font-weight: 500; }
+
+a h2 {
+  color: green; }
+  a h2:hover {
+    background-color: blue; }
+  a h2:active {
+    background-color: white; }
