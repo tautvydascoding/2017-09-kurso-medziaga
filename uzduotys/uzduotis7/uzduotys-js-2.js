@@ -61,3 +61,9 @@ console.log(text);
 //// 5) nupiestiLentelesStulpeliuPavadinimus(firstColName, secondColName, lastColName) Nereik while!
 
 piestiEilute("- ");
+
+
+
+for (var i = arr.length - 1; i >= 0; i--) {
+	arr[i]
+}
