@@ -23,12 +23,12 @@ try {
     $mail->Port = 587;                                    // TCP port to connect to
 
     //Recipients
-    $mail->setFrom('from@example.com', 'Mailer');
-    $mail->addAddress('joe@example.net', 'Joe User');     // Add a recipient
+    $mail->setFrom($klientoPastas, 'Puslapiu kurimas');
+    $mail->addAddress('testascoding@gmail.com', 'Interneto istemos');     // Add a recipient
     // $mail->addAddress('ellen@example.com');               // Name is optional
-    $mail->addReplyTo('info@zaidimuPaulis.com', 'Information');
-    $mail->addCC('cc@example.com');
-    $mail->addBCC('bcc@example.com');
+    $mail->addReplyTo($klientoPastas, 'Pirkejas');
+    // $mail->addCC('cc@example.com');
+    // $mail->addBCC('bcc@example.com');
 
     //Attachments
     // $mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments
@@ -36,9 +36,9 @@ try {
 
     //Content
     $mail->isHTML(true);                                  // Set email format to HTML
-    $mail->Subject = 'Here is the subject';
-    $mail->Body    = 'This is the HTML message body <b>in bold!</b>';
-    $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
+    $mail->Subject = $antraste;
+    $mail->Body    = $klausimas;
+    $mail->AltBody = $klausimas;
 
     $mail->send();
     echo 'Message has been sent';
