@@ -1,0 +1,3 @@
+Sketis : 1vnt : 10.99e
+batas : 5vnt : 56e
+ratas : 4vnt : 265e
