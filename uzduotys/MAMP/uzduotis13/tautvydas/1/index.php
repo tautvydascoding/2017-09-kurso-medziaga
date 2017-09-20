@@ -9,12 +9,13 @@
 
         <h1>Post Get testavimas</h1>
 
-        <form class="" action="forma.php" method="get">
-            <input type="text" name="name" value="">
-            <input type="text" name="lname" value="">
-            <input type="number" name="age" value="">
-            <input type="password" name="password" value="">
-            <input type="email" name="pastas" value="" required>
+        <form class="" action="forma.php" method="post">
+            <input type="text" name="name" value="" placeholder="User name">
+            <input type="text" name="lname" value="" placeholder="User last name">
+            <input type="number" name="age" value="" placeholder="Age">
+            <input type="password" name="password1" value="" placeholder="Password">
+            <input type="password" name="password2" value="" placeholder="Password">
+            <input type="email" name="pastas" value="" required placeholder="Email">
 
             <input type="submit" name="" value="Register">
             <!-- ARBA -->
