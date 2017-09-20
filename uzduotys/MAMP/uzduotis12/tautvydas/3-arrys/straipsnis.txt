@@ -1,0 +1,3 @@
+"sketis" : 1vnt : 10.99
+"batai 45" : 1vnt : 56.99
+"ratas 195" : 4vnt : 265
