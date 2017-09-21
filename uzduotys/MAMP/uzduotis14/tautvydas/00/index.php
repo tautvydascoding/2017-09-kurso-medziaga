@@ -42,13 +42,13 @@ class Namas {
     public $rooms = 5;
     private $sildymoBudas = "kietasKuras";
     private $miegamujuSkaicius = 2;
-    public $saplva = "#b2b2b2";
+    public $spalva = "#b2b2b2";
     public function spausdintiPrivatuTurini() {
         $spaudinimoBudas = "laikrastis";
         echo "Miegamuju skaicius: " . $this->miegamujuSkaicius . "<br />";
         echo "Silgymo budas: " . $this->sildymoBudas  . "<br />";
         echo "Kaip bus ataspausdinta: " . $spaudinimoBudas . "<br />";
-        kurYraMaryte();
+        $this->kurYraMaryte();
     }
     private function kurYraMaryte() {
         echo "Maryte yra koridoriuje <br />";
@@ -57,7 +57,11 @@ class Namas {
 // uzduotis B
 // issivesti visus kintamuosius (atspausdinti ekrane)
 
-
+$daugiabutis = new Namas(); // kuriam Objekta
+$kambariai = $daugiabutis->rooms;
+echo "Kambariai: " . $kambariai . "<br>";
+echo "Namo spalva: " . $daugiabutis->spalva . "<br>";
+$daugiabutis->spausdintiPrivatuTurini();
 
 
 
