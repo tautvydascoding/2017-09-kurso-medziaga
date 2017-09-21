@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+}
+
+body,html {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+
+.fonas-yellow {
+    background-color: yellow;
+}
+
+aukstis100 {
+    height: 100px;
+}
+
+aukstis300 {
+    height: 300px;
+}
+
+
+aukstis500 {
+    height: 500px;
+}
+
+
+
+.raudona {
+    color: red;
+}
+
+
+aside > article {
+    background-color: red;
+}
