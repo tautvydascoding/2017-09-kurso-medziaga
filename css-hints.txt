@@ -1,4 +1,4 @@
-﻿==========musu puslapis uzimtu visu monitoriaus auksti =========
+==========musu puslapis uzimtu visu monitoriaus auksti =========
 body, html {
     height: 100%;
 }
@@ -72,3 +72,16 @@ aside {
     background-position: right bottom;
     min-height: 100%;
     margin: 0;
+
+// =================gradient-background - istrizas===========
+.banner-bg {
+    background: rgba(0, 0, 0, 0) linear-gradient(to right, #48cfad 5%, #3bafda 90%) repeat scroll 0 0;
+    bottom: 0;
+    height: 100%;
+    margin-left: -110px;
+    transform: skewX(-30deg);  /* istrizumas - sia css class “banner-bg “ ideti kaip atskira div i teva */
+    width: 70%;
+    /* ekrano virusje */
+    position: absolute;
+    top: 0;
+}
