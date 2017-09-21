@@ -21,6 +21,10 @@ class Zuvis extends Animal {
 }
 
 $karosas = new Zuvis();
+//    error, nes $zinduolis - privatus
+//    $karosas->zinduolis <br />
+//   errpr : protected , tai tas pats kas private- bet paveldeti iseina
+//   $karosas->maistas <br />
 echo "aukstis: $karosas->aukstis <br />
       svoris: $karosas->svoris   <br />
       peleku sk.: $karosas->pelekai        <br />
@@ -28,17 +32,20 @@ echo "aukstis: $karosas->aukstis <br />
      ";
 $karosas->setMaistas("dumblas");
 
-     // error, nes $zinduolis - privatus
-    //    $karosas->zinduolis <br />
-    // errpr : protected , tai tas pats kas private- bet paveldeti iseina
-    //   $karosas->maistas <br />
 
 
 
 
+//  uzduotis 1
+//  sukurti klase User / vartotojas
+// kintamieji: private username = 'Tim', privattus password = 'Dragon', public lastLoginTime
+// f-jos : public login($uname, $pass) , kuri patikrina ar vartotojo spaltazodis yra toks kaip vartotojo
+
+$vartotojas = new User();
+$arToksEgzistuoja = $vartotojas->login("Gregor", "Dragon");
+echo $arToksEgzistuoja;
 
 
-
-
-
-//
+// uzduotis 2 sukurti Admin kalse , kuri paveldi User klase
+// ir turi kintamuosius: $userRights
+// turi f-ja : grandUser() , kuri pakeicia vartotojo galias / teisias
