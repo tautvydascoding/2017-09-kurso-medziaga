@@ -72,8 +72,9 @@ $erelis->checkLogin("Tim", "Dragon");
 // 2
 class Admin extends User {
     public $userRights = '';
+
     public function changeUsername($newName) {
-        $this->username = $newName;
+        $this->setName($newName);
     }
     // automatiskai iskvieciama f-ja
     function __construct($x = "") {
@@ -84,9 +85,11 @@ class Admin extends User {
 
 $moderatorius = new Admin("moderator");
 $administratorius = new Admin( );
-echo "vartotojo teises: $moderatorius->userRights";
-echo "admino username: $administratorius->"
-
+echo "vartotojo teises: $moderatorius->userRights <br>";
+echo "admino username:" . $administratorius->getName() . "<br>";
+echo "admino username: {$administratorius->getName()} <br>";
+$administratorius->changeUsername("Poviliukas"); 
+echo "admino username: {$administratorius->getName()} <br>";
 
 
 //
