@@ -8,7 +8,12 @@ console.log("labas");
 
 $('.w3-row img').click( function() {
 
-      // nusikopijuojame paspausta paveiksliuko Obj
+
+
+
+
+
+    // nusikopijuojame paspausta paveiksliuko Obj
     var paveikslelioObjKopija = this.cloneNode(true);
     var imgParent = this.parentNode; // tevinis DOM elementas
 
@@ -16,12 +21,12 @@ $('.w3-row img').click( function() {
       imgParent.insertBefore(paveikslelioObjKopija,this);
 
 
-      $(this).css({
+      $(paveikslelioObjKopija).css({
         position : "absolute",
         width: "18%"
       });
 
-      $(this).animate({
+      $(paveikslelioObjKopija).animate({
           width: "10px",
           height: "10px",
           opacity: 0,
