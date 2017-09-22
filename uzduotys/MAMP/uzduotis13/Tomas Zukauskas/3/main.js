@@ -1,5 +1,5 @@
 $(".w3-grayscale img").click(function(){
-        var arse = $(this).clone(true).prependTo($(this).parent());
+        var arse = $(this).clone().prependTo($(this).parent());
         $(arse)
         .css({
             'position' : 'absolute',
