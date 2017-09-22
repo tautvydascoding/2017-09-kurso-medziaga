@@ -9,3 +9,25 @@ show databases;
   
   
   show tables;
+  
+  
+  
+  //-------------DOCTORS----------
+INSERT INTO doctors  VALUES  ('', 'Tom', 'Opsa');
+INSERT INTO doctors  VALUES  ('', 'Paul', 'Tor');
+INSERT INTO doctors  VALUES  ('', 'Jo', 'Oto');
+INSERT INTO doctors  VALUES  ('', 'Lili', 'Lekso');
+INSERT INTO doctors  VALUES  ('', 'Timy', 'So');
+//-------------PACIENTS---------------
+	INSERT INTO pacients  VALUES  ('', 'Ari', 'Amon', '3');
+	INSERT INTO pacients  VALUES  ('', 'Tim', 'Taros', '2');
+	INSERT INTO pacients  VALUES  ('', 'Ana', 'Tomson', '2');
+	INSERT INTO pacients  VALUES  ('', 'Tom', 'Alis', '3');
+	INSERT INTO pacients  VALUES  ('', 'Karis', 'Katis', '1');
+	INSERT INTO pacients  VALUES  ('', 'Jo', 'Oporas', '5');
+//-------------IMG---------------
+INSERT INTO img  VALUES  ('', 'pic-46.jpg', '5');
+INSERT INTO img  VALUES  ('', 'pic-46.PNG', '1');
+INSERT INTO img  VALUES  ('', 'pic-456.jpg', '3');
+INSERT INTO img  VALUES  ('', 'pic-4234234.GIF', '2');
+INSERT INTO img  VALUES  ('', 'pic-4622.GIF', '4');
