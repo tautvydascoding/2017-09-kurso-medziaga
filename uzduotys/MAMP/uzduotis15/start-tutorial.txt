@@ -1,0 +1,11 @@
+
+CREATE DATABASE `hospital9`;
+
+show databases;
+
+ use hospital9;
+ 
+  CREATE TABLE doctors (id INT(6) AUTO_INCREMENT PRIMARY KEY,  name varchar(25), lname varchar(35), pacient_id INT(6));
+  
+  
+  show tables;
