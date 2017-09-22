@@ -16,12 +16,14 @@ show databases;
   // kaip istrinti 2 daktara?
   DELETE FROM doctors WHERE id=2;
   
-  Create TABLE `pacients` ( id INT(6) AUTO_INCREMENT PRIMARY KEY, name VARCHAR(25), lname VARCHAR(35) );
-   INSERT INTO pacients  VALUES  ('', 'Ari', 'Amon');
+  Create TABLE `patients` ( id INT(6) AUTO_INCREMENT PRIMARY KEY, name VARCHAR(25), lname VARCHAR(35) );
+   INSERT INTO patients  VALUES  ('', 'Ari', 'Amon');
    
    // !!!
-   RENAME TABLE pacients TO patients;
+   RENAME TABLE patients TO patients;
    ALTER TABLE `doctors` CHANGE `pacient_id` `patient_id` int(6);
+   
+   Create TABLE `img` ( id INT(6) AUTO_INCREMENT PRIMARY KEY, name VARCHAR(55), client_id int(6) );
    
    
   //-------------DOCTORS----------
@@ -30,16 +32,21 @@ INSERT INTO doctors  VALUES  ('', 'Paul', 'Tor', '1');
 INSERT INTO doctors  VALUES  ('', 'Jo', 'Oto', '1');
 INSERT INTO doctors  VALUES  ('', 'Lili', 'Lekso', '3');
 INSERT INTO doctors  VALUES  ('', 'Timy', 'So', '2');
-//-------------PACIENTS---------------
-	INSERT INTO pacients  VALUES  ('', 'Ari', 'Amon' );
-	INSERT INTO pacients  VALUES  ('', 'Tim', 'Taros' );
-	INSERT INTO pacients  VALUES  ('', 'Ana', 'Tomson' );
-	INSERT INTO pacients  VALUES  ('', 'Tom', 'Alis' );
-	INSERT INTO pacients  VALUES  ('', 'Karis', 'Katis' );
-	INSERT INTO pacients  VALUES  ('', 'Jo', 'Oporas' );
+//-------------patients---------------
+	INSERT INTO patients  VALUES  ('', 'Ari', 'Amon' );
+	INSERT INTO patients  VALUES  ('', 'Tim', 'Taros' );
+	INSERT INTO patients  VALUES  ('', 'Ana', 'Tomson' );
+	INSERT INTO patients  VALUES  ('', 'Tom', 'Alis' );
+	INSERT INTO patients  VALUES  ('', 'Karis', 'Katis' );
+	INSERT INTO patients  VALUES  ('', 'Jo', 'Oporas' );
 //-------------IMG---------------
 INSERT INTO img  VALUES  ('', 'pic-46.jpg', '5');
 INSERT INTO img  VALUES  ('', 'pic-46.PNG', '1');
 INSERT INTO img  VALUES  ('', 'pic-456.jpg', '3');
 INSERT INTO img  VALUES  ('', 'pic-4234234.GIF', '2');
 INSERT INTO img  VALUES  ('', 'pic-4622.GIF', '4');
+
+
+
+
+
