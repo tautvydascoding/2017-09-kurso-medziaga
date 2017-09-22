@@ -7,17 +7,22 @@ show databases;
  
   CREATE TABLE doctors (id INT(6) AUTO_INCREMENT PRIMARY KEY,  name varchar(25), lname varchar(35), pacient_id INT(6));
   
-  
   show tables;
   
+  INSERT INTO doctors VALUES ('', 'Tom', 'Tomson', 2);
+  SELECT * FROM doctors;
+  
+  
+  // kaip istrinti 2 daktara?
+  DELETE FROM doctors WHERE id=2;
   
   
   //-------------DOCTORS----------
-INSERT INTO doctors  VALUES  ('', 'Tom', 'Opsa');
-INSERT INTO doctors  VALUES  ('', 'Paul', 'Tor');
-INSERT INTO doctors  VALUES  ('', 'Jo', 'Oto');
-INSERT INTO doctors  VALUES  ('', 'Lili', 'Lekso');
-INSERT INTO doctors  VALUES  ('', 'Timy', 'So');
+INSERT INTO doctors  VALUES  ('', 'Tom', 'Opsa', '2');
+INSERT INTO doctors  VALUES  ('', 'Paul', 'Tor', '1');
+INSERT INTO doctors  VALUES  ('', 'Jo', 'Oto', '1');
+INSERT INTO doctors  VALUES  ('', 'Lili', 'Lekso', '3');
+INSERT INTO doctors  VALUES  ('', 'Timy', 'So', '2');
 //-------------PACIENTS---------------
 	INSERT INTO pacients  VALUES  ('', 'Ari', 'Amon', '3');
 	INSERT INTO pacients  VALUES  ('', 'Tim', 'Taros', '2');
