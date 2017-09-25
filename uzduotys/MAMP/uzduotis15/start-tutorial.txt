@@ -34,18 +34,18 @@ show databases;
 	 
 	 
   //-------------DOCTORS----------
-INSERT INTO doctors  VALUES  ('', 'Tom', 'Opsa', '2');
-INSERT INTO doctors  VALUES  ('', 'Paul', 'Tor', '1');
-INSERT INTO doctors  VALUES  ('', 'Jo', 'Oto', '1');
-INSERT INTO doctors  VALUES  ('', 'Lili', 'Lekso', '3');
-INSERT INTO doctors  VALUES  ('', 'Timy', 'So', '2');
+INSERT INTO doctors  VALUES  ('', 'Tom', 'Opsa');
+INSERT INTO doctors  VALUES  ('', 'Paul', 'Tor');;
+INSERT INTO doctors  VALUES  ('', 'Jo', 'Oto');
+INSERT INTO doctors  VALUES  ('', 'Lili', 'Lekso');
+INSERT INTO doctors  VALUES  ('', 'Timy', 'So');
 //-------------patients---------------
-	INSERT INTO patients  VALUES  ('', 'Ari', 'Amon' );
-	INSERT INTO patients  VALUES  ('', 'Tim', 'Taros' );
-	INSERT INTO patients  VALUES  ('', 'Ana', 'Tomson' );
-	INSERT INTO patients  VALUES  ('', 'Tom', 'Alis' );
-	INSERT INTO patients  VALUES  ('', 'Karis', 'Katis' );
-	INSERT INTO patients  VALUES  ('', 'Jo', 'Oporas' );
+	INSERT INTO patients  VALUES  ('', 'Ari', 'Amon' , '2' );
+	INSERT INTO patients  VALUES  ('', 'Tim', 'Taros' , '1' );
+	INSERT INTO patients  VALUES  ('', 'Ana', 'Tomson' , '1' );
+	INSERT INTO patients  VALUES  ('', 'Tom', 'Alis' , '3' );
+	INSERT INTO patients  VALUES  ('', 'Karis', 'Katis' , '2' );
+	INSERT INTO patients  VALUES  ('', 'Jo', 'Oporas' , '2' );
 //-------------IMG---------------
 INSERT INTO img  VALUES  ('', 'pic-46.jpg', '5');
 INSERT INTO img  VALUES  ('', 'pic-46.PNG', '1');

@@ -17,8 +17,12 @@ SELECT * FROM user;
  GRANT ALL PRIVILEGES ON * . * TO 'tautvydas06'@'localhost' WITH GRANT OPTION;
 
  
- 
+ CREATE DATABASE  `ligonine4`;  
  CREATE DATABASE IF NOT EXISTS `ligonine4` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+ 
+ 
+ 
+ 
  
 		USER     IF NOT EXISTS 
  CREATE DATABASE IF NOT EXISTS  `hospital6` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci; 
