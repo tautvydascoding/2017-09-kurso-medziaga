@@ -47,11 +47,19 @@
         }
         // createDoctor($connection, "Bill", "Kolt" );
 		//----- OR (saugesnis budas)-----
+		//$first_name = $_POST['first_name'];
+		//$first_name = htmlspecialchars( $first_name );
+		//echo $first_name;
+		// $first_name = $_POST['first_name'];
+		// $first_name = strip_tags( $first_name );
+		// echo $first_name;
+		
 		function insertUser ($connection, $username, $userlname, $pass, $ac )  {
-
+			// http://php.net/manual/en/function.sprintf.php
           $sql = sprintf(
             "INSERT INTO users ( name, lname, password, ac) VALUES ('%s', '%s', '%s', '%s') ",
-
+			// https://www.w3schools.com/php/func_mysqli_real_escape_string.asp
+			// mysqli_real_escape_string - Required. The string to be escaped. Characters encoded are NUL (ASCII 0), \n, \r, \, ', ", and Control-Z.
             mysqli_real_escape_string($connection, $username),
             mysqli_real_escape_string($connection, $userlname),
             md5($pass),
