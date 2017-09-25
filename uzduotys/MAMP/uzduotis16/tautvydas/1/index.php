@@ -1,6 +1,18 @@
 <?php
 
 
+
+ // uzduotis 2
+ // sukurti f-ja createUser($uname, $password, $elpastas, $teises)
+ // uzduotis 3
+ // sukurti f-ja deleteUser($id)
+ // uzduotis 4
+ // sukurti f-ja editeUser($id, $uname, $password, $elpastas, $teises);
+ // uzduotis 5
+ // sukurti f-ja getUsers();
+
+
+
     // define - konstantos
    define( "DB_NAME", 'savaite4');
    define( "HOST", 'localhost');
@@ -77,33 +89,46 @@
 
    // uzduotis 2
    // sukurti f-ja createUser($uname, $password, $elpastas, $teises)
-   function createUser($uname, $password, $elpastas, $teises) {
-       $sql_string = "INSERT INTO users
-                      VALUES ('', '$uname', '$password', '$elpastas', '$teises')";
+   function createUser($uname, $password, $elpastas ) {
+    //    $sql_string = "INSERT INTO users
+    //                   VALUES ('', '$uname', '$password', '$elpastas')";
+       // ARBA SAUGIAU
+       $sql_string = sprintf("INSERT INTO users
+                          VALUES ('', '%s', '%s', '%s', 'subscriber')",
+                            mysqli_real_escape_string (getConnection(), $uname),
+                            mysqli_real_escape_string (getConnection(), $password),
+                            mysqli_real_escape_string (getConnection(), $elpastas)
+                     );
+      // https://www.w3schools.com/php/func_mysqli_real_escape_string.asp
+     // mysqli_real_escape_string - Required. The string to be escaped. Characters encoded are NUL (ASCII 0), \n, \r, \, ', ", and Control-Z.
+
+     // $first_name = htmlspecialchars( $first_name );
+     // $first_name = strip_tags( $first_name );
         $arVeikia = mysqli_query(getConnection(), $sql_string);
         if (!$arVeikia) {  //  ($arVeikia == false)
             echo "ERROR: " . mysqli_error(getConnection());
         }
    }
-   createUser('Petras', 'xxd3f', 'ada@a.lt', 'subscriber');
-   $vartotojas = getUser(3);
+   // createUser('Ka\r\l/is', 'bl"a\'kas  echo "aaa"; ?>', 'aaa@a.lt' );
+   <!-- $vartotojas = getNewestUser();
    echo "Vartotojo id: " . $vartotojas['id'] . "<br />";
    echo "Vartotojo vardas: " . $vartotojas['username'] . "<br />";
    echo "Vartotojo slaptazodis: " . $vartotojas['pass'] . "<br />";
    echo "Vartotojo el. pastas: " . $vartotojas['email'] . "<br />";
-   echo "Vartotojo el. teises: " . $vartotojas['rights'] . "<br />";
+   echo "Vartotojo el. teises: " . $vartotojas['rights'] . "<br />"; -->
+
+   function deleteUser ($x) {
+       $sql_text =  "DELETE FROM users WHERE id = $x";
+       $arPavykoSQL = mysqli_query(getConnection(), $sql_text);
+       if (!$arPavykoSQL) {  //  ($arVeikia == false)
+           echo "ERROR: " . mysqli_error(getConnection());
+       }
+   }
+   // deleteUser(3);
 
 
 
 
- // uzduotis 2
- // sukurti f-ja createUser($uname, $password, $elpastas, $teises)
- // uzduotis 3
- // sukurti f-ja deleteUser($id)
- // uzduotis 4
- // sukurti f-ja editeUser($id, $uname, $password, $elpastas, $teises);
- // uzduotis 5
- // sukurti f-ja getUsers();
 
 
 // $phash = password_hash($pword, PASSWORD_DEFAULT);  // 255 chars
