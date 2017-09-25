@@ -96,7 +96,8 @@
        $sql_string = sprintf("INSERT INTO users
                           VALUES ('', '%s', '%s', '%s', 'subscriber')",
                             mysqli_real_escape_string (getConnection(), $uname),
-                            mysqli_real_escape_string (getConnection(), $password),
+                            // mysqli_real_escape_string (getConnection(), md5($password)),
+                            mysqli_real_escape_string (getConnection(),  password_hash($password, PASSWORD_DEFAULT) ),
                             mysqli_real_escape_string (getConnection(), $elpastas)
                      );
       // https://www.w3schools.com/php/func_mysqli_real_escape_string.asp
@@ -109,13 +110,13 @@
             echo "ERROR: " . mysqli_error(getConnection());
         }
    }
-   // createUser('Ka\r\l/is', 'bl"a\'kas  echo "aaa"; ?>', 'aaa@a.lt' );
-   <!-- $vartotojas = getNewestUser();
+   // createUser('Kasdf/is', 'blaslal' , 'aaa@a.lt' );
+     $vartotojas = getNewestUser();
    echo "Vartotojo id: " . $vartotojas['id'] . "<br />";
    echo "Vartotojo vardas: " . $vartotojas['username'] . "<br />";
    echo "Vartotojo slaptazodis: " . $vartotojas['pass'] . "<br />";
    echo "Vartotojo el. pastas: " . $vartotojas['email'] . "<br />";
-   echo "Vartotojo el. teises: " . $vartotojas['rights'] . "<br />"; -->
+   echo "Vartotojo el. teises: " . $vartotojas['rights'] . "<br />";
 
    function deleteUser ($x) {
        $sql_text =  "DELETE FROM users WHERE id = $x";
@@ -127,15 +128,24 @@
    // deleteUser(3);
 
 
+   function editUser($id, $name, $password, $email, $rights) {
+       $sql_text = " UPDATE users
+                     SET id = '$id',
+                         username = '$name',
+                        pass = '$password',
+                        email = '$email',
+                        rights = '$rights'
 
+                    WHERE id = $id " ;
+       $arPavykoSQL = mysqli_query(getConnection(), $sql_text);
+       if (!$arPavykoSQL) {  //  ($arVeikia == false)
+           echo "ERROR: " . mysqli_error(getConnection());
+       }
+   }
+   // $petras = getUser(4);
+   // editUser('Karolis', $petras['pass'], $petras['mail'], $petras['rights']);
+   editUser(5, 'Karolis','Karolis','Karolis','Karolis');
 
-
-
-// $phash = password_hash($pword, PASSWORD_DEFAULT);  // 255 chars
-// $phash = md5($pword);
- // if ($arPavykoSQL == false) {
- //   echo "ERROR: xxxx() -  nepavyko: " . mysqli_error($connect) . " <br>";
- // }
 
 
 
