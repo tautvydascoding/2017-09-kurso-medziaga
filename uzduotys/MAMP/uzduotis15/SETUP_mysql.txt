@@ -19,6 +19,7 @@ Open Terminal (Applications -> Utilities)
 Type in: (one line)
 ?/Applications/MAMP/Library/bin/mysql --host=localhost -uroot -proot
 
+mysql -uroot -proot
 
 
  
