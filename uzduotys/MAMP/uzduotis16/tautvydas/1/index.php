@@ -1,6 +1,18 @@
 <?php
 
 
+
+ // uzduotis 2
+ // sukurti f-ja createUser($uname, $password, $elpastas, $teises)
+ // uzduotis 3
+ // sukurti f-ja deleteUser($id)
+ // uzduotis 4
+ // sukurti f-ja editeUser($id, $uname, $password, $elpastas, $teises);
+ // uzduotis 5
+ // sukurti f-ja getUsers();
+
+
+
     // define - konstantos
    define( "DB_NAME", 'savaite4');
    define( "HOST", 'localhost');
@@ -37,28 +49,108 @@
        }
    }
 
+      // $vartotojas = getUser(1);
+      // var_dump($vartotojas);
+      // print_r ($vartotojas);
+      // echo "Vartotojo id: " . $vartotojas['id'] . "<br />";
+      // echo "Vartotojo vardas: " . $vartotojas['username'] . "<br />";
+      // echo "Vartotojo slaptazodis: " . $vartotojas['pass'] . "<br />";
+      // echo "Vartotojo el. pastas: " . $vartotojas['email'] . "<br />";
+      // echo "Vartotojo el. teises: " . $vartotojas['rights'] . "<br />";
 
-   $vartotojas = getUser(1);
-   // var_dump($vartotojas);
-   // print_r ($vartotojas);
+
+   // paimti konkretu vartotoja pagal jo id
+   function getNewestUser() {
+       $sql = "SELECT * FROM users
+              ORDER BY id DESC
+              LIMIT 1";
+       $rezultatai = mysqli_query(getConnection(), $sql);
+       if ($rezultatai) {
+           //    echo "getUser Suveike";
+           // gryzusisu duomenis is DB sudedame i masyva
+           $rezultatai = mysqli_fetch_assoc($rezultatai);
+           return $rezultatai;
+       } else {
+           echo "ERROR: getUser nesuveike!!!!!!" . mysqli_error(getConnection());
+           return null;
+       }
+   }
+
+
+   $vartotojas = getNewestUser();
    echo "Vartotojo id: " . $vartotojas['id'] . "<br />";
    echo "Vartotojo vardas: " . $vartotojas['username'] . "<br />";
    echo "Vartotojo slaptazodis: " . $vartotojas['pass'] . "<br />";
    echo "Vartotojo el. pastas: " . $vartotojas['email'] . "<br />";
    echo "Vartotojo el. teises: " . $vartotojas['rights'] . "<br />";
 
- // uzduotis 2
- // sukurti f-ja createUser($uname, $password, $elpastas, $teises)
- // uzduotis 3
- // sukurti f-ja deleteUser($id)
- // uzduotis 4
- // sukurti f-ja editeUser($id, $uname, $password, $elpastas, $teises);
- // uzduotis 5
- // sukurti f-ja getUsers();
+
+
+
+   // uzduotis 2
+   // sukurti f-ja createUser($uname, $password, $elpastas, $teises)
+   function createUser($uname, $password, $elpastas ) {
+    //    $sql_string = "INSERT INTO users
+    //                   VALUES ('', '$uname', '$password', '$elpastas')";
+       // ARBA SAUGIAU
+       $sql_string = sprintf("INSERT INTO users
+                          VALUES ('', '%s', '%s', '%s', 'subscriber')",
+                            mysqli_real_escape_string (getConnection(), $uname),
+                            // mysqli_real_escape_string (getConnection(), md5($password)),
+                            mysqli_real_escape_string (getConnection(),  password_hash($password, PASSWORD_DEFAULT) ),
+                            mysqli_real_escape_string (getConnection(), $elpastas)
+                     );
+      // https://www.w3schools.com/php/func_mysqli_real_escape_string.asp
+     // mysqli_real_escape_string - Required. The string to be escaped. Characters encoded are NUL (ASCII 0), \n, \r, \, ', ", and Control-Z.
+
+     // $first_name = htmlspecialchars( $first_name );
+     // $first_name = strip_tags( $first_name );
+        $arVeikia = mysqli_query(getConnection(), $sql_string);
+        if (!$arVeikia) {  //  ($arVeikia == false)
+            echo "ERROR: " . mysqli_error(getConnection());
+        }
+   }
+   // createUser('Kasdf/is', 'blaslal' , 'aaa@a.lt' );
+     $vartotojas = getNewestUser();
+   echo "Vartotojo id: " . $vartotojas['id'] . "<br />";
+   echo "Vartotojo vardas: " . $vartotojas['username'] . "<br />";
+   echo "Vartotojo slaptazodis: " . $vartotojas['pass'] . "<br />";
+   echo "Vartotojo el. pastas: " . $vartotojas['email'] . "<br />";
+   echo "Vartotojo el. teises: " . $vartotojas['rights'] . "<br />";
+
+   function deleteUser ($x) {
+       $sql_text =  "DELETE FROM users WHERE id = $x";
+       $arPavykoSQL = mysqli_query(getConnection(), $sql_text);
+       if (!$arPavykoSQL) {  //  ($arVeikia == false)
+           echo "ERROR: " . mysqli_error(getConnection());
+       }
+   }
+   // deleteUser(3);
+
+
+   function editUser($id, $name, $password, $email, $rights) {
+       $sql_text = " UPDATE users
+                     SET id = '$id',
+                         username = '$name',
+                        pass = '$password',
+                        email = '$email',
+                        rights = '$rights'
+                    WHERE id = $id " ;
+       $arPavykoSQL = mysqli_query(getConnection(), $sql_text);
+       if (!$arPavykoSQL) {  //  ($arVeikia == false)
+           echo "ERROR: " . mysqli_error(getConnection());
+       }
+   }
+   $petras = getUser(10); 
+   editUser($petras['id'], 'karlosas', $petras['pass'], "kaunas@info.lt", $petras['rights']);
+   // editUser(5, 'Karolis','Karolis','Karolis','Karolis');
 
 
 
 
+
+
+// if( mysqli_num_rows($result) > 0 ) {
 
 
 
