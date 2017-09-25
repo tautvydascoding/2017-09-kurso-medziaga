@@ -135,16 +135,15 @@
                         pass = '$password',
                         email = '$email',
                         rights = '$rights'
-
                     WHERE id = $id " ;
        $arPavykoSQL = mysqli_query(getConnection(), $sql_text);
        if (!$arPavykoSQL) {  //  ($arVeikia == false)
            echo "ERROR: " . mysqli_error(getConnection());
        }
    }
-   // $petras = getUser(4);
-   // editUser('Karolis', $petras['pass'], $petras['mail'], $petras['rights']);
-   editUser(5, 'Karolis','Karolis','Karolis','Karolis');
+   $petras = getUser(10); 
+   editUser($petras['id'], 'karlosas', $petras['pass'], "kaunas@info.lt", $petras['rights']);
+   // editUser(5, 'Karolis','Karolis','Karolis','Karolis');
 
 
 
