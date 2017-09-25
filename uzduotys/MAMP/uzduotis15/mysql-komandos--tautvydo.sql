@@ -1,7 +1,7 @@
-﻿mysql> 
+﻿mysql>
 
-show databases; 
-use duomenuBazesPavadinimas;  
+show databases;
+use duomenuBazesPavadinimas;
 show tables;
 
 
@@ -15,23 +15,24 @@ SELECT * FROM user;
  // username - pas kai kuriuos negali tureti skaiciu!!!
  CREATE USER 'tautvydas04'@'localhost' IDENTIFIED BY 'tratata';
  CREATE USER 'tautvydas06'@'localhost' IDENTIFIED BY 'tratata';
+ CREATE USER 'tautvydasDelete'@'localhost' IDENTIFIED BY 'tratata';
  GRANT ALL PRIVILEGES ON * . * TO 'tautvydas04'@'localhost' WITH GRANT OPTION;
  GRANT ALL PRIVILEGES ON * . * TO 'tautvydas06'@'localhost' WITH GRANT OPTION;
+GRANT ALL PRIVILEGES ON * . * TO 'tautvydasDelete'@'localhost' WITH GRANT OPTION;
 
- 
- CREATE DATABASE  `ligonine4`;  
+ CREATE DATABASE  `ligonine4`;
  CREATE DATABASE IF NOT EXISTS `ligonine4` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
- 
- 
- 
- 
- 
-		USER     IF NOT EXISTS 
- CREATE DATABASE IF NOT EXISTS  `hospital6` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci; 
-		TABLE    IF NOT EXISTS 
 
-		
-		
+
+
+
+
+		USER     IF NOT EXISTS
+ CREATE DATABASE IF NOT EXISTS  `hospital6` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+		TABLE    IF NOT EXISTS
+
+
+
 // ====== naudingos kitos:
 // reset autoincreament :
 ALTER TABLE tablename AUTO_INCREMENT = 1;   // A) budas
@@ -45,34 +46,36 @@ use duomenuBazesPavadinimas;   // pasikeisti DB  pries kuriant lenteles
       name VARCHAR(30) not NULL,
       lname VARCHAR(30) NOT NULL
 	  );
- 
-	  
-CREATE TABLE IF NOT EXISTS pacients ( 
+
+
+CREATE TABLE IF NOT EXISTS pacients (
      id INT(6) UNSIGNED     AUTO_INCREMENT PRIMARY KEY,
      name VARCHAR(30) not NULL,
      lname VARCHAR(30) NOT NULL,
      doctor_id INT(6) NOT NULL
      );
-	 
-CREATE TABLE IF NOT EXISTS img ( 
+
+CREATE TABLE IF NOT EXISTS img (
 	 id INT(6) UNSIGNED     AUTO_INCREMENT PRIMARY KEY,
 	 name VARCHAR(60) not NULL,
 	 doctor_id INT(6) NOT NULL
 	 );
+	 
+
 
 // -------SQL komandos----------------------
 ` - geros kabutes
 ' - geros kabutes
-‘  - blogos kabutes    
+‘  - blogos kabutes
 
 
 SELECT column1, column2, ...
-	FROM table_name 
+	FROM table_name
 	WHERE condition1 AND condition2 AND condition3 ...;
 	WHERE condition1 OR condition2 OR condition3 ...;
 	WHERE NOT condition;
 	WHERE CustomerName LIKE 'a%'; 				 // PRASIDEDA "a" zodis
-	ORDER BY column1, column2, ... ASC|DESC;     // rikiavimas 
+	ORDER BY column1, column2, ... ASC|DESC;     // rikiavimas
 	ORDER BY Country ASC, CustomerName DESC;
 
 INSERT INTO table_name
@@ -88,27 +91,27 @@ DELETE FROM table_name
 UPDATE table_name
 	SET column1 = value1, column2 = value2, ...
 	WHERE condition;
-		
-	
- SELECT TOP 3 * FROM Customers;   
+
+
+ SELECT TOP 3 * FROM Customers;
  // BEVEIK TAS PATS
  SELECT * FROM Customers LIMIT 3;
-	
-	
+
+
 // rikiuoti pagal kaina
 SELECT MIN(column_name)
 	FROM table_name
 	WHERE condition;
 
 SELECT MIN(Price) AS SmallestPrice
-	FROM Products;	
+	FROM Products;
 
 SELECT AVG(column_name)
 	FROM table_name
 	WHERE condition;
 
 SELECT * FROM Customers
-	WHERE City LIKE 'ber%'; 
+	WHERE City LIKE 'ber%';
 	WHERE Country IN ('Germany', 'France', 'UK');
 	WHERE Country NOT IN ('Germany', 'France', 'UK');
 	WHERE Country IN (SELECT Country FROM Suppliers);
@@ -119,19 +122,19 @@ SELECT * FROM Products
 SELECT Orders.OrderID, Customers.CustomerName
 	FROM Orders
 	INNER JOIN Customers ON Orders.CustomerID = Customers.CustomerID;
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 //-------------DOCTORS----------
 INSERT INTO doctors  VALUES  ('', 'Tom', 'Opsa');
@@ -178,20 +181,20 @@ UPDATE pacients
   SET doctor_id = 6
   WHERE name like 'T%';
 
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 4) sprendimas
 SELECT doctors.lname     	// ko ieskome ir ka grazins
 	FROM pacients, doctors  // su kokiomis lentelemis dirbsime
@@ -204,13 +207,13 @@ SELECT doctors.lname      // ko ieskome ir ka grazins
 	INNER JOIN pacients ON pacients.doctor_id = doctors.id
 	WHERE pacients.name = 'Tom';     /// AND pacients.password = $pass;
 
-	
-	
-SELECT doctors.lname     	 
-	FROM pacients, doctors   
+
+
+SELECT doctors.lname
+	FROM pacients, doctors
 	WHERE pacients.name = 'Tom' AND pacients.doctor_id = doctors.id;
 // OR
-SELECT doctors.lname      
-	FROM doctors          
+SELECT doctors.lname
+	FROM doctors
 	INNER JOIN pacients ON pacients.doctor_id = doctors.id
-	WHERE pacients.name = 'Tom';     
+	WHERE pacients.name = 'Tom';
