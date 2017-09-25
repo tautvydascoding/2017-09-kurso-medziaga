@@ -44,7 +44,6 @@ Route::get('/get-doctors', function () {
                         $('.zinute').html('');
                  }
               });
-			  
         }
     </script>
   </body>
