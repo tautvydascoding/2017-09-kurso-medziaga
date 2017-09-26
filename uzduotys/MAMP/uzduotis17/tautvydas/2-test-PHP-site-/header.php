@@ -17,6 +17,13 @@
         <div class="container">
                 <header class="row aukstis100 fonas-yellow">
                     <div class="col-md-12">
-                        header
+
+                        <?php
+                            include_once('./function-users.php');
+                            $users = getUsers(4);
+
+
+                         ?>
+
                     </div> <!-- END  -->
                 </header>
