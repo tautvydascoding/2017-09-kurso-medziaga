@@ -80,7 +80,54 @@ function editUser ($id, $name, $password, $email, $rights) {
   $koreguoti = mysqli_query(getConnection(), $sql);
 }
 $Benji = getUser(14);
-editUser(14, 'Lipsicas', 'Goga', 'a@mom.pl', $Benji['rights']);
+// editUser(14, 'Lipsicas', 'Goga', 'a@mom.pl', $Benji['rights']);
 //uzduotis 5 - sukurti f-ja getUsers($id, $uname, $pass....)
+
+
+function getUsers() {
+  $sql = "SELECT * FROM users;";
+  $rezultatai = mysqli_query(getConnection(), $sql);
+//patikrinome ar radome vartotoju ir suskaiciuoja kiek ju
+  if (mysqli_num_rows($rezultatai)>0){
+    // $rezultatai = mysqli_fetch_assoc($rezultatai);
+    return $rezultatai;
+    } else {
+      echo "ERROR: " . mysqli_error(getConnection());
+      return null;
+    }
+  }
+
+$allUsers = getUsers();
+if ($allUsers != null) {
+  $userDate = $allUsers;
+  while ($userDate) {
+    $userDate = mysqli_fetch_assoc($allUsers);
+    echo " vartotojo ID: " . $userDate['id'] . "<br />";
+    echo " vartotojo ID: " . $userDate['username'] . "<br />";
+    echo " vartotojo ID: " . $userDate['pass'] . "<br />";
+    echo " vartotojo ID: " . $userDate['email'] . "<br />";
+    echo " vartotojo ID: " . $userDate['rights'] . "<br />";
+  }
+  // print_r($allUsers);
+}
+
+// atsijungti nuo DB
+mysqli_close(getConnection());
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ?>
