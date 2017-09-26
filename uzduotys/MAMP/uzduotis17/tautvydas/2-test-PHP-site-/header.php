@@ -20,33 +20,31 @@
 
                         <?php
                             include_once('./function-users.php');
-                            $users = getUsers(5);
-
-
                          ?>
 
                          <nav>
                              <ul>
                                   <?php
-                                    // mysqli_fetch_assoc - paima sekanti vartotoja is obj
-                                    //  $user = mysqli_fetch_assoc($users);
-                                    //  echo "<li>" . $user['username'] . "</li>";
-                                     //
-                                    //  $user = mysqli_fetch_assoc($users);
-                                    //  echo "<li>" . $user['username'] . "</li>";
-                                     //
-                                    //  $user = mysqli_fetch_assoc($users);
-                                    //  echo "<li>" . $user['username'] . "</li>";
-                                     //
-                                    //  $user = mysqli_fetch_assoc($users);
-                                    //  echo "<li>" . $user['username'] . "</li>";
-
-                                     // ARBA
+                                     $users = getUsers(5);
                                      $user = mysqli_fetch_assoc($users);
                                      while ($user) {
                                          echo "<li>" . $user['username'] . "</li>";
                                          $user = mysqli_fetch_assoc($users);
                                      }
+
+
+                                       // mysqli_fetch_assoc - paima sekanti vartotoja is obj
+                                       //  $user = mysqli_fetch_assoc($users);
+                                       //  echo "<li>" . $user['username'] . "</li>";
+                                        //
+                                       //  $user = mysqli_fetch_assoc($users);
+                                       //  echo "<li>" . $user['username'] . "</li>";
+                                        //
+                                       //  $user = mysqli_fetch_assoc($users);
+                                       //  echo "<li>" . $user['username'] . "</li>";
+                                        //
+                                       //  $user = mysqli_fetch_assoc($users);
+                                       //  echo "<li>" . $user['username'] . "</li>";
                                   ?>
                              </ul>
                          </nav>
