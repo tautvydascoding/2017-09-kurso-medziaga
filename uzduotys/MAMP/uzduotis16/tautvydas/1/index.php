@@ -174,9 +174,10 @@
                 echo " vartotojo slaptazodis: " . $userData['pass'] . "<br />";
                 echo " vartotojo el pastas: " . $userData['email'] . "<br />";
                 echo " vartotojo teises: " . $userData['rights'] . "<br />";
+                echo " ===============================================<br /><br />";
                 // mysqli_fetch_row -  duomenis (is sekancios eilutes) sudeda i masyva (paprasta [0])
                 // mysqli_fetch_assoc - duomenis (is sekancios eilutes) sudeda i  masyva  ['id']       // mysqli_fetch_array - duomenis (is sekancios eilutes) sudeda i  masyva  ['id'] ir paprasta [0]
-                    
+
                 $userData = mysqli_fetch_array($allUsers);
         }
    }
