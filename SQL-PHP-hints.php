@@ -10,7 +10,11 @@
 		echo "ERROR:: ===Prisijungti prie DB nepavyko=== " .  mysqli_connect_error();
 	  }
   
-  
+  	    //------------kad lietuviu veiktu------
+	  // Change character set to utf8
+		mysqli_set_charset($connection,"utf8");
+		
+		
 	// "$sql" paprastas kintamasis (String) - kuris saugo SQl komanda
 	  // $sql = "INSERT INTO doctors VALUES ('', 'Karl', 'Tomson'); ";
 	  // $sql = "INSERT INTO doctors ( id, name, lname) VALUES ('', 'Karl', 'Tomson');";
@@ -23,6 +27,7 @@
 	  } else {
 		echo "ERROR:: SQL nepavyko ivykdyti!!!" .  mysqli_connect_error();
 	  }
+
 	  
 	  // -----------------functions-------------------------
 	    // prijungia prie DB

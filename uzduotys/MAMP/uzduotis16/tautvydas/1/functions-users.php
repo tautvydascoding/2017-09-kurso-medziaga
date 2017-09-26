@@ -28,6 +28,10 @@
    } else {
        die ("ERROR: prisijungti napavyko, nes: " . mysqli_connect_error());
    }
+   // Change character set to utf8
+   // ijungima lietuvyves
+   mysqli_set_charset($connection,"utf8"); 
+
 
    function getConnection() {
        global $connection;
@@ -50,14 +54,12 @@
        }
    }
 
-      // $vartotojas = getUser(1);
-      // var_dump($vartotojas);
-      // print_r ($vartotojas);
-      // echo "Vartotojo id: " . $vartotojas['id'] . "<br />";
-      // echo "Vartotojo vardas: " . $vartotojas['username'] . "<br />";
-      // echo "Vartotojo slaptazodis: " . $vartotojas['pass'] . "<br />";
-      // echo "Vartotojo el. pastas: " . $vartotojas['email'] . "<br />";
-      // echo "Vartotojo el. teises: " . $vartotojas['rights'] . "<br />";
+      $vartotojas = getUser(7);
+      echo "Vartotojo id: " . $vartotojas['id'] . "<br />";
+      echo "Vartotojo vardas: " . $vartotojas['username'] . "<br />";
+      echo "Vartotojo slaptazodis: " . $vartotojas['pass'] . "<br />";
+      echo "Vartotojo el. pastas: " . $vartotojas['email'] . "<br />";
+      echo "Vartotojo el. teises: " . $vartotojas['rights'] . "<br />";
 
 
    // paimti konkretu vartotoja pagal jo id
@@ -150,7 +152,7 @@
    // uzduotis 5 getUsers()
    function getUsers($kiekis = 999999) {
        $sql_text = "SELECT * FROM users
-                    ORDER BY id DESC   
+                    ORDER BY id DESC
                     LIMIT $kiekis;";
        $rezultatai = mysqli_query(getConnection(), $sql_text);
        // patikriname ar radome vartotoju
