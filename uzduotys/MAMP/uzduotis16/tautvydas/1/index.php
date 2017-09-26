@@ -1,7 +1,8 @@
 <?php
 
 
-
+// uzduotis 1
+// sukurti f-ja getUser($id);
  // uzduotis 2
  // sukurti f-ja createUser($uname, $password, $elpastas, $teises)
  // uzduotis 3
@@ -141,9 +142,54 @@
            echo "ERROR: " . mysqli_error(getConnection());
        }
    }
-   $petras = getUser(10); 
+   $petras = getUser(10);
    editUser($petras['id'], 'karlosas', $petras['pass'], "kaunas@info.lt", $petras['rights']);
    // editUser(5, 'Karolis','Karolis','Karolis','Karolis');
+
+
+   // uzduotis 5 getUsers()
+   function getUsers() {
+       $sql_text = "SELECT * FROM users;";
+       $rezultatai = mysqli_query(getConnection(), $sql_text);
+       // patikriname ar radome vartotoju
+       // mysqli_num_rows - suskaiciuoja kiek rado rezultatu
+       if (mysqli_num_rows($rezultatai) > 0 ) {
+            return $rezultatai;
+       } else {
+           echo "ERROR: " . mysqli_error(getConnection());
+           return null;
+       }
+   }
+
+   $allUsers = getUsers( );
+   // tikriname ar DB radome vartotoju - ar turime duomenu
+   if ($allUsers != null) {
+       // mysqli_fetch_row -  duomenis (is sekancios eilutes) sudeda i masyva (paprasta [0])
+       // mysqli_fetch_assoc - duomenis (is sekancios eilutes) sudeda i  masyva  ['id']
+       // mysqli_fetch_array - duomenis (is sekancios eilutes) sudeda i  masyva  ['id'] ir paprasta [0]
+       $userData = mysqli_fetch_array($allUsers);
+        while ($userData) {
+                echo " vartotojo id: " . $userData[0] . "<br />";
+                echo " vartotojo vardas: " . $userData['username'] . "<br />";
+                echo " vartotojo slaptazodis: " . $userData['pass'] . "<br />";
+                echo " vartotojo el pastas: " . $userData['email'] . "<br />";
+                echo " vartotojo teises: " . $userData['rights'] . "<br />";
+                echo " ===============================================<br /><br />";
+                // mysqli_fetch_row -  duomenis (is sekancios eilutes) sudeda i masyva (paprasta [0])
+                // mysqli_fetch_assoc - duomenis (is sekancios eilutes) sudeda i  masyva  ['id']       // mysqli_fetch_array - duomenis (is sekancios eilutes) sudeda i  masyva  ['id'] ir paprasta [0]
+
+                $userData = mysqli_fetch_array($allUsers);
+        }
+   }
+   // atsijunget nuo DB
+   mysqli_close(getConnection());
+
+
+
+
+
+
+
 
 
 
