@@ -15,10 +15,10 @@
 
 
     // define - konstantos
-   define( "DB_NAME", 'savaite4');
+   define( "DB_NAME", 'testdb');
    define( "HOST", 'localhost');
-   define( "DB_USERNAME", 'tautvydasDelete');  // root
-   define( "DB_PASS", 'tratata');            // root
+   define( "DB_USERNAME", 'root');      // root
+   define( "DB_PASS", 'root');            // root
 
 
    $connection = mysqli_connect( HOST, DB_USERNAME, DB_PASS, DB_NAME);
@@ -128,12 +128,12 @@
        }
    }
    // $petras = getUser(10);
-   // editUser($petras['id'], 'karlosas', $petras['pass'], "kaunas@info.lt", $petras['rights']); 
+   // editUser($petras['id'], 'karlosas', $petras['pass'], "kaunas@info.lt", $petras['rights']);
 
    // uzduotis 5 getUsers()
    function getUsers($kiekis = 999999) {
        $sql_text = "SELECT * FROM users
-                    ORDER BY id DESC
+                    ORDER BY id ASC
                     LIMIT $kiekis;";
        $rezultatai = mysqli_query(getConnection(), $sql_text);
        // patikriname ar radome vartotoju
@@ -166,25 +166,9 @@
    //      }
    // }
    // atsijunget nuo DB
-   mysqli_close(getConnection());
+   // mysqli_close(getConnection());
 
 
 
 
-
-
-
-
-
-
-
-
-
-// if( mysqli_num_rows($result) > 0 ) {
-
-
-
-
-
-
-   //
+?>
