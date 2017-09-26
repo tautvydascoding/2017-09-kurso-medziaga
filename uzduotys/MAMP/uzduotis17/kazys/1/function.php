@@ -90,13 +90,24 @@ function getArticles($kiekis = 100) {
   $visasTurinys = mysqli_query(getConnection(), $sql);
 }
 $allArticles = getArticles();
-if ($allArticles !=null){
-  $straipsnis = mysqli_fetch_assoc($myArticles);
-  while ($straipsnis){
-    echo "content: " . $straipsnis['content'] . "<br />";
-    $straipsnis = mysqli_fetch_array($myArticles);
-  }
+if ($allArticles != null) {
+                                //     // mysqli_fetch_row -  duomenis (is sekancios eilutes) sudeda i masyva (paprasta [0])
+                                //     // mysqli_fetch_assoc - duomenis (is sekancios eilutes) sudeda i  masyva  ['id']
+                                //     // mysqli_fetch_array - duomenis (is sekancios eilutes) sudeda i  masyva  ['id'] ir paprasta [0]
+    $straipsnis = mysqli_fetch_assoc($allArticles);
+     while ($straipsnis) {
+             echo "ID: " . $straipsnis['id'] . "<br />";
+             echo "<h2>Antraste: " . $straipsnis['title'] . "</h2><br />";
+             echo "<i>" . $straipsnis['content'] . "</i><br />";
+             echo "Data: " . $straipsnis['date'] . "<br />";
+             echo "Autoriaus id: " . $straipsnis['user_id'] . "<br />";
+             echo " ===============================================<br /><br />";
+              $straipsnis = mysqli_fetch_array(  $allArticles  ); // imame sekancios eilutes duomenis
+     }
 }
+// atsijunget nuo DB
+mysqli_close(getConnection());
+
 
 //
 ?>
