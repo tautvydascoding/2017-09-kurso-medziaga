@@ -14,6 +14,30 @@
         <link rel="stylesheet" href="./css/main.css">
     </head>
     <body>
-            <h1>test</h1>
+        <div class="container">
+                <header class="row aukstis100 fonas-yellow">
+                    <div class="col-md-12">
+                        header
+                    </div> <!-- END  -->
+                </header>
+
+
+                <div id="wrapper" class="row   aukstis300">
+                     <section class="col-md-8 ">
+                         Section
+                     </section>
+                     <aside class="col-md-4">
+                         Aside
+                     </aside>
+                </div>
+                <!-- END  wrapper-->
+
+                <footer class="row aukstis100 fonas-yellow">
+                    <div class="col-md-12">
+                        Footer
+                    </div>
+                </footer>
+        </div>
+        <!-- END container -->
     </body>
 </html>
