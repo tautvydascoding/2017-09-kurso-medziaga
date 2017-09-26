@@ -17,8 +17,8 @@
     // define - konstantos
    define( "DB_NAME", 'savaite4');
    define( "HOST", 'localhost');
-   define( "DB_USERNAME", 'tautvydasDelete');  // root
-   define( "DB_PASS", 'tratata');            // root
+   define( "DB_USERNAME", 'eima');  // root
+   define( "DB_PASS", 'eima123');            // root
 
 
    $connection = mysqli_connect( HOST, DB_USERNAME, DB_PASS, DB_NAME);
@@ -148,9 +148,9 @@
 
 
    // uzduotis 5 getUsers()
-   function getUsers($kiekis = 999999) {
+   function getUsers($kiekis = 99999) {
        $sql_text = "SELECT * FROM users
-                    ORDER BY id DESC   
+                    ORDER BY id DESC
                     LIMIT $kiekis;";
        $rezultatai = mysqli_query(getConnection(), $sql_text);
        // patikriname ar radome vartotoju
@@ -163,7 +163,7 @@
        }
    }
 
-   $allUsers = getUsers(4);
+   $allUsers = getUsers( );
    // tikriname ar DB radome vartotoju - ar turime duomenu
    if ($allUsers != null) {
        // mysqli_fetch_row -  duomenis (is sekancios eilutes) sudeda i masyva (paprasta [0])
@@ -171,7 +171,7 @@
        // mysqli_fetch_array - duomenis (is sekancios eilutes) sudeda i  masyva  ['id'] ir paprasta [0]
        $userData = mysqli_fetch_array($allUsers);
         while ($userData) {
-                echo " vartotojo id: " . $userData['id'] . "<br />";
+                echo " vartotojo id: " . $userData[0] . "<br />";
                 echo " vartotojo vardas: " . $userData['username'] . "<br />";
                 echo " vartotojo slaptazodis: " . $userData['pass'] . "<br />";
                 echo " vartotojo el pastas: " . $userData['email'] . "<br />";
@@ -179,7 +179,8 @@
                 echo " ===============================================<br /><br />";
                 // mysqli_fetch_row -  duomenis (is sekancios eilutes) sudeda i masyva (paprasta [0])
                 // mysqli_fetch_assoc - duomenis (is sekancios eilutes) sudeda i  masyva  ['id']       // mysqli_fetch_array - duomenis (is sekancios eilutes) sudeda i  masyva  ['id'] ir paprasta [0]
-                $userData = mysqli_fetch_array($allUsers); // imame sekancios eilutes duomenis
+
+                $userData = mysqli_fetch_array($allUsers);
         }
    }
    // atsijunget nuo DB
