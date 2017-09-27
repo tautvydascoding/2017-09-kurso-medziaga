@@ -20,30 +20,12 @@
 
 
 
-
- // define - konstantos
-define( "DB_NAME", 'savaite4');
-define( "HOST", 'localhost');
-define( "DB_USERNAME", 'tautvydasDelete');  // root
-define( "DB_PASS", 'tratata');            // root
-
-
-$connection = mysqli_connect( HOST, DB_USERNAME, DB_PASS, DB_NAME);
-
-if ($connection) {
-    echo "Prisijungti prie DB pavyko <br>";
-} else {
-    die ("ERROR: prisijungti napavyko, nes: " . mysqli_connect_error());
-}
 // Change character set to utf8
 // ijungima lietuvyves
 mysqli_set_charset($connection,"utf8");
 
 
-function getConnection() {
-    global $connection;
-    return $connection;
-}
+
 
 // paimti konkretu vartotoja pagal jo id
 function getArticle($id) {
@@ -138,22 +120,22 @@ function getArticles($kiekis = 999999) {
     }
 }
 
-$allArticles = getArticles();
-// tikriname ar DB radome vartotoju - ar turime duomenu
-if ($allArticles != null) {
-                                //     // mysqli_fetch_row -  duomenis (is sekancios eilutes) sudeda i masyva (paprasta [0])
-                                //     // mysqli_fetch_assoc - duomenis (is sekancios eilutes) sudeda i  masyva  ['id']
-                                //     // mysqli_fetch_array - duomenis (is sekancios eilutes) sudeda i  masyva  ['id'] ir paprasta [0]
-    $straipsnis = mysqli_fetch_assoc($allArticles);
-     while ($straipsnis) {
-             echo "ID: " . $straipsnis['id'] . "<br />";
-             echo "<h2>Antraste: " . $straipsnis['title'] . "</h2><br />";
-             echo "<i>" . $straipsnis['content'] . "</i><br />";
-             echo "Data: " . $straipsnis['date'] . "<br />";
-             echo "Autoriaus id: " . $straipsnis['user_id'] . "<br />";
-             echo " ===============================================<br /><br />";
-              $straipsnis = mysqli_fetch_array(  $allArticles  ); // imame sekancios eilutes duomenis
-     }
-}
+// $allArticles = getArticles();
+// // tikriname ar DB radome vartotoju - ar turime duomenu
+// if ($allArticles != null) {
+//                                 //     // mysqli_fetch_row -  duomenis (is sekancios eilutes) sudeda i masyva (paprasta [0])
+//                                 //     // mysqli_fetch_assoc - duomenis (is sekancios eilutes) sudeda i  masyva  ['id']
+//                                 //     // mysqli_fetch_array - duomenis (is sekancios eilutes) sudeda i  masyva  ['id'] ir paprasta [0]
+//     $straipsnis = mysqli_fetch_assoc($allArticles);
+//      while ($straipsnis) {
+//              echo "ID: " . $straipsnis['id'] . "<br />";
+//              echo "<h2>Antraste: " . $straipsnis['title'] . "</h2><br />";
+//              echo "<i>" . $straipsnis['content'] . "</i><br />";
+//              echo "Data: " . $straipsnis['date'] . "<br />";
+//              echo "Autoriaus id: " . $straipsnis['user_id'] . "<br />";
+//              echo " ===============================================<br /><br />";
+//               $straipsnis = mysqli_fetch_array(  $allArticles  ); // imame sekancios eilutes duomenis
+//      }
+// }
 // atsijunget nuo DB
 // mysqli_close(getConnection());

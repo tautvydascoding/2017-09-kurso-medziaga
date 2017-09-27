@@ -24,7 +24,7 @@
    $connection = mysqli_connect( HOST, DB_USERNAME, DB_PASS, DB_NAME);
 
    if ($connection) {
-       echo "Prisijungti prie DB pavyko <br>";
+    //    echo "Prisijungti prie DB pavyko <br>";
    } else {
        die ("ERROR: prisijungti napavyko, nes: " . mysqli_connect_error());
    }

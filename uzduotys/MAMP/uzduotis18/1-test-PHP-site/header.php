@@ -20,6 +20,8 @@
 
                         <?php
                             include_once('./function-users.php');
+                            include_once('./function-articles.php');
+
                          ?>
 
                          <nav>
