@@ -15,10 +15,10 @@
 
 
     // define - konstantos
-   define( "DB_NAME", 'testdb');
+   define( "DB_NAME", 'savaite4');
    define( "HOST", 'localhost');
-   define( "DB_USERNAME", 'kazys');  // root
-   define( "DB_PASS", 'fliperis');            // root
+   define( "DB_USERNAME", 'tautvydasDelete');  // root
+   define( "DB_PASS", 'tratata');            // root
 
 
    $connection = mysqli_connect( HOST, DB_USERNAME, DB_PASS, DB_NAME);
@@ -128,7 +128,7 @@
        }
    }
    // $petras = getUser(10);
-   // editUser($petras['id'], 'karlosas', $petras['pass'], "kaunas@info.lt", $petras['rights']);
+   // editUser($petras['id'], 'karlosas', $petras['pass'], "kaunas@info.lt", $petras['rights']); 
 
    // uzduotis 5 getUsers()
    function getUsers($kiekis = 999999) {
