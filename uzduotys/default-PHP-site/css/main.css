@@ -25,21 +25,3 @@ color: blue;
 .aukstis300 {
     min-height: 300px;
 }
-
-ul li {
-    display: inline-block;
-    padding: 20px 30px;
-    width: 20%;
-    font-size: 28px;
-    font-weight: 200;
-    text-transform: capitalize;
-    text-align: center;
-}
-ul li:hover {
-    background-color: #b2b2b2;
-    color: #fff;
-}
-
-
-
-/* */

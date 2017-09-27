@@ -156,4 +156,4 @@ if ($allArticles != null) {
      }
 }
 // atsijunget nuo DB
-// mysqli_close(getConnection());
+mysqli_close(getConnection());
