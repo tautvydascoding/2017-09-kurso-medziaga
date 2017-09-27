@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+/* -------------*/
+h1 {
+color: blue;
+}
+
+//sukuriame kintamaji, kuris saugos spalva $titleColor
+$titleColor: green;
+$titleSize : 29px;
+$titleWeight : 600;
+
+
+
+
+section {
+        h3 {
+            color: $titleColor;
+            font-size: $titleSize;
+            font-weight: $titleWeight;
+        }
+        p {
+            font-size:  16px;
+            font-weight: 600;
+
+        }
+    }
+
+
+aside {
+    h3 {
+        color: red;
+        font-size: 36px;
+        font-weight: 200;
+    }
+    p {
+        font-size:  14px;
+        font-weight: 500;
+    }
+}
+
+a {
+    font-weight: bold;
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+    &:active {
+    color: #3637d6; }
+    a h3 {
+        color: blue;
+    }
+}
+
+
+
+.fonas-yellow {
+    background-color: #f4d42f;
+}
+.fonas-green {
+    background-color: #71eb37;
+}
+.aukstis100 {
+    height: 100px;
+}
+.aukstis300 {
+    min-height: 300px;
+}

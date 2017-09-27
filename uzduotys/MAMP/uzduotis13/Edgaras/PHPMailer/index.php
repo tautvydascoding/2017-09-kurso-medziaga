@@ -13,9 +13,9 @@
             <input type="text" name="antraste" value="" maxlength="100">
             <br><br>
             <label for="">Jusu klausimas</label>
-            <textarea name="uzklausa" rows="10" cols="80"></textarea>
+            <textarea name="zinute" rows="10" cols="80"></textarea>
             <br>
-            <input type="button" name="" value="Klausti">
+            <input type="submit" name="" value="Klausti">
         </form>
     </body>
 </html>
