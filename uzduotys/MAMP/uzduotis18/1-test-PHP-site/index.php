@@ -29,7 +29,7 @@
                               <input type="password" name="pass"  required > <br>
 
                               <label for="pass2">Re-Password</label>   <br>
-                              <input type="password" name="pass2"  required" > <br>
+                              <input type="password" name="pass2"  required > <br>
 
                               <label for="email">Email</label>   <br>
                               <input type="email" name="email"  required > <br>
