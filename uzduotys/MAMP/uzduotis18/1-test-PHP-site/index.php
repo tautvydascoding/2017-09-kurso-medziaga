@@ -5,7 +5,10 @@
 
                 <div id="wrapper" class="row   aukstis300">
                      <section class="col-md-8 ">
-                         Section
+                            <?php
+                            
+                                include('./article.php');
+                             ?>
                      </section>
                      <aside class="col-md-4">
                          Aside
