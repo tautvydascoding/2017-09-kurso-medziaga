@@ -15,15 +15,39 @@
     </head>
     <body>
         <div class="container">
-                <header class="row aukstis100 fonas-yellow">
+                <header class="row aukstis300 fonas-yellow">
                     <div class="col-md-12">
 
                         <?php
                             include_once('./function-users.php');
-                            $users = getUsers(4);
-
-
                          ?>
+
+                         <nav>
+                             <ul>
+                                  <?php
+                                     $users = getUsers(5);
+                                     $user = mysqli_fetch_assoc($users);
+                                     while ($user) {
+                                         echo "<li>" . $user['username'] . "</li>";
+                                         $user = mysqli_fetch_assoc($users);
+                                     }
+
+
+                                       // mysqli_fetch_assoc - paima sekanti vartotoja is obj
+                                       //  $user = mysqli_fetch_assoc($users);
+                                       //  echo "<li>" . $user['username'] . "</li>";
+                                        //
+                                       //  $user = mysqli_fetch_assoc($users);
+                                       //  echo "<li>" . $user['username'] . "</li>";
+                                        //
+                                       //  $user = mysqli_fetch_assoc($users);
+                                       //  echo "<li>" . $user['username'] . "</li>";
+                                        //
+                                       //  $user = mysqli_fetch_assoc($users);
+                                       //  echo "<li>" . $user['username'] . "</li>";
+                                  ?>
+                             </ul>
+                         </nav>
 
                     </div> <!-- END  -->
                 </header>
