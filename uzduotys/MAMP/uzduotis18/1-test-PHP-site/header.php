@@ -19,6 +19,7 @@
                     <div class="col-md-12">
 
                         <?php
+                            // session_start();
                             include_once('./function-users.php');
                             include_once('./function-articles.php');
 

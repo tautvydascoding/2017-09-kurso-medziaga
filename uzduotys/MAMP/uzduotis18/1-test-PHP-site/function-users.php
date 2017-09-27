@@ -168,7 +168,19 @@
    // atsijunget nuo DB
    // mysqli_close(getConnection());
 
-
+function existUserName($x) {
+    $sql_text = "SELECT username FROM users
+                    WHERE username = '$x'";
+    $arRado = mysqli_query(getConnection(), $sql_text);
+    // jeigu tokio vardo nerado
+    if (mysqli_num_rows($arRado) > 0 ) {
+        echo "true;" . mysqli_error(getConnection());
+        return true;
+    } else {
+        echo "false;" . mysqli_error(getConnection());
+        return false;
+    }
+}
 
 
 ?>

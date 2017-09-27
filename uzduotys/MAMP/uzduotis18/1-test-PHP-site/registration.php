@@ -7,19 +7,28 @@
                 <?php
                     // print_r ($duomenys);
                     $duomenys = $_POST;
-                    $vardas = $duomenys['uname'];
-                    $slaptazodis = $duomenys['pass'];
-                    $slaptazodis2 = $duomenys['pass2'];
-                    $elpastas = $duomenys['email'];
+                    // trim -
+                    $vardas = trim($duomenys['uname']);
+                    $slaptazodis = trim($duomenys['pass']);
+                    $slaptazodis2 = trim($duomenys['pass2']);
+                    $elpastas = trim($duomenys['email']);
+
 
                     if ($slaptazodis === $slaptazodis2) {
-                        // createUser - i DB irasys nauja vartotoja
-                         createUser($vardas, $slaptazodis, $elpastas);
-                         echo '<h2 class="text-center">Jusu vartotojas sukurtas!</h2>';
+                        if ( existUserName($vardas) == false) {
+                            // createUser - i DB irasys nauja vartotoja
+                            createUser($vardas, $slaptazodis, $elpastas);
+                            echo '<h2 class="text-center">Jusu vartotojas sukurtas!</h2>';
+                        } else {
+                             echo '<h2 class="text-center alert alert-danger">Sis vartotojo vardas uzimtas!!!</h2>';
+                        }
                     }   else {
                         ?>
                          <h2 class="text-center alert alert-danger">Jusu slaptazodis nesutampa!!!</h2>
         <?php       }  ?>
+
+
+
 
              </section>
     </div>

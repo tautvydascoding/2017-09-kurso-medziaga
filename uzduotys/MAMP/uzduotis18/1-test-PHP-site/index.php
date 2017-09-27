@@ -20,10 +20,12 @@
                              ?>
                      </section>
                      <aside class="col-md-4">
-                         <h3>Registration</h3>
+                         <h3>Registration</h3> 
+
                           <form class="form" action="./registration.php" method="post">
                               <label for="uname">Username</label> <br>
-                              <input type="text" name="uname"  required  > <br>
+                              <input type="text" name="uname"  required
+                                value=" "> <br>
 
                               <label for="pass">Password</label>   <br>
                               <input type="password" name="pass"  required > <br>
