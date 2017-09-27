@@ -17,13 +17,8 @@
     // define - konstantos
    define( "DB_NAME", 'testdb');
    define( "HOST", 'localhost');
-<<<<<<< HEAD
    define( "DB_USERNAME", 'kazys');  // root
    define( "DB_PASS", 'fliperis');            // root
-=======
-   define( "DB_USERNAME", 'root');      // root
-   define( "DB_PASS", 'root');            // root
->>>>>>> 402c9127c27e42a040b28eecdbb6c6f7a994d536
 
 
    $connection = mysqli_connect( HOST, DB_USERNAME, DB_PASS, DB_NAME);
@@ -138,7 +133,7 @@
    // uzduotis 5 getUsers()
    function getUsers($kiekis = 999999) {
        $sql_text = "SELECT * FROM users
-                    ORDER BY id ASC
+                    ORDER BY id DESC
                     LIMIT $kiekis;";
        $rezultatai = mysqli_query(getConnection(), $sql_text);
        // patikriname ar radome vartotoju
@@ -171,9 +166,25 @@
    //      }
    // }
    // atsijunget nuo DB
-   // mysqli_close(getConnection());
+   mysqli_close(getConnection());
 
 
 
 
-?>
+
+
+
+
+
+
+
+
+
+// if( mysqli_num_rows($result) > 0 ) {
+
+
+
+
+
+
+   //
