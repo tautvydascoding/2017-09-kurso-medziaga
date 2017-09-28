@@ -40,6 +40,18 @@ ul li:hover {
     color: #fff;
 }
 
+.logo {
+    background-image: url('./logo.jpg');
+    width: 100px;
+    height: auto;
+    display: block;
+}
+/*  retinos ekranams */
+ @media (-webkit-min-device-pixel-ratio: 2),  (min-resolution: 192dpi) {
+     .logo {
+         background-image: url('./logo-x3.jpg');
+     }
+}
 
 
 /* */

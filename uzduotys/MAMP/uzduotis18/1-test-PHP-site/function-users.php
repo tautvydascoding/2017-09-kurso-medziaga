@@ -17,14 +17,14 @@
     // define - konstantos
    define( "DB_NAME", 'testdb');
    define( "HOST", 'localhost');
-   define( "DB_USERNAME", 'kazys');  // root
-   define( "DB_PASS", 'fliperis');            // root
+   define( "DB_USERNAME", 'root');      // root
+   define( "DB_PASS", 'root');            // root
 
 
    $connection = mysqli_connect( HOST, DB_USERNAME, DB_PASS, DB_NAME);
 
    if ($connection) {
-       echo "Prisijungti prie DB pavyko <br>";
+    //    echo "Prisijungti prie DB pavyko <br>";
    } else {
        die ("ERROR: prisijungti napavyko, nes: " . mysqli_connect_error());
    }
@@ -133,7 +133,7 @@
    // uzduotis 5 getUsers()
    function getUsers($kiekis = 999999) {
        $sql_text = "SELECT * FROM users
-                    ORDER BY id DESC
+                    ORDER BY id ASC
                     LIMIT $kiekis;";
        $rezultatai = mysqli_query(getConnection(), $sql_text);
        // patikriname ar radome vartotoju
@@ -166,25 +166,21 @@
    //      }
    // }
    // atsijunget nuo DB
-   mysqli_close(getConnection());
+   // mysqli_close(getConnection());
+
+function existUserName($x) {
+    $sql_text = "SELECT username FROM users
+                    WHERE username = '$x'";
+    $arRado = mysqli_query(getConnection(), $sql_text);
+    // jeigu tokio vardo nerado
+    if (mysqli_num_rows($arRado) > 0 ) {
+        echo "true;" . mysqli_error(getConnection());
+        return true;
+    } else {
+        echo "false;" . mysqli_error(getConnection());
+        return false;
+    }
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
-// if( mysqli_num_rows($result) > 0 ) {
-
-
-
-
-
-
-   //
+?>

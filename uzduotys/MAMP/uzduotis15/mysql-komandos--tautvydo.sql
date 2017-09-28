@@ -8,6 +8,8 @@ show tables;
 SELECT USER, PASSWORD, password_expired FROM user;
 SELECT * FROM user;
 
+ CREATE USER 'kazys'@'localhost' IDENTIFIED BY 'fliperis';
+ GRANT ALL PRIVILEGES ON * . * TO 'kazys'@'localhost' WITH GRANT OPTION;
 
 
  // username - pas kai kuriuos negali tureti skaiciu!!!
