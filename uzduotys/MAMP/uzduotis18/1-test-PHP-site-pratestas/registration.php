@@ -7,11 +7,12 @@
                 <?php
                     // print_r ($duomenys);
                     $duomenys = $_POST;
-                    // trim -
-                    $vardas = trim($duomenys['uname']);
-                    $slaptazodis = trim($duomenys['pass']);
-                    $slaptazodis2 = trim($duomenys['pass2']);
-                    $elpastas = trim($duomenys['email']);
+                    // trim - pasalina tarpus aplink visa stringa
+                    // strip_tags - pasalina tagus HTML ir php ir pan.
+                    $vardas = strip_tags( trim( $duomenys['uname']));
+                    $slaptazodis = strip_tags( trim( $duomenys['pass']));
+                    $slaptazodis2 = strip_tags( trim( $duomenys['pass2']));
+                    $elpastas = strip_tags( trim( $duomenys['email']));
 
 
                     if ($slaptazodis === $slaptazodis2) {
