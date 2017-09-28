@@ -1,20 +1,31 @@
-<article class="row">
+<article class="row  mt-4 mb-4 mv-4 ">
     <div class="col-xl-3  col-lg-4 col-md-6 col-sm-12 ">
         <img class="img-responsive img-fluid" src="./1.jpg" alt="piestukas rasyti ant popieriaus">
     </div>
     <div class="col-xl-9 col-lg-8 col-md-6 col-sm-12 ">
 
-        <?php
-            // $straipsnis = 
+        <h3 class="text-center">
+            <?php echo $straipsnis['title']; ?>
+         </h3>
+         <p>
+             <?php echo $straipsnis['content']; ?>
+         </p>
+
+         <i>Autoriaus nr.:
+             <?php echo $straipsnis['user_id']; ?>
+         </i>
+         <i class="float-right pull-right">
+               <?php echo $straipsnis['date']; ?>
+         </i>
+
+
+
+
+         <!-- ARBA -->
+         <?php
+            // echo "<h3 class='text-center'>" .  $straipsnis['title']   . "</h3>";
+            // echo "<p>" .   $straipsnis['content']   . "</p>";
          ?>
-        <h3>Antraste</h3>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        </p>
-        <i>Autorius</i>
-        <i class="float-right pull-right">
-            2017-02-12
-        </i>
 
 
     </div>
