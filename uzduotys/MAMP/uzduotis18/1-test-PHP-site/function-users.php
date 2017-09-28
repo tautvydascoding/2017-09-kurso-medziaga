@@ -24,7 +24,7 @@
    $connection = mysqli_connect( HOST, DB_USERNAME, DB_PASS, DB_NAME);
 
    if ($connection) {
-       echo "Prisijungti prie DB pavyko <br>";
+    //    echo "Prisijungti prie DB pavyko <br>";
    } else {
        die ("ERROR: prisijungti napavyko, nes: " . mysqli_connect_error());
    }
@@ -168,7 +168,19 @@
    // atsijunget nuo DB
    // mysqli_close(getConnection());
 
-
+function existUserName($x) {
+    $sql_text = "SELECT username FROM users
+                    WHERE username = '$x'";
+    $arRado = mysqli_query(getConnection(), $sql_text);
+    // jeigu tokio vardo nerado
+    if (mysqli_num_rows($arRado) > 0 ) {
+        echo "true;" . mysqli_error(getConnection());
+        return true;
+    } else {
+        echo "false;" . mysqli_error(getConnection());
+        return false;
+    }
+}
 
 
 ?>
