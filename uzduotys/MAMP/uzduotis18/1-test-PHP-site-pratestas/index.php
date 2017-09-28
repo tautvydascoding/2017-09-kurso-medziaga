@@ -20,7 +20,11 @@
                              ?>
                      </section>
                      <aside class="col-md-4">
-                         <h3>Registration</h3> 
+                         <h3>Registration</h3>
+                         <?php
+                         print_r($_REQUEST);
+
+                         ?>
 
                           <form class="form" action="./registration.php" method="post">
                               <label for="uname">Username</label> <br>
