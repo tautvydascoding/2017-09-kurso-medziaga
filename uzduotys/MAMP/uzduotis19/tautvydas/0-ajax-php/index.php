@@ -49,3 +49,6 @@
 <?php
     require_once('./footer.php');
  ?>
+ <?php
+ print_r($_REQUEST);  
+ ?>
