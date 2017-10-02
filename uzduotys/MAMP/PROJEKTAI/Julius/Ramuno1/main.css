@@ -1,58 +1,141 @@
+ p{
+ font-family: "Helvetica Neue", "Lucida Grande", Helvetica, Arial, Verdana, sans-serif;
+        font-size: 14px;
+        margin-top: .5em; color: black;
+
+}
+h1,h2,h3,h4,h5,h6 {
+ font-family:Georgia,serif;
+ font-variant: small-caps; text-transform: none; font-weight: 100; margin-bottom: 0;
+}
+.wrap {
+    background-color:rgba(255,255,255,0.9);
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    
+       
+}
+.wrapFooter {
+    background-color:rgba(0,0,0,0.7);
+    
+}
+.bgimg:after {
+    content: "";
+    background: url("img/bglast1.jpg");
+    background-size: cover;
+    background-repeat: repeat;
+    background-position:bottom;
+    opacity: 0.2;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
 
 
 /*ID JAVASKRIPTUI---img change---------------*/
-#aboutus {}
-#kaip{}
-#kodel{}
-#paslaugos{}
+.bglist {
+    background-color:rgba(0, 0, 0, 0.5);
+}
+div.dropdown-menu {
+    background-color:rgba(0,0,0,0.7);
+}
+
+#aboutus { 
+}
+
+#kaip {}
+
+#kodel {}
+
+#paslaugos {}
+
 #bgfotoaboutus1 {
-    background-image:url("img/technology.jpg");
-    height:100%;
+    background-image: url("img/kazkas1.jpg");
+    border-radius: 50px;
+    height: 100%;
+    border-right:none;
+    background-repeat:no-repeat;
 }
-.active0{
-    background-color:rgba(0,0,200,0.2);
+.text3:hover { 
+    text-decoration: underline;
+    font-weight: bolder;
 }
-.active1{
-    background-color:rgba(0,200,0,0.2);
+.text3 {
+    color:white;
+    font-family:Georgia,serif;
 }
-.active2{
-    background-color:rgba(200,200,0,0.2);
+.active0 {
+    background-color:rgba(255,255,255,0.7);
+   
+    border-top-left-radius:10px; 
+    border-right:none;
+    color:black;
 }
-.active3{
-    background-color:rgba(200,100,200,0.2);
+
+.active1 {
+    background-color:rgba(255,255,255,0.7);
+    
+    border-right: none;
+    color:black;
+}
+
+.active2 {
+    background-color:rgba(255,255,255,0.7);
+   
+    border-right: none;
+    color:black;
+}
+
+.active3 {
+    background-color:rgba(255,255,255,0.7);
+    
+    border-right:none;
+    
+    border-bottom-left-radius: 10px;
+    color:black;
+    
 }
 
 
 /*-----------------------------        */
 
+
 /*/navlinku tekstas*/
+
 .onhover:hover {
-    font-weight:bold;
+    
     color: rgba(255, 255, 255, 1);
 }
+
 .onhover:active {
-    font-weight:normal;
+    font-weight: normal;
     color: rgba(255, 255, 255, 1);
 }
+
 .onhover1:hover {
-    font-weight:bold;
-    color: rgba(0, 0, 0, 1);
-}
-.onhover1:active {
-    font-weight:normal;
+    font-weight: bold;
     color: rgba(0, 0, 0, 1);
 }
 
+.onhover1:active {
+    font-weight: normal;
+    color: rgba(0, 0, 0, 1);
+}
 
 
 .onhoversearchicon:hover {
     border: 2px solid rgba(255, 255, 255, 0.7);
-    border-style:inset;  
+    border-style: inset;
 }
+
 .onhoversearchicon:active {
     border: 2px solid white;
-    border-style:inset;  
+    border-style: inset;
 }
+
 .onhoverbutton:hover {
     height: 50px;
     width: auto;
@@ -61,94 +144,130 @@
     border: solid white 2px;
     border-radius: 5px;
     background: rgba(0, 0, 0, 0.8);
-    color:white;
-/*    font-weight:bold;*/
+    color: white;
+    /*    font-weight:bold;*/
     margin-top: 50px;
     display: flex;
-    float: right; 
-  
+    float: right;
 }
+
 .onhoverbutton:active {
-    border-style:inset;
+    border-style: inset;
     border: solid white 3px;
 }
+
 #navbarSupportedContent {
     margin-left: auto;
-    margin-right:2%;
-    
-    width:auto;
+    margin-right: 2%;
+    width: auto;
 }
 
 .blackbg {
-    background-color:black;
+    background-color: black;
 }
+
 .searchicon {
     height: 25px;
     width: 25px;
+    
+    
+    
 }
 
 .searchbg {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
 .search-button {
-    background-color: rgba(0, 0, 0, 0.2);
-    color: rgba(255, 255, 255, 0.4);
-    border: 2px solid rgba(0,0,0,0);
+    background-color: rgba(0, 50, 0, 1);
+    border: 2px solid rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    height: 35px;
+}
+.search-button1 {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 2px solid rgba(0, 0, 0, 0);
     border-radius: 5px;
     height: 35px;
 }
 
 
 /*MYGTUKAS INTRO PAGE--------------*/
+
 .button {
     height: 50px;
     width: auto;
     z-index: 1;
     position: absolute;
-    border: solid 2px rgba(255,255,255, 0.5);
+    border: solid 2px rgba(255, 255, 255, 0.5);
     border-radius: 5px;
     background: rgba(0, 0, 0, 0.5);
-    color: rgba(255,255,255, 1);
+    color: rgba(255, 255, 255, 1);
     margin-top: 50px;
     display: flex;
     float: right;
 }
-/*MYGTUKAS DROPDOWN--------------------*/
-.btndrop {
-    background:none;
-}
 
+
+/*MYGTUKAS DROPDOWN--------------------*/
+
+.btndrop {
+    background: none;
+}
+.btnabout {
+    background-color:rgba(0, 50, 0, 0.5);
+}
 .bgmain {
     background-color: rgba (255, 255, 255, 0.5);
 }
 
 header {
+/*
     background-image: url(img/gears.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+*/
     width: 100%;
-    height: 200px;
+    height: 50px;
 }
 
 footer {
     width: 100%;
-    height: 20%;
+    height: 100%;
+    
 }
 
 .hidden {
-    overflow: hidden;
+    overflow:hidden;
 }
 
 .aukstis {
     width: 100%;
     height: 100%;
 }
-
+.aukstis300 {
+    height:340px;
+    
+}
+.aukstis150 {
+    height:150px;
+}
+.aukstisauto{
+    height: auto;
+}
+.aukstis25 {
+    height:25%;
+}
+.aukstis33{
+    height:33.3%;
+}
 .aukplot30p {
     height: 30px;
     width: 30px;
+}
+.plotis {
+    width:100%;
 }
 
 .pos1 {
@@ -170,23 +289,33 @@ footer {
 .textshadow {
     text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9), 0px 0px 50px rgba(0, 0, 0, 0.9);
 }
+
 .navbg {
-    background-color:rgba(0,0,0, 0.3);
+    background-color: rgba(0, 50, 0, 0.3);
 }
+.navbg1 {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
 .navboxshadow {
-    box-shadow: 5px 5px 10px 10px rgba(0,0,0,0.3);
+    box-shadow: 5px 5px 10px 10px rgba(0, 50, 0, 0.3);
     margin-right: 0;
-    
 }
+.navboxshadow1 {
+    box-shadow: 5px 5px 10px 10px rgba(0, 0, 0, 0.3);
+    margin-right: 0;
+}
+
 .navtext1 {
     color: rgba(255, 255, 255, 0.7);
+    font-family:Georgia,serif;
 }
 
 .navtext2 {
-    color: rgba(0, 0, 0, 0.7);
-   margin:auto;
-    
+    color: rgba(255, 255, 255, 0.7);
+    margin: auto;
 }
+
 
 .pos2 {
     position: absolute;
@@ -195,7 +324,6 @@ footer {
     padding-left: 800px;
     color: rgba(255, 255, 255, 0.7);
 }
-
 
 #map {
     height: 100%;
@@ -296,33 +424,88 @@ footer {
 
 /*<!--- bbz*/
 
-
 @media only screen and (max-width: 767px) {
     /* For mobile phones: */
     [class*="navbar"] {
-        
         margin-right: 0;
-        margin-left:0;
+        margin-left: 0;
     }
     [class*="form-inline"] {
-        display:none;
+        display: none;
     }
     [class*="pos1"] {
-         position: absolute;
-    z-index: 1;
-    padding-top: 35%;
-    padding-left: 20%;
-    color: rgba(255, 255, 255, 1);
+        position: absolute;
+        z-index: 1;
+        padding-top: 35%;
+        padding-left: 20%;
+        color: rgba(255, 255, 255, 1);
     }
     [class*="pos1-2"] {
-        display:none;
+        display: none;
     }
-    
     [class*="navboxshadow"] {
-        box-shadow:none;
+        box-shadow: none;
     }
-   
 }
-  
-        
 
+.footerimg1{
+    background-image:url(img/stakles1.jpg);
+    background-size: cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    opacity: 0.7;
+}
+.footerimg2{
+    background-image:url(img/stakles2.jpg);
+    background-size: cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    opacity: 0.7;
+}
+.footerimg3{
+    background-image:url(img/stakles3.jpg);
+    background-size: cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    opacity: 0.7;
+}
+.footerimg4{
+    background-image:url(img/stakles4.jpg);
+    background-size: cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    opacity: 0.7;
+}
+.footerimg5{
+    background-image:url(img/stakles5.jpg);
+    background-size: cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    opacity: 0.7;
+}
+.footerimg6{
+    background-image:url(img/stakles6.jpg);
+    background-size: cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    opacity: 0.7;
+}
+.footerimg7{
+    background-image:url(img/stakles7.jpg);
+    background-size: cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    opacity: 0.7;
+}
+.footerimg8{
+    background-image:url(img/stakles8.jpg);
+    background-size: cover;
+    background-repeat:no-repeat;
+    opacity: 0.7;
+    
+}
+.footerimg1:hover,.footerimg2:hover,.footerimg3:hover,
+.footerimg4:hover,.footerimg5:hover,.footerimg6:hover,.footerimg7:hover {
+    
+    opacity:1;
+}
