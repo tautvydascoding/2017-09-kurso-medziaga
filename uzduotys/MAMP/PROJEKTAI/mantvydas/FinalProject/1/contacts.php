@@ -6,8 +6,8 @@
          <article class="col abtColor">
 <h2>Register</h2>
              <form class="form" action="./registration.php" method="post">
-                 <label for="uname">Username</label> <br>
-                 <input type="text" name="uname" required value=""> <br>
+                 <label for="username">Username</label> <br>
+                 <input type="text" name="username" required value=""> <br>
 
                  <label for="pass">Password</label> <br>
                  <input type="password" name="pass" required> <br>

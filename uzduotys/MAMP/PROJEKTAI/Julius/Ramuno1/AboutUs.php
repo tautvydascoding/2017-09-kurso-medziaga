@@ -1,35 +1,39 @@
 <?php
 include('Headerindex.php');
 ?>
-        <div class="row pl-5 pr-5">
-            <div class="col-8 ">
-               <div class="row">
-                   <div class="col-2 d-flex align-items-center">
-                       <ul class="listgroup pl-0">
+        <div class="row pl-5 pr-5 aukstis300 ">
+            <div class="col-8 p-0 m-0 ">
+               <div class="row  d-flex aukstis">
+                   <div class="col-2 pl-0 pr-0">
+                       <ul class="listgroup d-inline-block aukstis25 p-0">
                          
-                          <li  class="list-group-item onhover1" id="aboutus">
-                             <p> Kas mes</p>
+                          <li  class="text3  bglist   active0 m-0 aukstis plotis d-flex justify-content-center align-items-center" id="aboutus">
+                             <h6> Kas mes</h6>
                            </li>
-                           <li  class="list-group-item onhover1  " id="kaip">
-                           <p>Kaip pradejom?</p>
-                           <li  class="list-group-item onhover1 " id="kodel"> 
-                               <p>Kodel mes?</p>
-                           <li  class="list-group-item onhover1 " id="ka">
-                               <p>Paslaugos trumpai</p>
+                           <li   class="text3  bglist  aukstis plotis d-flex justify-content-center align-items-center text-center" id="kaip">
+                           <h6>Kaip pradejom?</h6>
+                           <li class="text3  bglist  aukstis plotis d-flex justify-content-center align-items-center" id="kodel"> 
+                               <h6>Kodel mes?</h6>
+                           <li  class="text3 bglist  aukstis plotis d-flex justify-content-center align-items-center text-center" id="ka">
+                               <h6>Paslaugos trumpai</h6>
                            </li>
                            
                        </ul>
                    </div>
-                   <div class="col-10 tekstasaboutus">
-                      <h5 class="justify-content-center d-flex"> Kas mes?</h5>
-                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet repellat exercitationem sunt nihil vero, quae perferendis error quam consectetur quia maiores at magnam assumenda, mollitia, nesciunt voluptas molestiae sapiente laudantium doloribus esse eaque. Iste libero quos, velit nam vitae quaerat, cumque ab delectus quae voluptas optio! Dolorum, voluptatum. Quos laboriosam quis assumenda maxime sunt qui incidunt vitae obcaecati eum eius aut, repellendus, totam pariatur quia, nam neque ea. Quasi, ipsa, aperiam. Fugit quam enim dolore, quo esse voluptates blanditiis est! Blanditiis hic facilis quas vel repudiandae debitis deleniti dolores, exercitationem, voluptas numquam, et a eveniet id magni ex corrupti inventore.Kas mes?</p>
+                   <div class="col-10 tekstasaboutus wrap pt-3">
+                     <article>
+                      <h5 class="justify-content-center d-flex textlg"> Kas mes?</h5>
+                       <p class="textsm tekstoVietaAboutus" id="tekstoVietaKasMes">
+                         
+                       </p>
+                       </article>
                    </div>
                </div>
                
                 
             </div>
             <div class="col-4">
-                <h3> </h3>
+                
                 <div id="bgfotoaboutus1">
                 
                 </div>

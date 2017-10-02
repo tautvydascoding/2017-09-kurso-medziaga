@@ -1,0 +1,9 @@
+<?php
+		include_once('./header.php');
+		include_once('./about.php');
+		include_once('./reviews.php');
+		include_once('./kainos.php');
+		include_once('./contacts.php');
+		include_once('./duk.php');
+		include_once('./footer.php');
+	 ?>

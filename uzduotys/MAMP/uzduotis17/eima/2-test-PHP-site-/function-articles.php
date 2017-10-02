@@ -19,32 +19,6 @@
  // sukurti f-ja getArticles();
 
 
-
-
- // define - konstantos
-define( "DB_NAME", 'savaite4');
-define( "HOST", 'localhost');
-define( "DB_USERNAME", 'tautvydasDelete');  // root
-define( "DB_PASS", 'tratata');            // root
-
-
-$connection = mysqli_connect( HOST, DB_USERNAME, DB_PASS, DB_NAME);
-
-if ($connection) {
-    echo "Prisijungti prie DB pavyko <br>";
-} else {
-    die ("ERROR: prisijungti napavyko, nes: " . mysqli_connect_error());
-}
-// Change character set to utf8
-// ijungima lietuvyves
-mysqli_set_charset($connection,"utf8");
-
-
-function getConnection() {
-    global $connection;
-    return $connection;
-}
-
 // paimti konkretu vartotoja pagal jo id
 function getArticle($id) {
     $sql = "SELECT * FROM articles

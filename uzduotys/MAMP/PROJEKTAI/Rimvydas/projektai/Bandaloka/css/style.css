@@ -61,6 +61,11 @@ display: none;
     color: #e83a93;
 }
 
+
+.navbar-default .navbar-nav:hover {
+	color: #eee;
+}
+
  .brand-logo {
 
      height: 25px;
@@ -697,11 +702,15 @@ display: none;
 
 @media (max-width: 355px){
     #NEWSLETTER {
-        height: 500px;   
+        height: 600px;   
     }
     
     textarea {
         margin-bottom: 15px;
+    }
+
+    body {
+    	text-align: center;
     }
 }
 
