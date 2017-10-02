@@ -1,0 +1,3 @@
+"sketis" : 1vnt : 10.99
+"langas" : 8vnt : 85.99
+"suo" : 1vnt : 62.96
