@@ -1,0 +1,55 @@
+section {
+    a {
+        &:hover {
+            h3 {
+                color: yellow;
+            }
+        }
+        &:active {
+            h3 {
+                color: orange;
+            }
+        }
+    }
+    h3 {
+        color: red;
+        font-size: 29px;
+        font-weight: 600;
+    }
+    p {
+        font-size: 16px;
+        font-weight: 300;
+    }
+}
+
+aside {
+    h3 {
+        color: red;
+        font-size: 36px;
+        font-weight: 200;
+    }
+    p {
+        font-size: 14px;
+        font-weight: 500;
+    }
+}
+
+// kuriam ir naudojam kintamaji
+$titleColor: blue;
+h2 {
+    color: $titleColor;
+}
+
+//galima rasyt taip properties: 
+article {
+    font: {
+        size: 10px;
+        weight: 300;
+    }
+}
+
+// arba 
+article {
+    font-size: 15px;
+    font-weight: 200px;
+}
