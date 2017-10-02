@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 02, 2017 at 10:01 AM
--- Server version: 10.1.26-MariaDB
--- PHP Version: 7.1.8
+-- Generation Time: Oct 02, 2017 at 12:40 PM
+-- Server version: 10.1.22-MariaDB
+-- PHP Version: 7.1.4
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -19,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `skaiciuokle`
+-- Database: `projektas`
 --
 
 -- --------------------------------------------------------
@@ -88,7 +88,8 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `password`, `age`, `gen`, `cen`, `weight`, `loa`, `cneed`, `consumed`, `fneed`, `fconsumed`, `pneed`, `pconsumed`, `crneed`, `crconsumed`, `remember_token`, `created_at`, `updated_at`) VALUES
-(1, 'Tomas', 'test@test.com', '$2y$10$CP2elkmzKhO0/pCXJAwgc.JrPDuFDUB8plU5.1h0NBDrC.Ys2rVdu', 35, 0, 190, 90, 1, 2636, 417, 73, 11, 164, 29, 164, 50, 'yBmEWFlhkEWKzlnVvWQoxWvZ4wKzdh0Spa6Ubc5uBGom20znCSd7UcfuaMCW', '2017-09-30 10:09:33', '2017-10-02 04:15:44');
+(1, 'Tomas', 'test@test.com', '$2y$10$FKriVVV2NXTWp/nyAvNOQOCIgo.Hn/M02DIxXffgSeW3u3JPdDy/W', 50, 0, 180, 80, 2, 2570, 0, 71, 0, 160, 0, 160, 0, 'SmRQbpDJAo8ZdBU3xwlQCMDdtMqGNAYE98CVvOjpKVp5IKw5xSdQwxapvCsO', '2017-10-02 07:11:48', '2017-10-02 07:21:43'),
+(2, 'Titas', 'test2@test.com', '$2y$10$t58zpGAwBO.Y4FgkTIqRTuk22lEBdtLFFSO1mhEsmphk2uNong4DW', 20, 0, 170, 50, 1, 2017, 0, 56, 0, 126, 0, 126, 0, 'eycsHbBIbAfb0mnuyIw6DLtqDsYp57gaKshDYLiMJgLjrwxwCTSfQKO5RyAo', '2017-10-02 07:22:10', '2017-10-02 07:40:33');
 
 --
 -- Indexes for dumped tables
@@ -126,7 +127,7 @@ ALTER TABLE `migrations`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;COMMIT;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
