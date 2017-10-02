@@ -22,7 +22,10 @@
                             // session_start();
                             include_once('./function-users.php');
                             include_once('./function-articles.php');
+<<<<<<< HEAD:uzduotys/MAMP/uzduotis18/1-test-PHP-site/header.php
+=======
 
+>>>>>>> a27d75a9e2c0bf1c8510e9f8cbb8391938ee054e:uzduotys/MAMP/uzduotis18/1-test-PHP-site-pratestas/header.php
                          ?>
 
                          <nav>
