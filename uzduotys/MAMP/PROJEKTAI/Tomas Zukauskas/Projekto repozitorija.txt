@@ -1,0 +1,2 @@
+git clone https://windowas@bitbucket.org/windowas/projektas.git
+https://bitbucket.org/windowas/projektas/src

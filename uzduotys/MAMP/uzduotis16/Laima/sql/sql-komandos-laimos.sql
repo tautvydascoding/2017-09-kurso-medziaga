@@ -11,10 +11,10 @@ SELECT * FROM user;
 
 
  // username - pas kai kuriuos negali tureti skaiciu!!!
- CREATE USER 'tautvydas04'@'localhost' IDENTIFIED BY 'tratata';
- CREATE USER 'tautvydas06'@'localhost' IDENTIFIED BY 'tratata';
- GRANT ALL PRIVILEGES ON * . * TO 'tautvydas04'@'localhost' WITH GRANT OPTION;
- GRANT ALL PRIVILEGES ON * . * TO 'tautvydas06'@'localhost' WITH GRANT OPTION;
+ CREATE USER 'pokojo'@'localhost' IDENTIFIED BY 'nesakysiu';
+ CREATE USER 'pokojo17'@'localhost' IDENTIFIED BY 'nesakysiu';
+ GRANT ALL PRIVILEGES ON * . * TO 'pokojo'@'localhost' WITH GRANT OPTION;
+ GRANT ALL PRIVILEGES ON * . * TO 'pokojo17'@'localhost' WITH GRANT OPTION;
 
  
  CREATE DATABASE  `ligonine4`;  

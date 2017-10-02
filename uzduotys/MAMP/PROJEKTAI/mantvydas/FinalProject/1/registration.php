@@ -5,20 +5,20 @@
 <!-- ============== WRAPPER ============== -->
 <div class="container-fluid registration abtColor">
 
-<div class="row aukstis300">
+<div class="row">
     <section class="col-md-8">
 
         <?php
-            $duomenys = $_POST;
-            $vardas = strip_tags( trim( $duomenys['uname']));
-            $slaptazodis = strip_tags( trim( $duomenys['pass']));
-            $slaptazodis2 = strip_tags( trim( $duomenys['pass2']));
-            $elpastas = strip_tags( trim( $duomenys['email']));
+            $infoInput = $_POST;
+            $name = strip_tags( trim( $infoInput['username']));
+            $password = strip_tags( trim( $infoInput['pass']));
+            $password2 = strip_tags( trim( $infoInput['pass2']));
+            $eMaill = strip_tags( trim( $infoInput['email']));
 
 
-            if ($slaptazodis === $slaptazodis2) {
-                if ( existUserName($vardas) == false) {
-                    createUser($vardas, $slaptazodis, $elpastas);
+            if ($password === $password2) {
+                if ( existUserName($name) == false) {
+                    createUser($name, $password, $eMaill);
                     echo '<h2 class="text-center alert alert-success">Account created!</h2>';
                 } else {
                      echo '<h2 class="text-center alert alert-danger">This username is taken!!!</h2>';
