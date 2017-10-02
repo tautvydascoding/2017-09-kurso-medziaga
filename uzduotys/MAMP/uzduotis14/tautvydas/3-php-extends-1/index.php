@@ -7,6 +7,11 @@ class Animal {
     public $svoris = 0;
     private $zinduolis = false; // boolean: true arba false
     protected $maistas = "zole";
+    public function setMaistas ($y) {
+        $this->maistas = $y;
+        $this->gelavandenis = $this->y;
+        echo " Bandome issivesti protected reikeme: " . $this->maistas. "<br>";
+    }
 }
 
 class Zuvis extends Animal {
@@ -14,9 +19,7 @@ class Zuvis extends Animal {
     public $gelavandenis = null;
     public $y = "true";
     public function setMaistas ($y) {
-        $this->maistas = $y;
-        $this->gelavandenis = $this->y;
-        echo " Bandome issivesti protected reikeme: " . $this->maistas. "<br>";
+        echo "laba diena;";
     }
 }
 
@@ -88,7 +91,7 @@ $administratorius = new Admin( );
 echo "vartotojo teises: $moderatorius->userRights <br>";
 echo "admino username:" . $administratorius->getName() . "<br>";
 echo "admino username: {$administratorius->getName()} <br>";
-$administratorius->changeUsername("Poviliukas"); 
+$administratorius->changeUsername("Poviliukas");
 echo "admino username: {$administratorius->getName()} <br>";
 
 
