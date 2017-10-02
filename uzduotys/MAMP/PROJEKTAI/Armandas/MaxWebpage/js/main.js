@@ -3,7 +3,7 @@ $(document).ready(
     function () {
         var preload = document.getElementById("preload");
         var loading = 0;
-        var id = setInterval(frame, 6000);
+        var id = setInterval(frame, 30);
         function frame()
         {
             window.scrollTo(0, 0);

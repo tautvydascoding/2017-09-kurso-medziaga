@@ -249,10 +249,9 @@ width: 300px;
 height:100%;
  }
  .bg-color {
-   background-image: url("../img/drop.jpeg");
-   background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    color: white;
+    background-image: url("../img/drop.jpeg");
+    background-size: 100% 100%;
  }
 
 /*video*/
@@ -271,9 +270,7 @@ video {
     transition: 1s opacity;
     opacity: 0.7;
 }
-@media screen and (max-width: 500px) {
-  div{width:70%;}
-}
+
 @media screen and (max-device-width: 800px) {
     #bgvid { display: none; }
 }
