@@ -1,0 +1,33 @@
+ CREATE DATABASE finalproject;
+ DROP TABLE articles;
+
+
+CREATE TABLE users (id INT(6) AUTO_INCREMENT PRIMARY KEY, username varchar(20), pass varchar(20), email varchar(30), rights varchar(10));
+
+CREATE TABLE articlesliving (id INT(6) AUTO_INCREMENT PRIMARY KEY, title varchar(160), content text, date date, user_id varchar(30));
+CREATE TABLE articlesexterior (id INT(6) AUTO_INCREMENT PRIMARY KEY, title varchar(160), content text, date date, user_id varchar(30));
+CREATE TABLE articlesdining (id INT(6) AUTO_INCREMENT PRIMARY KEY, title varchar(160), content text, date date, user_id varchar(30));
+CREATE TABLE articlesworkplace (id INT(6) AUTO_INCREMENT PRIMARY KEY, title varchar(160), content text, date date, user_id varchar(30));
+
+INSERT INTO users  VALUES  ('', 'Sandra', '984651', 'sandrucha@gmail.com', 'admin');
+
+UPDATE users SET username='TomUpdated', pass='123Updated', email='tomUpdated@gmail.com', rights='admin' WHERE id=1;
+
+INSERT INTO articlesliving  VALUES  ('', 'Living Title', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.', NOW(), 'Designer Living');
+
+INSERT INTO articlesliving  VALUES  ('', 'SECOND Living Title', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.', NOW(), 'Designer Living');
+
+
+INSERT INTO articlesexterior  VALUES  ('', 'Exterior Title', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.', NOW(), 'Architect Exterior');
+
+INSERT INTO articlesexterior  VALUES  ('', 'SECOND Exterior Title', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.', NOW(), 'Architect Exterior');
+
+
+INSERT INTO articlesdining  VALUES  ('', 'Dining Title', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.', NOW(), 'Designer Dining');
+
+INSERT INTO articlesdining  VALUES  ('', 'SECOND Dining Title', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.', NOW(), 'Designer Dining');
+
+
+INSERT INTO articlesworkplace  VALUES  ('', 'Workplace Title', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.', NOW(), 'Designer Workplace');
+
+INSERT INTO articlesworkplace  VALUES  ('', 'SECOND Workplace Title', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.', NOW(), 'Designer Workplace');
