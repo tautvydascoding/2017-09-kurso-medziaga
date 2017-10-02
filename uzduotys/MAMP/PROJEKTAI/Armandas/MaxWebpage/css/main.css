@@ -1,0 +1,283 @@
+* {
+    box-sizing: border-box;
+}
+html, body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    font-family: 'Merriweather', serif;
+    background-color: black;
+}
+/* -------------*/
+/*Loder*/
+.preload {
+    width: 100%;
+    height: 100%;
+    background: #333;
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.logo {
+    height: 50%;
+    width: 100%;
+    margin-top: auto;
+    padding-top: 10%;
+    font-size: 50px;
+    text-shadow: -1px 2px 2px #000;
+    text-align: center;
+    color: azure;
+
+}
+
+.loader-frame {
+    width: 3%;
+    height: 50%;
+    margin: auto;
+    position: relative;
+}
+
+.loader1, .loader2{
+    position: absolute;
+    border: 5px solid transparent;
+    border-radius: 50%;
+}
+
+.loader1 {
+    width: 70px;
+    height: 70px;
+    border-top: 5px solid rgb(212, 0, 0);
+    border-bottom: 5px solid rgb(212, 0, 0);
+    animation: clockwisespin 2s linear 3;
+}
+
+.loader2 {
+    width: 60px;
+    height: 60px;
+    border-top: 5px solid rgb(226, 210, 0);
+    border-right: 5px solid rgb(226, 210, 0);
+    top: 5px; left: 5px;
+    animation: anticlockwisespin 2s linear 3;
+}
+
+@keyframes clockwisespin {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
+@keyframes anticlockwisespin {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(-360deg);}
+}
+
+@keyframes fadeout {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+/*Navbar*/
+
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+}
+.navbar-wrapper > .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+.navbar-wrapper .navbar {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.navbar-wrapper .navbar .container {
+  width: auto;
+}
+nav a {
+  color: white;
+  font-weight: normal;
+}
+/*Responsive css*/
+@media (min-width: 768px) {
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    margin-top: 20px;
+  }
+  .navbar-wrapper .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left: 0;
+  }
+/* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  } }
+
+
+/* Carousel base class */
+.carousel {
+  height: 657px;
+  margin-bottom: 0;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+  margin-bottom: 130px;
+}
+nav img {
+  margin-left: 30px;
+  margin-top: 5px;
+}
+ul li {
+  text-transform: uppercase;
+  font-size: large;
+}
+
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 657px;
+  background-color: #000000;
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  max-height: 100%;
+  opacity: 0.6;
+}
+
+.featurette-divider {
+  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+  /*Contact forma*/
+  #contact {
+    padding: 80px 0;
+    color: white;
+    background-image: url("../img/street.jpg");
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+  }
+  #contact p, h1 {
+    text-align: center;
+  }
+  #contact .btn-default {
+    padding: 4px 60px;
+    margin: 15px;
+    border: 1px solid #fff;
+    border-radius: 10;
+    transition: 0.3s;
+  }
+  #contact .btn-default:hover {
+    color:#fff;
+    background-color: #5b3101;
+    transition: 0.3s;
+  }
+  #contact .row {
+    margin-top: 50px;
+  }
+
+  /*Picture flip*/
+
+.f1_container {
+    position: relative;
+    margin: 10px auto;
+    width: 100%;
+    max-width: 250px;
+    height: 250px;
+    z-index: 1;
+    perspective: 1000;
+}
+.f1_card {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 1.0s linear;
+}
+.f1_container:hover .f1_card {
+    transform: rotateY(180deg);
+}
+.face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+.face.back {
+    display: block;
+    transform: rotateY(900deg);
+    box-sizing: border-box;
+    color: white;
+    text-align: center;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+
+}
+.marginTOP {
+  /*margin-top: 50px;*/
+}
+.aukstis300 {
+  height: 350px;
+}
+.aukstis100 {
+  height: 80px;
+  background-color: black;
+}
+#gallery h1 {
+  color: white;
+}
+#gallery img {
+width: 300px;
+height:100%;
+ }
+ .bg-color {
+   background-image: url("../img/drop.jpeg");
+   background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+ }
+
+/*video*/
+
+video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+    background-size: cover;
+    transition: 1s opacity;
+    opacity: 0.7;
+}
+@media screen and (max-width: 500px) {
+  div{width:70%;}
+}
+@media screen and (max-device-width: 800px) {
+    #bgvid { display: none; }
+}
+
+.whiteColor {
+  color: white;
+}
