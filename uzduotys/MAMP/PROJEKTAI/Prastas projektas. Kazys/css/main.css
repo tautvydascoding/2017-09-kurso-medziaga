@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+}
+html, body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    font-family: 'Julius Sans One', sans-serif;
+}
+/* -------------*/
+
+.col-md-9 {
+  position:relative;
+}
+.sidebar h2 {
+  font-size: 12px;
+}
+.sidebar h3 {
+  font-size: 22px;
+  border-bottom: 1px solid black;
+  padding-bottom: 4px;
+}
+.fontclass {
+font-family: 'Julius Sans One', sans-serif;
+}
+.height20 {
+  height: 20px;
+}
+.bg-sidebar {
+  background-color: rgba(240, 240, 240, 0.6);
+}
+.bg-green {
+  background-color: green;
+}
+.navbar-item {
+  display: block;
+}
+a:hover{
+   background-color: rgba(187, 171, 178, 0.29);
+}
+img {
+  height: 750px;
+}
+a {
+  all: unset;
+}
+/*header end*/
+/*CAROUSEL start*/
+
+/*CAROUSEL end*/
+/*GALLERY start*/
+.lightbox {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(218, 218, 224, 0.7);
+  display: none;
+}
+.lightbox[data-state="visible"] {
+  display: block;
+}
+.lightboximg {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+.lightbox-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.lightbox-container {
+  position: absolute;
+  left: 40px;
+  right: 40px;
+  top: 40px;
+  bottom: 40px;
+  background-color: rgba(224, 224, 224, 0.75);
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px #000;
+}
+/*GALLERY end*/
+/*FAQS start*/
+.faq {
+  margin-top: 10px;
+}
+.faqs {
+  background-image: url(../img/9.jpg);
+}
+.faqsDivBack {
+  background-color: rgba(240, 240, 241, 0.55);
+}
+.btnColor {
+  background-color: rgba(163, 163, 163, 0.5);
+}
+/*FAQS end*/
+/*CONTACTS start*/
+.contacts {
+  background-image: url(../img/7.jpg);
+}
+.contactHeader {
+  margin-left: 36px;
+  border-bottom: 1px solid black;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.contactList .fa {
+  margin-top: 15px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 200;
+}
+.contactsDivBack {
+  background-color: rgba(240, 240, 241, 0.55);
+}
+.contactsPage h2 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid black;
+}
+/*CONTACTS end*/
+/*footer pradzia*/
+
+
+/*footer pabaiga*/
