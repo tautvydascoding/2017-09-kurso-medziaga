@@ -12,7 +12,7 @@ console.log("Labas");
 //         var that = this;
 //         console.log("function daro - this.vardas: " + this.vardas);   // Jonas
 //         console.log("function daro - vardas: " + vardas);   // undefined
-//         // kintamuosius visada kurit virsuje, nes galite jauti err"undefined"
+//         // kintamuosius visada kurti virsuje, nes galite gauti err "undefined"
 //         var vardas = "Mantas";
 //         console.log("function daro - vardas: " + vardas);   // Mantas
 //

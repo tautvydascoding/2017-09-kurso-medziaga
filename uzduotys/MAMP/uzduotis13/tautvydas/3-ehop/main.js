@@ -1,8 +1,6 @@
 console.log("labas");
 
-// $paveiksliukas = $('.w3-row.w3-grayscale  img');
-// console.log($paveiksliukas[1]);
-// $paveiksliukas.on("click", function(){
+ 
  $('.w3-row.w3-grayscale  img').on("click", function(){
 
     $imgKopija = this.cloneNode(true);

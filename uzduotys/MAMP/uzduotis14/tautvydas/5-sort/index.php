@@ -4,7 +4,7 @@
 
   print_r($algos);
 
-  // rikevimas
+  // rikiavimas
   for ($i=0; $i < count($algos); $i++) {
       for ($k=0; $k < count($algos)-1; $k++) {
           if ( $algos[$k]  < $algos[$k + 1]) {

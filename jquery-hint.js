@@ -105,7 +105,7 @@ $("#w3s").attr("href"); // paima atributa
 		$("#div1").width(500).height(500); // pakeisti
 			
 	//===============redirect==========
-        // similar behavior as an HTTP redirect // apsaugo   vartotoja nuo Back neverendding loop
+        // similar behavior as an HTTP redirect // apsaugo   vartotoja nuo Back never-endding loop
         window.location.replace("http://google.com");	
 		
 		// similar behavior as clicking on a link

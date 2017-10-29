@@ -66,10 +66,15 @@ aside {
 
 // ===============per visa auksti ir desineje===========================
 
-    background-image: url(../assets/background.jpg);
-    background-size: auto 100%;
+    background-image: url(../assets/background.jpg); 
+    background-position-y: center;
     background-repeat: no-repeat;
-    background-position: right bottom;
+    background-blend-mode: luminosity;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; 
+    /*background-position: right bottom;*/
     min-height: 100%;
     margin: 0;
 

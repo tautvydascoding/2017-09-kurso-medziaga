@@ -29,3 +29,21 @@
      // C) issivesti username
      // 5)  panaudoti login funkcija
      // A) panaudoti login funkcija , pakeitus username
+
+
+
+//=================================
+
+//  uzduotis 1
+//  sukurti klase User / vartotojas
+// kintamieji: private username = 'Tim', privattus password = 'Dragon', public lastLoginTime
+// f-jos : public login($uname, $pass) , kuri patikrina ar vartotojo spaltazodis yra toks kaip vartotojo
+
+// $vartotojas = new User();
+// $arToksEgzistuoja = $vartotojas->login("Gregor", "Dragon");
+// echo $arToksEgzistuoja;
+
+
+// uzduotis 2 sukurti Admin kalse , kuri paveldi User klase
+// ir turi kintamuosius: $userRights
+// turi f-ja : changeUsername($newName) , kuri pakeicia vartotojo varda
